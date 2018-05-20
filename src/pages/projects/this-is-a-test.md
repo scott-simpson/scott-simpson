@@ -1,9 +1,12 @@
 ---
 templateKey: project-post
-title: This is a test
+title: A Better Way To Track Your Deliveries.
 short-title: Test
-description: This is a description that I'm testing out right now.
-short-description: This is a description.
+description: >-
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis elementum congue
+  porttitor. In ultricies odio ut orci viverra, id maximus magna venenatis.
+  Nullam ipsum velit, tempus suscipit augue at, rhoncus mattis.
+short-description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
 date: '2018-05-20'
 role:
   - Some Role
