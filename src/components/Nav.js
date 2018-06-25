@@ -26,7 +26,7 @@ const Nav = () => (
   <NavContainer>
     <NavA activeStyle={{ color: 'red' }} to='/projects'>Projects</NavA>
     <NavA to='/'>Blog</NavA>
-    <NavA to='/'>About Me</NavA>
+    <NavA to='/about'>About Me</NavA>
   </NavContainer>
 )
 
