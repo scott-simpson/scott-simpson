@@ -9,7 +9,11 @@ import Wrap from '../components/Wrap';
 export default class IndexPage extends Component {
   render() {
     const { data } = this.props;
-    const { edges: projects } = data.allMarkdownRemark;
+    const { edges: dataObj } = data.allMarkdownRemark;
+    const projects = dataObj.filter(project => project.node.frontmatter.templateKey === 'project-post');
+    const aboutObj = dataObj.filter(aboutObj => aboutObj.node.frontmatter.templateKey === 'about-page');
+    const about = aboutObj[0].node;
+    console.log(about);
 
     return (
       <Wrap>
@@ -18,12 +22,16 @@ export default class IndexPage extends Component {
           <Text fontSize={[3, 4]}>Product Designer</Text>
           <Text my={[2, 4]} lineHeight={1} fontSize={[3, 4]}>Im Cofounder and Head of Product at <a href='#'>UrbanStems</a>. My focus is on creating product design systems that help companies and teams scale.</Text>
         </Box>
+        <Flex>
+          <Box width={3/12}>
+            <Text>Washington, DC</Text>
+          </Box>
+        </Flex>
         <div className="container">
           <div className="content">
             <h1 className="has-text-weight-bold is-size-2">Projects</h1>
           </div>
           {projects
-            .filter(project => project.node.frontmatter.templateKey === 'project-post')
             .map(({ node: project }) => (
               <div
                 className="content"

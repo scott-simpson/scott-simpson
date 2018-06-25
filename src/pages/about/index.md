@@ -1,4 +1,5 @@
 ---
+templateKey: about-page
 name: Scott Simpson
 title: This is just a test
 description: >-
