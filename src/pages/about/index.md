@@ -7,7 +7,7 @@ description: >-
   focus is on creating product design systems that help companies and teams
   scale.
 location: "\U0001F1FA\U0001F1F8Washington, DC"
-working: UrbanStems
-countries: '41'
+working: "\U0001F490UrbanStems"
+countries: ✈️41
 ---
 And here is another test
