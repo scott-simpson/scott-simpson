@@ -1,9 +1,5 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import unified from 'unified';
-import markdown from 'remark-parse';
-import remark2rehype from 'remark-rehype';
-import rehype2react from 'rehype-react';
 import styled from 'styled-components';
 import Link from 'gatsby-link';
 import Img from "gatsby-image";
@@ -15,7 +11,6 @@ import WavesSVG from '../img/waves.svg';
 import Wrap from '../components/Wrap';
 import Anchor from '../components/Anchor';
 import Project from '../components/Project';
-import Content, { HTMLContent } from '../components/Content';
 
 import '../css/index.css';
 
@@ -59,16 +54,6 @@ export default class IndexPage extends Component {
     console.log(projects[0].node);
     console.log(about);
 
-    const renderLinks = unified()
-      .use(markdown)
-      .use(remark2rehype)
-      .use(rehype2react, {
-        createElement: React.createElement,
-        components: {
-          "a": Anchor,
-        }
-      })
-
     return (
       <div>
         <Section>
@@ -79,7 +64,7 @@ export default class IndexPage extends Component {
                   <ScrollAnimation animateIn="fadeInUp">
                     <Heading color="heading" fontSize={[5, 7]}>{about.frontmatter.name}</Heading>
                     <Text fontSize={[2, 3, 4]}>{about.frontmatter.title}</Text>
-                    <Text my={[2, 4]} lineHeight={1} fontSize={[2, 3, 4]}>{renderLinks.processSync(about.frontmatter.description).contents}</Text>
+                    <Text my={[2, 4]} lineHeight={1} fontSize={[2, 3, 4]}>Im Cofounder and Head of Product at <Anchor href="https://urbanstems.com">UrbanStems</Anchor>. My focus is on creating product design systems that help companies and teams scale.</Text>
                   </ScrollAnimation>
                 </Box>
               </Wrap>
