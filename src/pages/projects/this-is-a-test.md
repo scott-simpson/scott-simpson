@@ -1,12 +1,12 @@
 ---
 templateKey: project-post
-title: A Better Way To Track Your Deliveries.
-shortTitle: This is a short title
+title: A Better Way To Track Your Deliveries
+short-title: A Better Way To Track Your Deliveries
 description: >-
   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis elementum congue
   porttitor. In ultricies odio ut orci viverra, id maximus magna venenatis.
   Nullam ipsum velit, tempus suscipit augue at, rhoncus mattis.
-shortDescription: This is a short description
+short-description: 'Lorem ipsum dolor sit amet, elit atem ador consectetur adipiscing elit.'
 date: '2018-05-20'
 role:
   - Some Role
@@ -15,7 +15,7 @@ technology:
   - HTML
   - CSS
   - JSX
-cardImage: /img/order-tracking-list.png
+card-image: /img/order-tracking-list.png
 ---
 # Odio justo mus nam fusce condimentum at donec ut parturient
 
