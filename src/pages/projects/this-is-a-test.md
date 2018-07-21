@@ -10,6 +10,7 @@ shortDescription: >-
   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis elementum congue
   porttitor.
 date: '2018-05-20'
+client: UrbanStems
 role:
   - Some Role
 technology:
