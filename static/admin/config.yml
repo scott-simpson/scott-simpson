@@ -18,7 +18,7 @@ collections:
       - {label: "Description", name: "description", widget: "text"}
       - {label: "Short Description", name: "shortDescription", widget: "text"}
       - {label: "Date", name: "date", widget: "date"}
-      - {label: "Client", name: "client", widget: "text"}
+      - {label: "Client", name: "client", widget: "string"}
       - {label: "Role", name: "role", widget: "list"}
       - {label: "Technology", name: "technology", widget: "list", default: ["React", "HTML", "CSS", "JSX"]}
       - {label: "Card Image", name: "cardImage", widget: "image"}
