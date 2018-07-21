@@ -5,7 +5,6 @@ import styled from 'styled-components';
 const NavContainer = styled.nav`
   margin: 0 24px;
   padding: 12px 0;
-  border-bottom: ${props => props.theme.borders.light};
 `;
 
 const NavA = styled(Link)`
@@ -24,9 +23,9 @@ const NavA = styled(Link)`
 
 const Nav = () => (
   <NavContainer>
-    <NavA activeStyle={{ color: 'red' }} to='/projects'>Projects</NavA>
-    <NavA to='/'>Blog</NavA>
+    <NavA activeStyle={{ color: '#1C21FF' }} to='/'>Work</NavA>
     <NavA to='/about'>About Me</NavA>
+    <NavA to='/blog'>Blog</NavA>
   </NavContainer>
 )
 

@@ -14,13 +14,13 @@ collections:
     fields:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "project-post"}
       - {label: "Title", name: "title", widget: "string"}
-      - {label: "Short Title", name: "short-title", widget: "string"}
+      - {label: "Short Title", name: "shortTitle", widget: "string"}
       - {label: "Description", name: "description", widget: "text"}
-      - {label: "Short Description", name: "short-description", widget: "text"}
+      - {label: "Short Description", name: "shortDescription", widget: "text"}
       - {label: "Date", name: "date", widget: "date"}
       - {label: "Role", name: "role", widget: "list"}
       - {label: "Technology", name: "technology", widget: "list", default: ["React", "HTML", "CSS", "JSX"]}
-      - {label: "Card Image", name: "card-image", widget: "image"}
+      - {label: "Card Image", name: "cardImage", widget: "image"}
       - {label: "Body", name: "body", widget: "markdown"}
   - name: "pages"
     label: "Pages"

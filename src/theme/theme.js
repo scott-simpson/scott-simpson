@@ -1,8 +1,11 @@
 const colors = {
-  body: '#414141',
-  heading: '#212121',
+  body: '#37393C',
+  heading: '#blb181A1B',
   blue: '#1C21FF',
-  beige: '#F2F2EC',
+  lightBlue: '#C0E8F4',
+  gray: '#f6f7f9',
+  beige: '#FAF7F5',
+  white: '#ffffff',
 }
 
 const fonts = {
@@ -28,8 +31,8 @@ const breakpoints = [
 ]
 
 const lineHeights = [
-  '1.8',
-  '1.8'
+  '1.7',
+  '1.7'
 ]
 
 const fontSizes = [

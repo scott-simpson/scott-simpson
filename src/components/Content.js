@@ -32,12 +32,13 @@ export const HTMLContent = ({ content }) => (
 );
 
 const Content = ({ content }) => (
-  <div className={className}>{content}</div>
+  <div>{content}</div>
 );
 
 Content.propTypes = {
-  content: PropTypes.string,
-  className: PropTypes.string,
+  content: PropTypes.shape({
+    children: PropTypes.array,
+  }),
 };
 
 HTMLContent.propTypes = Content.propTypes;

@@ -24,6 +24,12 @@ module.exports = {
         plugins: [],
       },
     },
+    {
+      resolve: 'gatsby-plugin-react-svg',
+      options: {
+          include: `${__dirname}/src/img`,
+      },
+    },
     'gatsby-plugin-netlify-cms',
   ],
 };

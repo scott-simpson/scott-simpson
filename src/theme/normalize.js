@@ -1,6 +1,7 @@
 import styledNormalize from 'styled-normalize'
 import { injectGlobal } from 'styled-components'
 import UntitledSans from '../fonts/UntitledSansTest-Light.woff'
+import UntitledSansMedium from '../fonts/UntitledSansTest-Medium.woff'
 import UntitledSansBold from '../fonts/UntitledSansTest-Bold.woff'
 
 export default () => injectGlobal`
@@ -9,7 +10,7 @@ export default () => injectGlobal`
   body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    color: #494E72;
+    color: #37393C;
     font-weight: 400;
     line-height: 2.2em;
   }
@@ -17,6 +18,11 @@ export default () => injectGlobal`
     font-family: 'Untitled-Sans';
     font-weight: 400;
     src: url(${UntitledSans}) format('woff')
+  }
+  @font-face {
+    font-family: 'Untitled-Sans';
+    font-weight: 500;
+    src: url(${UntitledSansMedium}) format('woff')
   }
   @font-face {
     font-family: 'Untitled-Sans';
