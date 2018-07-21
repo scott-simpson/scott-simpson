@@ -142,6 +142,8 @@ export const pageQuery = graphql`
           frontmatter {
             countries
             description
+            shortDescription
+            shortTitle
             location
             name
             templateKey
