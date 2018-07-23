@@ -19,7 +19,7 @@ technology:
   - HTML
   - CSS
   - JSX
-cardImage: /img/order-tracking-list.png
+cardImage: /img/portfolio-card-1.jpg
 ---
 ## The Opportunity
 
