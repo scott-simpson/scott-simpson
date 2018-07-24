@@ -39,7 +39,6 @@ const Project = ({
   slug,
   cardImage,
   cardBackground,
-  cardText,
   client,
   title,
   description,
