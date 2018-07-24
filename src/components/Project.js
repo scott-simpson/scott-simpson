@@ -18,39 +18,41 @@ const ProjectContainer = styled.article`
     transform: scale(1);
   }
   & img {
-    transform: scale(1.02);
+    transform: scale(1);
     transform-origin: center;
     transition: all 0.3s ease-in-out;
     z-index: 1;
   }
   &:hover img {
-    transform: scale(1);
+    transform: scale(0.97);
   }
 `;
 
 const ProjectLink = styled(Link)`
   color: ${props => props.theme.colors.body};
   display: block;
-  padding: 0 4%;
+  padding: 0;
   text-decoration: none;
 `;
 
 const Project = ({
   slug,
   cardImage,
+  cardBackground,
+  cardText,
   client,
   title,
   description,
   date
 }) => (
-  <ProjectContainer>
+  <ProjectContainer style={{ backgroundColor: cardBackground }}>
     <ProjectLink to={slug}>
       <Flex flexWrap="wrap" alignItems="center">
-        <Box width={[1, 4/12]}>
+        <Box p={5} width={[1, 5/12]}>
           <Heading fontSize={[4, 6]} pb={2}>{title}</Heading>
           <Text lineHeight={1} fontSize={[1, 3]}>{description}</Text>
         </Box>
-        <Box width={[1, 8/12]}>
+        <Box width={[1, 7/12]}>
           <img
             src={cardImage}
             alt={title}

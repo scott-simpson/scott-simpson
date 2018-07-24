@@ -109,8 +109,10 @@ export default class IndexPage extends Component {
                 <Box key={project.fields.slug} width={[1, 10/12]} my={2}>
                   <ScrollAnimation offset={0} duration={0.5} animateOnce={true} animateIn="fadeInUp">
                     <Project
-                      cardImage={project.frontmatter.cardImage}
                       slug={project.fields.slug}
+                      cardImage={project.frontmatter.cardImage}
+                      cardBackground={project.frontmatter.cardBackground}
+                      textColor={project.frontmatter.textColor}
                       client={project.frontmatter.client}
                       title={project.frontmatter.shortTitle}
                       description={project.frontmatter.shortDescription}
@@ -151,6 +153,8 @@ export const pageQuery = graphql`
           }
           frontmatter {
             cardImage
+            cardBackground
+            cardText
             client
             countries
             date(formatString: "YYYY")
