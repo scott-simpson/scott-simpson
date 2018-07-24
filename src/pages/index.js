@@ -112,6 +112,7 @@ export default class IndexPage extends Component {
                       slug={project.fields.slug}
                       cardImage={project.frontmatter.cardImage}
                       cardBackground={project.frontmatter.cardBackground}
+                      cardText={project.frontmatter.cardText}
                       client={project.frontmatter.client}
                       title={project.frontmatter.shortTitle}
                       description={project.frontmatter.shortDescription}
@@ -153,6 +154,7 @@ export const pageQuery = graphql`
           frontmatter {
             cardImage
             cardBackground
+            cardText
             client
             countries
             date(formatString: "YYYY")

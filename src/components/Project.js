@@ -35,32 +35,48 @@ const ProjectLink = styled(Link)`
   text-decoration: none;
 `;
 
+const Meta = styled(Text)`
+  position: absolute;
+  bottom: 0;
+  left: 0;
+`;
+
 const Project = ({
   slug,
   cardImage,
   cardBackground,
+  cardText,
   client,
   title,
   description,
   date
-}) => (
-  <ProjectContainer style={{ backgroundColor: cardBackground }}>
-    <ProjectLink to={slug}>
-      <Flex flexWrap="wrap" alignItems="center">
-        <Box p={5} width={[1, 5/12]}>
-          <Heading fontSize={[4, 6]} pb={2}>{title}</Heading>
-          <Text lineHeight={1} fontSize={[1, 3]}>{description}</Text>
-        </Box>
-        <Box width={[1, 7/12]}>
-          <img
-            src={cardImage}
-            alt={title}
-          />
-        </Box>
-      </Flex>
-    </ProjectLink>
-  </ProjectContainer>
-)
+}) => {
+  let headlineColor = props => props.theme.colors.heading;
+  let bodyColor = props => props.theme.colors.body;
+  if(cardText == 'light') {
+    headlineColor = '#ffffff';
+    bodyColor = '#f6f7f9';
+  }
+  return (
+    <ProjectContainer style={{ backgroundColor: cardBackground }}>
+      <ProjectLink to={slug}>
+        <Flex flexWrap="wrap" alignItems="center">
+          <Box p={5} width={[1, 5/12]}>
+            <Heading style={{ color: headlineColor }} fontSize={[4, 6]} pb={2}>{title}</Heading>
+            <Text style={{ color: bodyColor }} lineHeight={1} fontSize={[1, 3]}>{description}</Text>
+          </Box>
+          <Box width={[1, 7/12]}>
+            <img
+              src={cardImage}
+              alt={title}
+            />
+          </Box>
+        </Flex>
+        <Meta style={{ color: bodyColor }} p={5}>{client}, {date}</Meta>
+      </ProjectLink>
+    </ProjectContainer>
+  );
+}
 
 export default Project;
 
