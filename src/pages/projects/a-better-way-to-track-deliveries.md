@@ -19,6 +19,7 @@ technology:
   - JSX
 cardImage: /img/portfolio-card-3.jpg
 cardBackground: '#c8c4e4'
+cardText: dark
 ---
 ## Reducing The Question “When?”
 Since launching our nationwide delivery service back in January, our customer care team was fielding more and more calls from customers asking about the status of their order. We didn’t have a system up until this point for order tracking because of the largely on-demand nature of our business. Working with the care team, we decided that creating an easy way for customers to track their order would free up their time to address larger issues.
