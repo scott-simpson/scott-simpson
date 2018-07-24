@@ -18,7 +18,7 @@ technology:
   - HTML
   - CSS
   - JSX
-cardImage: /img/order-tracking-list.png
+cardImage: /img/portfolio-card-1.jpg
 ---
 ## The Opportunity
 As a small design and engineering team, it was often hard for us to build and iterate on our product quick enough to keep up with the company's growth. Without a single source of truth for our design system, we would find ourselves creating multiple UI components to accomplish the same thing. We would also call these components by different names, often causing confusion between teams. Very quickly, our css library got bloated and was difficult to maintain. It was clear that if we were to be more effective working across teams, we needed a simple system.
