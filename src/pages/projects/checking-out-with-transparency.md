@@ -21,6 +21,7 @@ technology:
   - JSX
 cardImage: /img/portfolio-card-1.jpg
 cardBackground: '#ffe9e9'
+cardText: dark
 ---
 ## The Opportunity
 
