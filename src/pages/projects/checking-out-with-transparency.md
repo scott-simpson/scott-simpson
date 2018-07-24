@@ -29,7 +29,11 @@ When we started UrbanStems, we saw a big opportunity to improve the experience o
 
 Why not offer transparent pricing and be upfront about delivery costs? Why not offer a curated selection to make the choice easier? It was clear that the floral industry was broken, and that the best way of winning customers over was to simply be transparent, while creating a quick and seamless ordering experience. These two ideas worked their way into almost every part of our design process and established a foundation for our user experience.
 
-<aside>![Just A Test](/img/portfolio-card-1.jpg)</aside>
+<aside>
+
+![Something Here](/img/portfolio-card-1.jpg)
+
+</aside>
 
 ## Visualizing The Flow
 
