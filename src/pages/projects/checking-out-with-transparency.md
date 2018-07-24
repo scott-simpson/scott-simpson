@@ -32,7 +32,7 @@ Why not offer transparent pricing and be upfront about delivery costs? Why not o
 <figure>
 
 ![Something Here](/img/portfolio-card-1.jpg)
-
+<figcaption>This is a caption for this image</figcaption>
 </figure>
 
 ## Visualizing The Flow
