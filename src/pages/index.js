@@ -18,29 +18,26 @@ const Section = styled.section`
   background: ${props => props.theme.colors.beige};
 `;
 
-const Article = styled.article`
-  background: ${props => props.theme.colors.gray};
-  padding: 32px;
-`;
-
 const BlueBox = styled(Box)`
+  background: #4C50FF;
   position: absolute;
   height: 100%;
-  width: 20px;
+  width: 100%;
   top: 0;
   right: 0;
   z-index: 1;
 `;
 
 const WavesContainer = styled(Box)`
-  background: #4C50FF;
   position: relative;
 `;
 
 const Waves = styled(WavesSVG)`
   position: absolute;
   top: 0;
-  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
   z-index: 2;
 `;
 
@@ -58,38 +55,38 @@ export default class IndexPage extends Component {
       <div>
         <Section>
           <Flex flexWrap="wrap">
-            <Box width={[1, 8/12]}>
+            <Box width={[1, 7/12]}>
               <Wrap>
-                <Box ml={[0, '8.333%']} py={[5, 6]} width={[1, 9/12, 7/12]}>
-                  <ScrollAnimation animateIn="fadeInUp">
+                <Box ml={[0, '8.333%']} py={[5, 6]} width={[1, 1, 9/12]}>
+                  <ScrollAnimation offset={0} animateOnce={true} duration={0.75} animateIn="fadeInUp">
                     <Heading color="heading" fontSize={[5, 7]}>{about.frontmatter.name}</Heading>
-                    <Text fontSize={[2, 3, 4]}>{about.frontmatter.title}</Text>
-                    <Text my={[2, 4]} lineHeight={1} fontSize={[2, 3, 4]}>Im Cofounder and Head of Product at <Anchor href="https://urbanstems.com">UrbanStems</Anchor>. My focus is on creating product design systems that help companies and teams scale.</Text>
+                    <Text fontSize={[3, 4, 5]}>{about.frontmatter.title}</Text>
+                    <Text my={[2, 4]} lineHeight={1} fontSize={[3, 4, 5]}>Im Cofounder and Head of Product at <Anchor href="https://urbanstems.com">UrbanStems</Anchor>. My focus is on creating product design systems that help companies and teams scale.</Text>
                   </ScrollAnimation>
                 </Box>
               </Wrap>
               <Wrap pt={[0, 3]} pb={[4, 6]} flexWrap="wrap">
-                <Box ml={[0, '8.333%']} width={[1, 3/12]}>
-                  <ScrollAnimation delay={300} animateIn="fadeInUp">
+                <Box ml={[0, '8.333%']} width={[1, 4/12]}>
+                  <ScrollAnimation offset={0} animateOnce={true} duration={0.75} delay={500} animateIn="fadeInUp">
                     <Text fontSize={[1, 2]} color="heading" fontWeight="medium">Current Location</Text>
                     <Text fontSize={[2, 3]}>{about.frontmatter.location}</Text>
                   </ScrollAnimation>
                 </Box>
                 <Box width={[1, 3/12]}>
-                  <ScrollAnimation delay={300} animateIn="fadeInUp">
+                  <ScrollAnimation offset={0} animateOnce={true} duration={0.75} delay={500} animateIn="fadeInUp">
                     <Text fontSize={[1, 2]} color="heading" fontWeight="medium">Working At</Text>
                     <Text fontSize={[2, 3]}>{about.frontmatter.working}</Text>
                   </ScrollAnimation>
                 </Box>
                 <Box width={[1, 3/12]}>
-                  <ScrollAnimation delay={300} animateIn="fadeInUp">
+                  <ScrollAnimation offset={0} animateOnce={true} duration={0.75} delay={500} animateIn="fadeInUp">
                     <Text fontSize={[1, 2]} color="heading" fontWeight="medium">Countries Visited</Text>
                     <Text fontSize={[2, 3]}>{about.frontmatter.countries}</Text>
                   </ScrollAnimation>
                 </Box>
               </Wrap>
             </Box>
-            <WavesContainer width={[1, 4/12]}>
+            <WavesContainer width={[1, 5/12]}>
               <Img
                 fadeIn={true}
                 outerWrapperClassName="profileImgWrap fadeInUp"
@@ -100,18 +97,31 @@ export default class IndexPage extends Component {
             </WavesContainer>
           </Flex>
         </Section>
-        <Wrap>
-          {projects
-            .map(({ node: project }) => (
-              <Project key={project.fields.slug}
-                slug={project.fields.slug}
-                title={project.frontmatter.shortTitle}
-                description={project.frontmatter.shortDescription}
-                date={project.frontmatter.date}
-              />
-            ))
-          }
-        </Wrap>
+        <div>
+          <Flex justifyContent="center">
+            <Box>
+              <Heading fontSize={[5, 7]}>Selected Projects</Heading>
+            </Box>
+          </Flex>
+          <Flex my={6} justifyContent="center" flexWrap="wrap">
+            {projects
+              .map(({ node: project }) => (
+                <Box key={project.fields.slug} width={[1, 10/12]} my={2}>
+                  <ScrollAnimation offset={0} duration={0.5} animateOnce={true} animateIn="fadeInUp">
+                    <Project
+                      cardImage={project.frontmatter.cardImage}
+                      slug={project.fields.slug}
+                      client={project.frontmatter.client}
+                      title={project.frontmatter.shortTitle}
+                      description={project.frontmatter.shortDescription}
+                      date={project.frontmatter.date}
+                    />
+                  </ScrollAnimation>
+                </Box>
+              ))
+            }
+          </Flex>
+        </div>
       </div>
     );
   }
@@ -140,16 +150,18 @@ export const pageQuery = graphql`
             slug
           }
           frontmatter {
+            cardImage
+            client
             countries
+            date(formatString: "YYYY")
             description
-            shortDescription
-            shortTitle
             location
             name
+            shortDescription
+            shortTitle
             templateKey
             title
             working
-            date(formatString: "YYYY")
           }
         }
       }

@@ -22,6 +22,7 @@ collections:
       - {label: "Role", name: "role", widget: "list"}
       - {label: "Technology", name: "technology", widget: "list", default: ["React", "HTML", "CSS", "JSX"]}
       - {label: "Card Image", name: "cardImage", widget: "image"}
+      - {label: "Card Background Color", name: "cardBackground", widget: "string"}
       - {label: "Body", name: "body", widget: "markdown"}
   - name: "pages"
     label: "Pages"

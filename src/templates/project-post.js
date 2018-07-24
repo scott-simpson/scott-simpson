@@ -26,14 +26,14 @@ export const ProjectPost = ({
       <article>
         <Flex flexWrap="wrap" justifyContent="center">
           <Box py={[2, 4, 6]} width={[1, 9/12, 8/12, 6/12]}>
-            <Heading letterSpacing="-1px" color="heading" fontSize={[6, 7, 8]}>{title}</Heading>
-            <Text py={4} fontSize={[3, 4]}>{description}</Text>
+            <Heading letterSpacing="-1px" color="heading" fontSize={[7, 8, 9]}>{title}</Heading>
+            <Text py={4} fontSize={[4, 5]}>{description}</Text>
             <Flex pt={2} flexWrap="wrap">
               <Box width={2/12}>
                 <Allcaps color="blue">Year</Allcaps>
                 <Text color="heading" fontSize={3}>{year}</Text>
               </Box>
-              <Box width={4/12}>
+              <Box width={5/12}>
                 <Allcaps color="blue">Role</Allcaps>
                 <Text color="heading" fontSize={3}>
                   {role.map((role2, i) => (
@@ -43,7 +43,7 @@ export const ProjectPost = ({
                   ))}
                 </Text>
               </Box>
-              <Box width={4/12}>
+              <Box width={5/12}>
                 <Allcaps color="blue">Technology</Allcaps>
                 <Text color="heading" fontSize={3}>
                   {technology.map((technology2, i) => (

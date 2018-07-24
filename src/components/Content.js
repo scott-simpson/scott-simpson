@@ -8,7 +8,7 @@ import List from './List';
 const HeadingPrimary = ({ children }) => <Heading color="heading" fontSize={7} mb={3}>{children}</Heading>
 const HeadingSecondary = ({ children }) => <Heading color="heading" fontSize={6} mb={3}>{children}</Heading>
 const HeadingTertiary = ({ children }) => <Heading color="heading" fontSize={5} mb={3}>{children}</Heading>
-const Paragraph = ({ children }) => <Text lineHeight={[0, 1]} fontSize={[2, 3]} mb={4}>{children}</Text>
+const Paragraph = ({ children }) => <Text lineHeight={[0, 1]} fontSize={[3, 4]} mb={4}>{children}</Text>
 const UlList = ({ children }) => <List ml={3}>{children}</List>
 const LiListItem = ({ children }) => <ListItem fontSize={3} mb={3}>{children}</ListItem>
 

@@ -14,6 +14,10 @@ export default () => injectGlobal`
     font-weight: 400;
     line-height: 2.2em;
   }
+  img {
+    display: block;
+    max-width: 100%;
+  }
   @font-face {
     font-family: 'Untitled-Sans';
     font-weight: 400;

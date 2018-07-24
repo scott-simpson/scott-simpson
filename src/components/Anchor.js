@@ -20,7 +20,7 @@ const Anchor = styled(Link)`
     bottom: 0;
     width: 0;
     right: 0;
-    height: 30%;
+    height: 1px;
     z-index: -1;
   }
   &:before {
