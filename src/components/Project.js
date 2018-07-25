@@ -5,6 +5,8 @@ import { Flex, Box } from 'grid-styled';
 import { Heading, Text } from 'rebass';
 import styled from 'styled-components';
 
+import Allcaps from './Allcaps';
+
 const ProjectContainer = styled.article`
   background: #ffe9e9;
   border-radius: 5px;
@@ -61,18 +63,18 @@ const Project = ({
     <ProjectContainer style={{ backgroundColor: cardBackground }}>
       <ProjectLink to={slug}>
         <Flex flexWrap="wrap" alignItems="center">
-          <Box p={5} width={[1, 5/12]}>
-            <Heading style={{ color: headlineColor }} fontSize={[4, 6]} pb={2}>{title}</Heading>
-            <Text style={{ color: bodyColor }} lineHeight={1} fontSize={[1, 3]}>{description}</Text>
+          <Box p={[4, 5]} order={[2, 1]} width={[1, 5/12]}>
+            <Heading color={headlineColor} fontSize={[4, 6]} pb={2}>{title}</Heading>
+            <Text color={bodyColor} lineHeight={1} fontSize={[1, 3]}>{description}</Text>
+            <Allcaps fontSize={[0, 1]} color={bodyColor} pt={[3, 5]}>{client}, {date}</Allcaps>
           </Box>
-          <Box width={[1, 7/12]}>
+          <Box order={[1, 2]} width={[1, 7/12]}>
             <img
               src={cardImage}
               alt={title}
             />
           </Box>
         </Flex>
-        <Meta style={{ color: bodyColor }} p={5}>{client}, {date}</Meta>
       </ProjectLink>
     </ProjectContainer>
   );

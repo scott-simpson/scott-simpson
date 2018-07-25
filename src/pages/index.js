@@ -8,6 +8,7 @@ import { Flex, Box } from 'grid-styled';
 import ScrollAnimation from 'react-animate-on-scroll';
 import WavesSVG from '../img/waves.svg';
 
+import Allcaps from '../components/Allcaps';
 import Wrap from '../components/Wrap';
 import Anchor from '../components/Anchor';
 import Project from '../components/Project';
@@ -15,7 +16,7 @@ import Project from '../components/Project';
 import '../css/index.css';
 
 const Section = styled.section`
-  background: ${props => props.theme.colors.beige};
+  background: ${props => props.theme.colors.white};
 `;
 
 const BlueBox = styled(Box)`
@@ -57,30 +58,29 @@ export default class IndexPage extends Component {
           <Flex flexWrap="wrap">
             <Box width={[1, 7/12]}>
               <Wrap>
-                <Box ml={[0, '8.333%']} py={[5, 6]} width={[1, 1, 9/12]}>
+                <Box ml={[0, '8.333%']} py={[5, 6]} width={[1, 1, 8/12]}>
                   <ScrollAnimation offset={0} animateOnce={true} duration={0.75} animateIn="fadeInUp">
-                    <Heading color="heading" fontSize={[5, 7]}>{about.frontmatter.name}</Heading>
-                    <Text fontSize={[3, 4, 5]}>{about.frontmatter.title}</Text>
-                    <Text my={[2, 4]} lineHeight={1} fontSize={[3, 4, 5]}>Im Cofounder and Head of Product at <Anchor href="https://urbanstems.com">UrbanStems</Anchor>. My focus is on creating product design systems that help companies and teams scale.</Text>
+                    <Heading letterSpacing="-2px" lineHeight="1em" color="heading" fontSize={[9, 10]}>{about.frontmatter.name}</Heading>
+                    <Text my={[2, 4]} lineHeight={1} fontSize={[3, 4]}>Im Cofounder and Head of Product at <Anchor href="https://urbanstems.com">UrbanStems</Anchor>. My focus is on creating product design systems that help companies and teams scale.</Text>
                   </ScrollAnimation>
                 </Box>
               </Wrap>
-              <Wrap pt={[0, 3]} pb={[4, 6]} flexWrap="wrap">
-                <Box ml={[0, '8.333%']} width={[1, 4/12]}>
+              <Wrap pt={[0, 2]} pb={[4, 5]} flexWrap="wrap">
+                <Box pb={3} ml={[0, '8.333%']} width={[1, 4/12]}>
                   <ScrollAnimation offset={0} animateOnce={true} duration={0.75} delay={500} animateIn="fadeInUp">
-                    <Text fontSize={[1, 2]} color="heading" fontWeight="medium">Current Location</Text>
+                    <Allcaps fontSize={0} color="blue">Current Location</Allcaps>
                     <Text fontSize={[2, 3]}>{about.frontmatter.location}</Text>
                   </ScrollAnimation>
                 </Box>
-                <Box width={[1, 3/12]}>
+                <Box pb={3} width={[1, 3/12]}>
                   <ScrollAnimation offset={0} animateOnce={true} duration={0.75} delay={500} animateIn="fadeInUp">
-                    <Text fontSize={[1, 2]} color="heading" fontWeight="medium">Working At</Text>
+                    <Allcaps fontSize={0} color="blue">Working At</Allcaps>
                     <Text fontSize={[2, 3]}>{about.frontmatter.working}</Text>
                   </ScrollAnimation>
                 </Box>
-                <Box width={[1, 3/12]}>
+                <Box pb={3} width={[1, 3/12]}>
                   <ScrollAnimation offset={0} animateOnce={true} duration={0.75} delay={500} animateIn="fadeInUp">
-                    <Text fontSize={[1, 2]} color="heading" fontWeight="medium">Countries Visited</Text>
+                    <Allcaps fontSize={0} color="blue">Countries Visited</Allcaps>
                     <Text fontSize={[2, 3]}>{about.frontmatter.countries}</Text>
                   </ScrollAnimation>
                 </Box>
@@ -88,8 +88,7 @@ export default class IndexPage extends Component {
             </Box>
             <WavesContainer width={[1, 5/12]}>
               <Img
-                fadeIn={true}
-                outerWrapperClassName="profileImgWrap fadeInUp"
+                outerWrapperClassName="profileImgWrap fadeInUpAbsolute"
                 sizes={this.props.data.profileImage.sizes}
               />
               <Waves />
@@ -97,16 +96,16 @@ export default class IndexPage extends Component {
             </WavesContainer>
           </Flex>
         </Section>
-        <div>
+        <Section>
           <Flex justifyContent="center">
-            <Box>
+            <Box mt={5} mb={2}>
               <Heading fontSize={[5, 7]}>Selected Projects</Heading>
             </Box>
           </Flex>
-          <Flex my={6} justifyContent="center" flexWrap="wrap">
+          <Wrap my={2} justifyContent="center" flexWrap="wrap">
             {projects
               .map(({ node: project }) => (
-                <Box key={project.fields.slug} width={[1, 10/12]} my={2}>
+                <Box key={project.fields.slug} width={[1, 1, 10/12]} my={2}>
                   <ScrollAnimation offset={0} duration={0.5} animateOnce={true} animateIn="fadeInUp">
                     <Project
                       slug={project.fields.slug}
@@ -122,8 +121,8 @@ export default class IndexPage extends Component {
                 </Box>
               ))
             }
-          </Flex>
-        </div>
+          </Wrap>
+        </Section>
       </div>
     );
   }

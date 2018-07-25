@@ -12,7 +12,6 @@ const TemplateWrapper = ({ children }) => {
       <Helmet>
         <title>Scott Simpson</title>
         <link rel="stylesheet" href="https://use.typekit.net/iza8kcn.css" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" />
       </Helmet>
       <main role="main">{children()}</main>
     </Provider>

@@ -31,8 +31,8 @@ const breakpoints = [
 ]
 
 const lineHeights = [
-  '1.7',
-  '1.7'
+  '1.75em',
+  '1.8em',
 ]
 
 const fontSizes = [
@@ -41,12 +41,12 @@ const fontSizes = [
   16,
   18,
   20,
-  22,
+  24,
   28,
   32,
   38,
-  58,
-  72,
+  54,
+  82,
 ]
 
 const theme = {

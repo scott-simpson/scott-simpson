@@ -25,17 +25,17 @@ export const ProjectPost = ({
       {helmet || ''}
       <article>
         <Flex flexWrap="wrap" justifyContent="center">
-          <Box py={[2, 4, 6]} width={[1, 9/12, 8/12, 6/12]}>
-            <Heading letterSpacing="-1px" color="heading" fontSize={[7, 8, 9]}>{title}</Heading>
-            <Text py={4} fontSize={[4, 5]}>{description}</Text>
+          <Box py={[5, 6]} width={[1, 9/12, 8/12, 6/12]}>
+            <Heading color="heading" fontSize={[7, 8, 9]}>{title}</Heading>
+            <Text pt={[3, 4]} pb={4} fontSize={[4, 5]}>{description}</Text>
             <Flex pt={2} flexWrap="wrap">
-              <Box width={2/12}>
-                <Allcaps color="blue">Year</Allcaps>
-                <Text color="heading" fontSize={3}>{year}</Text>
+              <Box pb={3} width={[1, 2/12]}>
+                <Allcaps fontSize={0} color="blue">Year</Allcaps>
+                <Text color="heading" fontSize={[1, 3]}>{year}</Text>
               </Box>
-              <Box width={5/12}>
-                <Allcaps color="blue">Role</Allcaps>
-                <Text color="heading" fontSize={3}>
+              <Box pb={3} width={[1, 5/12]}>
+                <Allcaps fontSize={0} color="blue">Role</Allcaps>
+                <Text color="heading" fontSize={[1, 3]}>
                   {role.map((role2, i) => (
                     <span key={role2}>
                       { (i ? ', ' : '') + role2 }
@@ -43,9 +43,9 @@ export const ProjectPost = ({
                   ))}
                 </Text>
               </Box>
-              <Box width={5/12}>
-                <Allcaps color="blue">Technology</Allcaps>
-                <Text color="heading" fontSize={3}>
+              <Box pb={3} width={[1, 5/12]}>
+                <Allcaps fontSize={0} color="blue">Technology</Allcaps>
+                <Text color="heading" fontSize={[1, 3]}>
                   {technology.map((technology2, i) => (
                     <span key={technology2}>
                       { (i ? ', ' : '') + technology2 }

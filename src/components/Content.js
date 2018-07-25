@@ -1,16 +1,19 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import rehypeReact from "rehype-react";
-import { Heading, Text, Blockquote, Divider, Link } from 'rebass';
+import { Heading, Text, Blockquote, Divider, Link, Image } from 'rebass';
+import Anchor from './Anchor';
 import ListItem from './ListItem';
 import List from './List';
+import ImageContainer from './ImageContainer';
 
 const HeadingPrimary = ({ children }) => <Heading color="heading" fontSize={7} mb={3}>{children}</Heading>
 const HeadingSecondary = ({ children }) => <Heading color="heading" fontSize={6} mb={3}>{children}</Heading>
 const HeadingTertiary = ({ children }) => <Heading color="heading" fontSize={5} mb={3}>{children}</Heading>
-const Paragraph = ({ children }) => <Text lineHeight={[0, 1]} fontSize={[3, 4]} mb={4}>{children}</Text>
+const Paragraph = ({ children }) => <Text lineHeight={0} fontSize={[2, 4]} mb={4}>{children}</Text>
 const UlList = ({ children }) => <List ml={3}>{children}</List>
 const LiListItem = ({ children }) => <ListItem fontSize={3} mb={3}>{children}</ListItem>
+const ImageWrapper = ({ children }) => <ImageContainer>{children}</ImageContainer>
 
 const renderAst = new rehypeReact({
   createElement: React.createElement,
@@ -24,6 +27,8 @@ const renderAst = new rehypeReact({
     "a": Link,
     "ul": UlList,
     "li": LiListItem,
+    "img": Image,
+    "figure": ImageWrapper,
    },
 }).Compiler;
 
