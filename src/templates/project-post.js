@@ -4,10 +4,13 @@ import Helmet from 'react-helmet';
 import styled from 'styled-components';
 import { Heading, Text } from 'rebass';
 import { Flex, Box } from 'grid-styled';
+import ScrollAnimation from 'react-animate-on-scroll';
 
+import Nav from '../components/Nav';
 import Content, { HTMLContent } from '../components/Content';
 import Allcaps from '../components/Allcaps';
 import Wrap from '../components/Wrap';
+import Transition from '../components/Transition';
 
 export const ProjectPost = ({
   content,
@@ -21,48 +24,57 @@ export const ProjectPost = ({
 }) => {
   const ProjectContent = contentComponent || Content;
   return (
-    <Wrap>
+    <Transition>
       {helmet || ''}
-      <article>
-        <Flex flexWrap="wrap" justifyContent="center">
-          <Box py={[5, 6]} width={[1, 9/12, 8/12, 6/12]}>
-            <Heading color="heading" fontSize={[7, 8, 9]}>{title}</Heading>
-            <Text pt={[3, 4]} pb={4} fontSize={[4, 5]}>{description}</Text>
-            <Flex pt={2} flexWrap="wrap">
-              <Box pb={3} width={[1, 2/12]}>
-                <Allcaps fontSize={0} color="blue">Year</Allcaps>
-                <Text color="heading" fontSize={[1, 3]}>{year}</Text>
-              </Box>
-              <Box pb={3} width={[1, 5/12]}>
-                <Allcaps fontSize={0} color="blue">Role</Allcaps>
-                <Text color="heading" fontSize={[1, 3]}>
-                  {role.map((role2, i) => (
-                    <span key={role2}>
-                      { (i ? ', ' : '') + role2 }
-                    </span>
-                  ))}
-                </Text>
-              </Box>
-              <Box pb={3} width={[1, 5/12]}>
-                <Allcaps fontSize={0} color="blue">Technology</Allcaps>
-                <Text color="heading" fontSize={[1, 3]}>
-                  {technology.map((technology2, i) => (
-                    <span key={technology2}>
-                      { (i ? ', ' : '') + technology2 }
-                    </span>
-                  ))}
-                </Text>
-              </Box>
-            </Flex>
-          </Box>
-        </Flex>
-        <Flex flexWrap="wrap" justifyContent="center">
-          <Box width={[1, 9/12, 8/12, 6/12]}>
-            <ProjectContent content={content} />
-          </Box>
-        </Flex>
-      </article>
-    </Wrap>
+      <Nav colorSmall="#37393C" colorLarge="#37393C" />
+      <Wrap>
+        <article>
+          <Flex flexWrap="wrap" justifyContent="center">
+            <Box py={[5, 6]} width={[1, 9/12, 8/12, 6/12]}>
+              <ScrollAnimation offset={0} duration={0.5} animateOnce={true} animateIn="fadeInUp"><Heading color="heading" fontSize={[7, 8, 9]}>{title}</Heading></ScrollAnimation>
+              <ScrollAnimation delay={500} offset={0} duration={0.5} animateOnce={true} animateIn="fadeInUp"><Text pt={[3, 4]} pb={4} fontSize={[4, 5]}>{description}</Text></ScrollAnimation>
+              <Flex pt={2} flexWrap="wrap">
+                <Box pb={3} width={[1, 2/12]}>
+                  <ScrollAnimation offset={0} delay={500} duration={0.5} animateOnce={true} animateIn="fadeInUp">
+                    <Allcaps fontSize={0} color="blue">Year</Allcaps>
+                    <Text color="heading" fontSize={[1, 3]}>{year}</Text>
+                  </ScrollAnimation>
+                </Box>
+                <Box pb={3} width={[1, 5/12]}>
+                  <ScrollAnimation offset={0} delay={500} duration={0.5} animateOnce={true} animateIn="fadeInUp">
+                    <Allcaps fontSize={0} color="blue">Role</Allcaps>
+                    <Text color="heading" fontSize={[1, 3]}>
+                      {role.map((role2, i) => (
+                        <span key={role2}>
+                          { (i ? ', ' : '') + role2 }
+                        </span>
+                      ))}
+                    </Text>
+                  </ScrollAnimation>
+                </Box>
+                <Box pb={3} width={[1, 5/12]}>
+                  <ScrollAnimation offset={0} delay={500} duration={0.5} animateOnce={true} animateIn="fadeInUp">
+                    <Allcaps fontSize={0} color="blue">Technology</Allcaps>
+                    <Text color="heading" fontSize={[1, 3]}>
+                      {technology.map((technology2, i) => (
+                        <span key={technology2}>
+                          { (i ? ', ' : '') + technology2 }
+                        </span>
+                      ))}
+                    </Text>
+                  </ScrollAnimation>
+                </Box>
+              </Flex>
+            </Box>
+          </Flex>
+          <Flex flexWrap="wrap" justifyContent="center">
+            <Box width={[1, 9/12, 8/12, 6/12]}>
+              <ProjectContent content={content} />
+            </Box>
+          </Flex>
+        </article>
+      </Wrap>
+    </Transition>
   )
 };
 

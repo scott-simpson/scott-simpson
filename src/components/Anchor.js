@@ -21,7 +21,6 @@ const Anchor = styled(Link)`
     width: 0;
     right: 0;
     height: 1px;
-    z-index: -1;
   }
   &:before {
     transition: width .15s cubic-bezier(0.51, 0.18, 0, 0.88) .1s;

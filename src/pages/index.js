@@ -6,17 +6,18 @@ import Img from "gatsby-image";
 import { Heading, Text } from 'rebass';
 import { Flex, Box } from 'grid-styled';
 import ScrollAnimation from 'react-animate-on-scroll';
-import WavesSVG from '../img/waves.svg';
 
+import WavesSVG from '../img/waves.svg';
+import Nav from '../components/Nav';
 import Allcaps from '../components/Allcaps';
 import Wrap from '../components/Wrap';
 import Anchor from '../components/Anchor';
 import Project from '../components/Project';
+import Transition from '../components/Transition';
 
 import '../css/index.css';
 
 const Section = styled.section`
-  background: ${props => props.theme.colors.white};
 `;
 
 const BlueBox = styled(Box)`
@@ -53,22 +54,23 @@ export default class IndexPage extends Component {
     console.log(about);
 
     return (
-      <div>
+      <Transition background="#ccc">
+        <Nav colorSmall="#181A1B" colorLarge="#FFFFFF" />
         <Section>
           <Flex flexWrap="wrap">
-            <Box width={[1, 7/12]}>
+            <Box width={[1, 1, 7/12]}>
               <Wrap>
-                <Box ml={[0, '8.333%']} py={[5, 6]} width={[1, 1, 8/12]}>
+                <Box ml={[0, '8.333%']} py={[4, 6]} width={[1, 1, 8/12]}>
                   <ScrollAnimation offset={0} animateOnce={true} duration={0.75} animateIn="fadeInUp">
-                    <Heading letterSpacing="-2px" lineHeight="1em" color="heading" fontSize={[9, 10]}>{about.frontmatter.name}</Heading>
+                    <Heading fontFamily="serif" lineHeight={["1.6em", "1em"]} color="heading" fontSize={[7, 9, 10]}>{about.frontmatter.name}</Heading>
                     <Text my={[2, 4]} lineHeight={1} fontSize={[3, 4]}>Im Cofounder and Head of Product at <Anchor href="https://urbanstems.com">UrbanStems</Anchor>. My focus is on creating product design systems that help companies and teams scale.</Text>
                   </ScrollAnimation>
                 </Box>
               </Wrap>
               <Wrap pt={[0, 2]} pb={[4, 5]} flexWrap="wrap">
-                <Box pb={3} ml={[0, '8.333%']} width={[1, 4/12]}>
+                <Box pb={3} ml={[0, '8.333%']} width={[1, 3/12]}>
                   <ScrollAnimation offset={0} animateOnce={true} duration={0.75} delay={500} animateIn="fadeInUp">
-                    <Allcaps fontSize={0} color="blue">Current Location</Allcaps>
+                    <Allcaps fontSize={0} color="blue">Location</Allcaps>
                     <Text fontSize={[2, 3]}>{about.frontmatter.location}</Text>
                   </ScrollAnimation>
                 </Box>
@@ -86,12 +88,12 @@ export default class IndexPage extends Component {
                 </Box>
               </Wrap>
             </Box>
-            <WavesContainer width={[1, 5/12]}>
+            <WavesContainer width={[1, 1, 5/12]}>
               <Img
                 outerWrapperClassName="profileImgWrap fadeInUpAbsolute"
                 sizes={this.props.data.profileImage.sizes}
               />
-              <Waves />
+              <Waves ref={(component) => {this.waveSvg = component}} />
               <BlueBox />
             </WavesContainer>
           </Flex>
@@ -123,7 +125,7 @@ export default class IndexPage extends Component {
             }
           </Wrap>
         </Section>
-      </div>
+      </Transition>
     );
   }
 };

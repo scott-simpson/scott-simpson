@@ -12,7 +12,15 @@ export default () => injectGlobal`
     -moz-osx-font-smoothing: grayscale;
     color: #37393C;
     font-weight: 400;
-    line-height: 1.7;
+    line-height: 1.7;  
+  }
+  ::selection {
+    background-color: #37393C;
+    color: #FFFFFF;
+  }
+  ::-moz-selection {
+    background: #37393C;
+    color: #FFFFFF;
   }
   img {
     display: block;

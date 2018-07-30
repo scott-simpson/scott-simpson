@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import ScrollAnimation from 'react-animate-on-scroll';
 
 const ImageContainer = styled.figure`
   margin: 0 0 16px -5%;
@@ -15,15 +16,17 @@ const ImageContainer = styled.figure`
     width: 130%;
   }
   @media (min-width: ${props => props.theme.breakpoints[2]}) {
-    margin-left: -40%;
-    width: 180%;
+    margin-left: -45%;
+    width: 190%;
   }
 `;
 
-const Nav = ({ children }) => (
-  <ImageContainer>
-    {children}
-  </ImageContainer>
+const ImgContainer = ({ children }) => (
+  <ScrollAnimation offset={0} duration={0.5} animateOnce={true} animateIn="fadeInUp">
+    <ImageContainer>
+      {children}
+    </ImageContainer>
+  </ScrollAnimation>
 )
 
-export default ImageContainer;
+export default ImgContainer;

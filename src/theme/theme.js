@@ -1,6 +1,6 @@
 const colors = {
   body: '#37393C',
-  heading: '#blb181A1B',
+  heading: '#181A1B',
   blue: '#1C21FF',
   lightBlue: '#C0E8F4',
   gray: '#f6f7f9',

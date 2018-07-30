@@ -9,7 +9,6 @@ import Allcaps from './Allcaps';
 
 const ProjectContainer = styled.article`
   background: #ffe9e9;
-  border-radius: 5px;
   position: relative;
   overflow: hidden;
   transform: scale(0.99);
@@ -17,6 +16,7 @@ const ProjectContainer = styled.article`
   transition: all 0.3s ease-in-out;
   z-index: 2;
   &:hover {
+    box-shadow: 0px 20px 20px -10px rgba(0,0,0,0.08);
     transform: scale(1);
   }
   & img {

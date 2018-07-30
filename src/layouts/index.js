@@ -4,6 +4,7 @@ import Helmet from 'react-helmet';
 import { Provider } from 'rebass';
 import theme from '../theme/theme';
 import normalize from '../theme/normalize';
+import Transition from '../components/Transition';
 
 const TemplateWrapper = ({ children }) => {
   normalize();

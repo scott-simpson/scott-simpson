@@ -1,19 +1,20 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import rehypeReact from "rehype-react";
+import rehypeReact from 'rehype-react';
+import ScrollAnimation from 'react-animate-on-scroll';
 import { Heading, Text, Blockquote, Divider, Link, Image } from 'rebass';
 import Anchor from './Anchor';
 import ListItem from './ListItem';
 import List from './List';
 import ImageContainer from './ImageContainer';
 
-const HeadingPrimary = ({ children }) => <Heading color="heading" fontSize={7} mb={3}>{children}</Heading>
-const HeadingSecondary = ({ children }) => <Heading color="heading" fontSize={6} mb={3}>{children}</Heading>
-const HeadingTertiary = ({ children }) => <Heading color="heading" fontSize={5} mb={3}>{children}</Heading>
-const Paragraph = ({ children }) => <Text lineHeight={0} fontSize={[2, 4]} mb={4}>{children}</Text>
-const UlList = ({ children }) => <List ml={3}>{children}</List>
-const LiListItem = ({ children }) => <ListItem fontSize={3} mb={3}>{children}</ListItem>
-const ImageWrapper = ({ children }) => <ImageContainer>{children}</ImageContainer>
+const HeadingPrimary = ({ children }) => <ScrollAnimation offset={0} duration={0.5} animateOnce={true} animateIn="fadeInUp"><Heading color="heading" fontSize={[5, 7]} mb={3}>{children}</Heading></ScrollAnimation>
+const HeadingSecondary = ({ children }) => <ScrollAnimation offset={0} duration={0.5} animateOnce={true} animateIn="fadeInUp"><Heading color="heading" fontSize={[4, 6]} mb={3}>{children}</Heading></ScrollAnimation>
+const HeadingTertiary = ({ children }) => <ScrollAnimation offset={0} duration={0.5} animateOnce={true} animateIn="fadeInUp"><Heading color="heading" fontSize={[3, 5]} mb={3}>{children}</Heading></ScrollAnimation>
+const Paragraph = ({ children }) => <ScrollAnimation offset={0} duration={0.5} animateOnce={true} animateIn="fadeInUp"><Text lineHeight={[0, 1]} fontSize={[2, 4]} mb={4}>{children}</Text></ScrollAnimation>
+const UlList = ({ children }) => <ScrollAnimation offset={0} duration={0.5} animateOnce={true} animateIn="fadeInUp"><List ml={3}>{children}</List></ScrollAnimation>
+const LiListItem = ({ children }) => <ScrollAnimation offset={0} duration={0.5} animateOnce={true} animateIn="fadeInUp"><ListItem fontSize={3} mb={3}>{children}</ListItem></ScrollAnimation>
+const ImageWrapper = ({ children }) => <ScrollAnimation offset={0} duration={0.5} animateOnce={true} animateIn="fadeInUp"><ImageContainer>{children}</ImageContainer></ScrollAnimation>
 
 const renderAst = new rehypeReact({
   createElement: React.createElement,
