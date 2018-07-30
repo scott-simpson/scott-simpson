@@ -23,13 +23,7 @@ cardImage: /img/portfolio-card-1.jpg
 cardBackground: '#ffe9e9'
 cardText: dark
 ---
-<figure>
-
-![Part of the design system that I created](/img/design-system-1.jpg)
-
-<figcaption>This is a caption for this image</figcaption>
-</figure>
-## The Opportunity
+\## The Opportunity
 
 When we started UrbanStems, we saw a big opportunity to improve the experience of sending flowers online. At the time, the market was dominated by traditional ecommerce sites like 1800 flowers, FTD, and Teleflora. Landing one of these sites, customers are faced with a dizzying array of options, get upsold along the way, and find out about hidden charges at the very last step. What starts as a $20 order of roses ends up costing nearly $70 when all is said and done. It just seemed wrong.
 
