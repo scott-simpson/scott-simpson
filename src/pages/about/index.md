@@ -3,13 +3,14 @@ templateKey: about-page
 name: Scott Simpson
 title: Product Designer
 description: >-
-  Im Cofounder and Head of Product at [UrbanStems](https://urbanstems.com). My
-  focus is on creating product design systems that help companies and teams
-  scale.
+  My name is Scott Simpson and I’m a product designer and entrepreneur based out
+  of Washington, DC.
 location: 'Washington, DC'
 working: UrbanStems
 countries: '41'
 ---
-Lorem ipsum dolor sit amet, est no nonumy salutandi constituto, ei mucius vocibus fastidii nec, ut omnis [maiestatis](https://urbanstems.com) eum. Ne mei modo periculis. Te eos fabellas elaboraret consequuntur, et eam verear aliquam consetetur. Meis laudem placerat no nam, eu ipsum oratio referrentur pri, et nec latine oblique.
+I enjoy growing companies and building the design systems, strategies, and great user experiences necessary to achieve that. My expertise spans the space between design and development. I approach new challenges with the desire to learn, experiment and iterate.
 
-In sed corpora constituto reformidans. [Ullum sanctus](https://urbanstems.com) contentiones et mea, per ex ullum iusto veniam. Eam ad porro aeterno, maiorum abhorreant ne duo, ei mea salutatus scribentur. Eu sit esse ancillae.
+In 2014 I co-founded a startup called UrbanStems which quickly grew into one of the most well-known floral brands in the country. It’s been a challenging experience, but it’s taught me a lot about growing a team, building a business, and creating a brand that customers care about.
+
+For fun, I enjoy skiing, photography, mountain biking and travelling. My wife and I have been to over 40 countries and I find that those experiences have brought better insight into my design work.
