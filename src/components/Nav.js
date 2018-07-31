@@ -24,7 +24,7 @@ const Nav = ({ colorSmall, colorLarge }) => {
     @media (min-width: ${props => props.theme.breakpoints[1]}) {
       color: ${colorLarge};
       font-size: ${props => props.theme.fontSizes[3] + 'px'};
-      padding: 16px 24px;
+      padding: 24px;
       &:hover, &:active, &:visited {
         color: ${colorLarge};
       }
@@ -37,8 +37,21 @@ const Nav = ({ colorSmall, colorLarge }) => {
       width: 100%;
       left: 0;
       top: 0;
-      padding: 8px 0;
       z-index: 3;
+    }
+  `;
+
+  const Scott = styled(Link)`
+    font-family: ${props => props.theme.fonts.serif};
+    font-size: ${props => props.theme.fontSizes[4] + 'px'};
+    font-weight: ${props => props.theme.fontWeights.bold};
+    color: ${props => props.theme.colors.heading};
+    text-decoration: none;
+    & span {
+      color: ${props => props.theme.colors.blue}; 
+    }
+    @media (min-width: ${props => props.theme.breakpoints[1]}) {
+      font-size: ${props => props.theme.fontSizes[6] + 'px'};
     }
   `;
 
@@ -46,7 +59,7 @@ const Nav = ({ colorSmall, colorLarge }) => {
     <NavContainer>
       <Wrap alignItems='center'>
         <Box>
-          <Link to="/"><Heading>Scott</Heading></Link>
+          <Scott to="/">Scott<span>.</span></Scott>
         </Box>
         <Box ml="auto">
           <NavA activeStyle={{ color: '#1C21FF' }} to='/projects'>Projects</NavA>

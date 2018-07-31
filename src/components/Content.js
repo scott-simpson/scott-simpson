@@ -25,7 +25,7 @@ const renderAst = new rehypeReact({
     "p": Paragraph,
     "blockquote": Blockquote,
     "hr": Divider,
-    "a": Link,
+    "a": Anchor,
     "ul": UlList,
     "li": LiListItem,
     "img": Image,

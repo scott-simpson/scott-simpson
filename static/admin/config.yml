@@ -35,7 +35,7 @@ collections:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "about-page"}
           - {label: "Name", name: "name", widget: "string"}
           - {label: "Title", name: "title", widget: "string"}
-          - {label: "Description", name: "description", widget: "markdown"}
+          - {label: "Intro", name: "intro", widget: "text"}
           - {label: "Location", name: "location", widget: "string"}
           - {label: "Working At", name: "working", widget: "string"}
           - {label: "Countries Visited", name: "countries", widget: "string"}

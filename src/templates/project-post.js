@@ -12,6 +12,10 @@ import Allcaps from '../components/Allcaps';
 import Wrap from '../components/Wrap';
 import Transition from '../components/Transition';
 
+const HeadingSerif = styled(Heading)`
+  font-family: ${props => props.theme.fonts.serif}; 
+`;
+
 export const ProjectPost = ({
   content,
   contentComponent,
@@ -30,8 +34,8 @@ export const ProjectPost = ({
       <Wrap>
         <article>
           <Flex flexWrap="wrap" justifyContent="center">
-            <Box py={[5, 6]} width={[1, 9/12, 8/12, 6/12]}>
-              <ScrollAnimation offset={0} duration={0.5} animateOnce={true} animateIn="fadeInUp"><Heading color="heading" fontSize={[7, 8, 9]}>{title}</Heading></ScrollAnimation>
+            <Box pt={[5, 6]} pb={[3, 4]} width={[1, 9/12, 8/12, 6/12]}>
+              <ScrollAnimation offset={0} duration={0.5} animateOnce={true} animateIn="fadeInUp"><HeadingSerif color="heading" fontSize={[7, 8, 9]}>{title}</HeadingSerif></ScrollAnimation>
               <ScrollAnimation delay={500} offset={0} duration={0.5} animateOnce={true} animateIn="fadeInUp"><Text pt={[3, 4]} pb={4} fontSize={[4, 5]}>{description}</Text></ScrollAnimation>
               <Flex pt={2} flexWrap="wrap">
                 <Box pb={3} width={[1, 2/12]}>

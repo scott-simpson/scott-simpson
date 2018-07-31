@@ -9,6 +9,7 @@ import ScrollAnimation from 'react-animate-on-scroll';
 
 import WavesSVG from '../img/waves.svg';
 import Nav from '../components/Nav';
+import Footer from '../components/Footer';
 import Allcaps from '../components/Allcaps';
 import Wrap from '../components/Wrap';
 import Anchor from '../components/Anchor';
@@ -18,6 +19,9 @@ import Transition from '../components/Transition';
 import '../css/index.css';
 
 const Section = styled.section`
+  background: ${props => props.theme.colors.white};
+  margin: auto;
+  max-width: 1600px;
 `;
 
 const BlueBox = styled(Box)`
@@ -43,6 +47,10 @@ const Waves = styled(WavesSVG)`
   z-index: 2;
 `;
 
+const HeadingSerif = styled(Heading)`
+  font-family: ${props => props.theme.fonts.serif}; 
+`;
+
 export default class IndexPage extends Component {
   render() {
     const { data } = this.props;
@@ -58,11 +66,11 @@ export default class IndexPage extends Component {
         <Nav colorSmall="#181A1B" colorLarge="#FFFFFF" />
         <Section>
           <Flex flexWrap="wrap">
-            <Box width={[1, 1, 7/12]}>
+            <Box py={[2, 4]} width={[1, 1, 7/12]}>
               <Wrap>
-                <Box ml={[0, '8.333%']} py={[4, 6]} width={[1, 1, 8/12]}>
+                <Box ml={[0, '8.333%']} py={["8%", "16%"]} width={[1, 1, 8/12]}>
                   <ScrollAnimation offset={0} animateOnce={true} duration={0.75} animateIn="fadeInUp">
-                    <Heading fontFamily="serif" lineHeight={["1.6em", "1em"]} color="heading" fontSize={[7, 9, 10]}>{about.frontmatter.name}</Heading>
+                    <HeadingSerif fontFamily="serif" lineHeight={["1.6em", "0.9em"]} color="heading" fontSize={[7, 9, 10]}>{about.frontmatter.name}</HeadingSerif>
                     <Text my={[2, 4]} lineHeight={1} fontSize={[3, 4]}>Im Cofounder and Head of Product at <Anchor href="https://urbanstems.com">UrbanStems</Anchor>. My focus is on creating product design systems that help companies and teams scale.</Text>
                   </ScrollAnimation>
                 </Box>
@@ -93,18 +101,16 @@ export default class IndexPage extends Component {
                 outerWrapperClassName="profileImgWrap fadeInUpAbsolute"
                 sizes={this.props.data.profileImage.sizes}
               />
-              <Waves ref={(component) => {this.waveSvg = component}} />
+              <Waves />
               <BlueBox />
             </WavesContainer>
           </Flex>
         </Section>
         <Section>
-          <Flex justifyContent="center">
-            <Box mt={5} mb={2}>
-              <Heading fontSize={[5, 7]}>Selected Projects</Heading>
+          <Wrap my={["4%", "6%"]} justifyContent="center" flexWrap="wrap">
+            <Box width={1}>
+              <Heading pb={[2, 4]} fontSize={[5, 7]} textAlign="center">Selected Projects</Heading>
             </Box>
-          </Flex>
-          <Wrap my={2} justifyContent="center" flexWrap="wrap">
             {projects
               .map(({ node: project }) => (
                 <Box key={project.fields.slug} width={[1, 1, 10/12]} my={2}>
@@ -125,6 +131,7 @@ export default class IndexPage extends Component {
             }
           </Wrap>
         </Section>
+        <Footer />
       </Transition>
     );
   }
