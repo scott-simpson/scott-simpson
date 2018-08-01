@@ -6,39 +6,31 @@ import { Heading, Text } from 'rebass';
 
 import Wrap from './Wrap';
 
-const Nav = ({ colorSmall, colorLarge }) => {
+const Nav = () => {
 
   const NavA = styled(Link)`
-    color: ${colorSmall};
+    color: ${props => props.theme.colors.body};
     display: inline-block;
     font-size: ${props => props.theme.fontSizes[1] + 'px'};
     line-height: 1;
     padding: 16px;
     text-decoration: none;
     &:hover, &:active, &:visited {
-      color: ${colorSmall};
+      color: ${props => props.theme.colors.body};
+    }
+    &:last-child {
+      padding-right: 0;
     }
     @media (min-width: ${props => props.theme.breakpoints[0]}) {
       font-size: ${props => props.theme.fontSizes[2] + 'px'};
     }
     @media (min-width: ${props => props.theme.breakpoints[1]}) {
-      color: ${colorLarge};
       font-size: ${props => props.theme.fontSizes[3] + 'px'};
       padding: 24px;
-      &:hover, &:active, &:visited {
-        color: ${colorLarge};
-      }
     }
   `;
 
   const NavContainer = styled.nav`
-    @media (min-width: ${props => props.theme.breakpoints[1]}) {
-      position: absolute;
-      width: 100%;
-      left: 0;
-      top: 0;
-      z-index: 3;
-    }
   `;
 
   const Scott = styled(Link)`

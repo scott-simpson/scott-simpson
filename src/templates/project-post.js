@@ -6,7 +6,6 @@ import { Heading, Text } from 'rebass';
 import { Flex, Box } from 'grid-styled';
 import ScrollAnimation from 'react-animate-on-scroll';
 
-import Nav from '../components/Nav';
 import Content, { HTMLContent } from '../components/Content';
 import Allcaps from '../components/Allcaps';
 import Wrap from '../components/Wrap';
@@ -30,7 +29,6 @@ export const ProjectPost = ({
   return (
     <Transition>
       {helmet || ''}
-      <Nav colorSmall="#37393C" colorLarge="#37393C" />
       <Wrap>
         <article>
           <Flex flexWrap="wrap" justifyContent="center">

@@ -5,6 +5,8 @@ import { Provider } from 'rebass';
 import theme from '../theme/theme';
 import normalize from '../theme/normalize';
 import Transition from '../components/Transition';
+import Nav from '../components/Nav';
+import Footer from '../components/Footer';
 
 const TemplateWrapper = ({ children }) => {
   normalize();
@@ -14,7 +16,9 @@ const TemplateWrapper = ({ children }) => {
         <title>Scott Simpson</title>
         <link rel="stylesheet" href="https://use.typekit.net/iza8kcn.css" />
       </Helmet>
+      <Nav />
       <main role="main">{children()}</main>
+      <Footer />
     </Provider>
   );
 }

@@ -6,7 +6,7 @@ import { Flex, Box } from 'grid-styled';
 
 import WavesSVG from '../img/waves.svg';
 import Content, { HTMLContent } from '../components/Content';
-import Nav from '../components/Nav';
+import Wrap from '../components/Wrap';
 import Transition from '../components/Transition';
 
 const Section = styled.section`
@@ -30,44 +30,53 @@ const Waves = styled(WavesSVG)`
   z-index: 2;
 `;
 
-export const AboutPageTemplate = ({ title, content, contentComponent }) => {
+export const AboutPageTemplate = ({ title, intro, content, contentComponent }) => {
   const PageContent = contentComponent || Content
 
   return (
     <Transition>
-      <Nav colorSmall="#37393C" colorLarge="#37393C" />
       <Section>
         <Flex flexWrap="wrap">
-          <Box ml={[0, 0, "8.333%"]} mr={[0, 0, "8.333%"]} width={[1, 1, 5/12]} py={["6%", "12%"]}>
-            <Heading pb={[2, 4]} lineHeight={["1.6em", "1em"]} color="heading" fontSize={[6, 7, 8]}>About Me</Heading>
-            <PageContent className="content" content={content} />
-            <Flex flexWrap="wrap">
-              <Box width={4/12}>2014 - Present</Box>
-              <Box width={8/12} pb={4}>
-                <Heading fontSize={[1, 2]} pb={[1, 2]}><Link color="heading" href="https://urbanstems.com">UrbanStems</Link></Heading>
-                <Text>Cofounder & Head of Product</Text>
+          <Box width={[1, 1, 7/12]}>
+            <Wrap>
+              <Box ml={[0, '8.333%']} py={["7%", "14%"]} width={[1, 1, 9/12]}>
+                <Text fontSize={[5, 7]} pt={2} pb={4}>{intro}</Text>
+                <PageContent className="content" content={content} />
               </Box>
-              <Box width={4/12}>2012 - 2013</Box>
-              <Box width={8/12} pb={4}>
-                <Heading fontSize={[1, 2]} pb={[1, 2]}><Link color="heading" href="https://isl.co">iStrategyLabs</Link></Heading>
-                <Text>Senior Designer</Text>
-              </Box>
-              <Box width={4/12}>2010 - 2012</Box>
-              <Box width={8/12} pb={4}>
-                <Heading fontSize={[1, 2]} pb={[1, 2]}><Link color="heading" href="https://scottsimpson.co">Scott Simpson</Link></Heading>
-                <Text>Freelance Designer</Text>
-              </Box>
-              <Box width={4/12}>2009 - 2010</Box>
-              <Box width={8/12} pb={4}>
-                <Heading fontSize={[1, 2]} pb={[1, 2]}><Link color="heading" href="http://southpawagency.com/">SouthPaw (Nexus/H)</Link></Heading>
-                <Text>Junior Designer</Text>
-              </Box>
-            </Flex>
+            </Wrap>
           </Box>
           <WavesContainer width={[1, 1, 5/12]}>
             <Waves />
           </WavesContainer>
         </Flex>
+      </Section>
+      <Section>
+        <Wrap flexWrap="wrap">
+          <Box width={6/12}>
+            <Flex flexWrap="wrap">
+              <Box width={4/12}>2014 - Present</Box>
+              <Box width={8/12} pb={4}>
+                <Heading fontSize={[1, 2]} pb={1}><Link color="heading" href="https://urbanstems.com">UrbanStems</Link></Heading>
+                <Text>Cofounder & Head of Product</Text>
+              </Box>
+              <Box width={4/12}>2012 - 2013</Box>
+              <Box width={8/12} pb={4}>
+                <Heading fontSize={[1, 2]} pb={1}><Link color="heading" href="https://isl.co">iStrategyLabs</Link></Heading>
+                <Text>Designer</Text>
+              </Box>
+              <Box width={4/12}>2010 - 2012</Box>
+              <Box width={8/12} pb={4}>
+                <Heading fontSize={[1, 2]} pb={1}><Link color="heading" href="https://scottsimpson.co">Scott Simpson</Link></Heading>
+                <Text>Freelance Designer</Text>
+              </Box>
+              <Box width={4/12}>2009 - 2010</Box>
+              <Box width={8/12} pb={4}>
+                <Heading fontSize={[1, 2]} pb={1}><Link color="heading" href="http://southpawagency.com/">SouthPaw (Nexus/H)</Link></Heading>
+                <Text>Designer</Text>
+              </Box>
+            </Flex>
+          </Box>
+        </Wrap>
       </Section>
     </Transition>
   )
@@ -75,6 +84,7 @@ export const AboutPageTemplate = ({ title, content, contentComponent }) => {
 
 AboutPageTemplate.propTypes = {
   title: PropTypes.string.isRequired,
+  intro: PropTypes.string.isRequired,
   content: PropTypes.shape({
     children: PropTypes.array,
   }),
@@ -88,6 +98,7 @@ const AboutPage = ({ data }) => {
     <AboutPageTemplate
       contentComponent={HTMLContent}
       title={post.frontmatter.title}
+      intro={post.frontmatter.intro}
       content={post.htmlAst}
     />
   )
@@ -105,6 +116,7 @@ export const aboutPageQuery = graphql`
       htmlAst
       frontmatter {
         title
+        intro
       }
     }
   }

@@ -8,7 +8,6 @@ import { Flex, Box } from 'grid-styled';
 import ScrollAnimation from 'react-animate-on-scroll';
 
 import WavesSVG from '../img/waves.svg';
-import Nav from '../components/Nav';
 import Allcaps from '../components/Allcaps';
 import Wrap from '../components/Wrap';
 import Anchor from '../components/Anchor';
@@ -21,6 +20,10 @@ const Section = styled.section`
   max-width: 1600px;
 `;
 
+const HeadingSerif = styled(Heading)`
+  font-family: ${props => props.theme.fonts.serif}; 
+`;
+
 export default class ProjectsPage extends Component {
   render() {
     const { data } = this.props;
@@ -30,18 +33,20 @@ export default class ProjectsPage extends Component {
 
     return (
       <Transition background="#ccc">
-        <Nav colorSmall="#181A1B" colorLarge="#181A1B" />
         <Section>
-          <Flex justifyContent="center">
-            <Box mt={5} mb={2}>
-              <Heading fontSize={[5, 7]}>Selected Projects</Heading>
+          <Flex my={["4%", "6%"]} justifyContent="center">
+            <Box>
+              <ScrollAnimation offset={0} duration={0.75} animateOnce={true} animateIn="fadeInUp">
+                <HeadingSerif textAlign="center" fontSize={[7, 8, 9]}>Projects</HeadingSerif>
+                <Text fontSize={[3, 4]} textAlign="center">A little taste of some of the work I've been doing</Text>
+              </ScrollAnimation>
             </Box>
           </Flex>
           <Wrap my={2} justifyContent="center" flexWrap="wrap">
             {projects
               .map(({ node: project }) => (
-                <Box key={project.fields.slug} width={[1, 1, 10/12]} my={2}>
-                  <ScrollAnimation offset={0} duration={0.5} animateOnce={true} animateIn="fadeInUp">
+                <Box key={project.fields.slug} width={[1, 1, 11/12]} my={2}>
+                  <ScrollAnimation offset={0} delay={500} duration={0.75} animateOnce={true} animateIn="fadeInUp">
                     <Project
                       slug={project.fields.slug}
                       cardImage={project.frontmatter.cardImage}
