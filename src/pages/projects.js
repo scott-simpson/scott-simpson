@@ -86,8 +86,8 @@ export const pageQuery = graphql`
             slug
           }
           frontmatter {
-            cardImage
             cardBackground
+            cardImage
             cardText
             client
             date(formatString: "YYYY")

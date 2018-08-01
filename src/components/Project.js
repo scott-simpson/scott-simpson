@@ -69,7 +69,7 @@ const Project = ({
             <Allcaps fontSize={[0, 1]} color={bodyColor} pt={[3, 5]}>{client}, {date}</Allcaps>
           </Box>
           <Box order={[1, 2]} width={[1, 7/12]}>
-            <img
+            <Img
               src={cardImage}
               alt={title}
             />

@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import Link from 'gatsby-link';
-import Img from "gatsby-image";
+import Img from 'gatsby-image';
 import { Heading, Text } from 'rebass';
 import { Flex, Box } from 'grid-styled';
 import ScrollAnimation from 'react-animate-on-scroll';
@@ -144,7 +144,7 @@ IndexPage.propTypes = {
 export const pageQuery = graphql`
   query IndexQuery {
     profileImage: imageSharp(id: { regex: "/scott.jpg/" }) {
-      sizes(maxWidth: 1240 ) {
+      sizes(maxWidth: 1240) {
         ...GatsbyImageSharpSizes
       }
     }
@@ -156,8 +156,8 @@ export const pageQuery = graphql`
             slug
           }
           frontmatter {
-            cardImage
             cardBackground
+            cardImage
             cardText
             client
             countries
