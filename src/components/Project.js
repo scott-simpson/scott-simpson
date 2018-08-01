@@ -1,6 +1,5 @@
 import React from 'react';
 import Link from 'gatsby-link';
-import Img from "gatsby-image";
 import { Flex, Box } from 'grid-styled';
 import { Heading, Text } from 'rebass';
 import styled from 'styled-components';
@@ -69,7 +68,7 @@ const Project = ({
             <Allcaps fontSize={[0, 1]} color={bodyColor} pt={[3, 5]}>{client}, {date}</Allcaps>
           </Box>
           <Box order={[1, 2]} width={[1, 7/12]}>
-            <Img
+            <img
               src={cardImage}
               alt={title}
             />
