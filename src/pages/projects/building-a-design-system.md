@@ -18,7 +18,7 @@ technology:
   - HTML
   - CSS
   - JSX
-cardImage: /img/list2.png
+cardImage: /img/portfolio-card-2.jpg
 cardBackground: '#04003d'
 cardText: light
 ---
