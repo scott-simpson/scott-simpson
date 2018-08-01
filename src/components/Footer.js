@@ -40,7 +40,7 @@ const Footer = () => (
       <Box order={[2, 1]} width={[1, 6/12, 5/12]}>
         <Text fontSize={[1, 2, 3]}>&copy; {(new Date().getFullYear())} Scott Simpson</Text>
       </Box>
-      <Box order={[1, 2]} width={[1, 6/12, 5/12]}>
+      <Box order={[1, 2]} width={[1, 6/12, 6/12]}>
         <Nav>
           <NavA p={3} href="mailto:hello@scottsimpson.co">Email</NavA>
           <NavA p={3} href="https://www.linkedin.com/in/scott-dc">LinkedIn</NavA>

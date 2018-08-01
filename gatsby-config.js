@@ -5,9 +5,10 @@ module.exports = {
     'gatsby-plugin-sharp',
     'gatsby-transformer-sharp',
     {
-      resolve: `gatsby-plugin-netlify-cms-paths`,
+      resolve: 'gatsby-source-filesystem',
       options: {
-        cmsConfig: `/static/admin/config.yml`
+        path: `${__dirname}/static/img`,
+        name: 'images',
       }
     },
     {
@@ -17,13 +18,7 @@ module.exports = {
         name: 'pages',
       },
     },
-    {
-      resolve: 'gatsby-source-filesystem',
-      options: {
-        path: `${__dirname}/src/img`,
-        name: 'images',
-      }
-    },
+    'gatsby-plugin-netlify-cms-paths',
     {
       resolve: 'gatsby-transformer-remark',
       options: {

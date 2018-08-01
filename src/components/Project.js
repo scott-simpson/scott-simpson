@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from 'gatsby-link';
+import Img from 'gatsby-image';
 import { Flex, Box } from 'grid-styled';
 import { Heading, Text } from 'rebass';
 import styled from 'styled-components';
@@ -21,7 +22,7 @@ const ProjectContainer = styled.article`
   & img {
     transform: scale(1);
     transform-origin: center;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out !important;
     z-index: 1;
   }
   &:hover img {
@@ -68,8 +69,8 @@ const Project = ({
             <Allcaps fontSize={[0, 1]} color={bodyColor} pt={[3, 5]}>{client}, {date}</Allcaps>
           </Box>
           <Box order={[1, 2]} width={[1, 7/12]}>
-            <img
-              src={cardImage}
+            <Img
+              sizes={cardImage.childImageSharp.sizes}
               alt={title}
             />
           </Box>

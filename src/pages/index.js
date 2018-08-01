@@ -157,8 +157,14 @@ export const pageQuery = graphql`
           }
           frontmatter {
             cardBackground
-            cardImage
             cardText
+            cardImage {
+              childImageSharp {
+                sizes(maxWidth: 1240) {
+                  ...GatsbyImageSharpSizes
+                }
+              }
+            }
             client
             countries
             date(formatString: "YYYY")
