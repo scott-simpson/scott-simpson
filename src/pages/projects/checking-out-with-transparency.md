@@ -44,6 +44,13 @@ We quickly identified that our user flow had to be different than other on-deman
 
 When customers landed on our storefront, I wanted the selection to be simple and for the page to communicate clearly the quality and variety of the product. I opted to keep all the product on one page in collections rather than divide it up onto multiple storefronts. This would make it easier for the customer to comparison shop and would communicate the different product categories all in one place.
 
+<figure>
+
+![Something Here](/img/checkout-transparency-2.jpg)
+
+<figcaption>This is a caption for this image</figcaption>
+</figure>
+
 ## Communicating Quality & Speed
 
 I saw the product page as an opportunity to reinforce the quality of the flowers and the transparency of our offering. I designed the page featuring a large carousel of beautiful product photography. I also collaborated with the marketing team to make the language concise and to highlight our value props as well as our happiness guarantee. Working with our photographer as well as the marketing team, I helped establish a product photography style and system that we used to showcase each product.
