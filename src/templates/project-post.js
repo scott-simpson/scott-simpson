@@ -71,7 +71,9 @@ export const ProjectPost = ({
           </Flex>
           <Flex flexWrap="wrap" justifyContent="center">
             <Box width={[1, 9/12, 8/12, 6/12]}>
-              <ProjectContent content={content} />
+              <ScrollAnimation offset={0} delay={750} duration={0.5} animateOnce={true} animateIn="fadeInUp">
+                <ProjectContent content={content} />
+              </ScrollAnimation>
             </Box>
           </Flex>
         </article>

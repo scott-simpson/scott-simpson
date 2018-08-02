@@ -22,11 +22,9 @@ const ImageContainer = styled.figure`
 `;
 
 const ImgContainer = ({ children }) => (
-  <ScrollAnimation offset={0} duration={0.5} animateOnce={true} animateIn="fadeInUp">
-    <ImageContainer>
-      {children}
-    </ImageContainer>
-  </ScrollAnimation>
+  <ImageContainer>
+    {children}
+  </ImageContainer>
 )
 
 export default ImgContainer;

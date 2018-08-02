@@ -34,11 +34,25 @@ const NavA = styled(Link) `
   }
 `;
 
+const Scott = styled(Link)`
+  font-family: ${props => props.theme.fonts.serif};
+  font-size: ${props => props.theme.fontSizes[4] + 'px'};
+  font-weight: ${props => props.theme.fontWeights.bold};
+  color: ${props => props.theme.colors.heading};
+  text-decoration: none;
+  & span {
+    color: ${props => props.theme.colors.blue}; 
+  }
+  @media (min-width: ${props => props.theme.breakpoints[1]}) {
+    font-size: ${props => props.theme.fontSizes[6] + 'px'};
+  }
+`;
+
 const Footer = () => (
   <FooterContainer>
     <Wrap flexWrap="wrap" alignItems="center" justifyContent="center" py={4}>
       <Box order={[2, 1]} width={[1, 6/12, 5/12]}>
-        <Text fontSize={[1, 2, 3]}>&copy; {(new Date().getFullYear())} Scott Simpson</Text>
+        <Scott to="/">Scott<span>.</span></Scott>
       </Box>
       <Box order={[1, 2]} width={[1, 6/12, 6/12]}>
         <Nav>
