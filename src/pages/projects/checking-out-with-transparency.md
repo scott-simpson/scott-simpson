@@ -59,6 +59,13 @@ I saw the product page as an opportunity to reinforce the quality of the flowers
 
 In our checkout flow, I decided to reduce distraction by having the customer focus on one step at a time. We broke the process into 4 different parts: recipient, delivery, message and payment. We wanted the process to be easier for returning customers, particularly if they had already sent to a recipient before. We were able to speed up the flow for these customers by bypassing some steps if they had chosen a past recipient.
 
+<figure>
+
+![Something Here](/img/checkout-transparency-4.jpg)
+
+<figcaption>This is a caption for this image</figcaption>
+</figure>
+
 We a/b tested this multiple step checkout flow with a single page checkout to see what converted better. Interestingly, the multiple step flow was more effective and from add to cart through to a completed payment converted at nearly 85%.
 
 ## Refining With Data
