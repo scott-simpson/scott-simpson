@@ -45,9 +45,9 @@ When customers landed on our storefront, I wanted the selection to be simple and
 
 <figure>
 
-![Something Here](/img/checkout-transparency_01.jpg)
+![Something Here](/img/urbanstems-storefront-desktop.jpg)
 
-![Something Here](/img/checkout-transparency_02.jpg)
+![Something Here](/img/urbanstems-storefront-mobile.jpg)
 
 </figure>
 
