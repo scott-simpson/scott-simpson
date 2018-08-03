@@ -46,9 +46,10 @@ When customers landed on our storefront, I wanted the selection to be simple and
 
 <figure>
 
-![Something Here](/img/checkout-transparency-2.jpg)
+![Something Here](/img/checkout-transparency_01.jpg)
 
-<figcaption>This is a caption for this image</figcaption>
+![Something Here](/img/checkout-transparency_02.jpg)
+
 </figure>
 
 ## Communicating Quality & Speed
