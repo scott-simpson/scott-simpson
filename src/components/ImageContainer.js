@@ -1,15 +1,16 @@
 import React from 'react';
 import styled from 'styled-components';
+import { Flex, Box } from 'grid-styled';
 import ScrollAnimation from 'react-animate-on-scroll';
 
-const ImageContainer = styled.figure`
+const ImageContainer = styled(Flex)`
   margin: 0 0 16px -5%;
   width: 110%;
   > div {
-    margin-bottom: 0;
+    flex: 1;
   }
-  & figcaption {
-    font-size: ${props => props.theme.fontSizes[1] + 'px'};
+  & div {
+    margin-bottom: 0;
   }
   @media (min-width: ${props => props.theme.breakpoints[0]}) {
     margin-left: -15%;
@@ -22,7 +23,7 @@ const ImageContainer = styled.figure`
 `;
 
 const ImgContainer = ({ children }) => (
-  <ImageContainer>
+  <ImageContainer flexDirection={["column", "column", "row"]}>
     {children}
   </ImageContainer>
 )

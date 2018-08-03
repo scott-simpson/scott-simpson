@@ -7,6 +7,7 @@ import Anchor from './Anchor';
 import ListItem from './ListItem';
 import List from './List';
 import ImageContainer from './ImageContainer';
+import ImageCaption from './ImageCaption';
 
 const HeadingPrimary = ({ children }) => <ScrollAnimation offset={0} duration={0.5} animateOnce={true} animateIn="fadeInUp"><Heading color="heading" fontSize={[5, 7]} mb={3}>{children}</Heading></ScrollAnimation>
 const HeadingSecondary = ({ children }) => <ScrollAnimation offset={0} duration={0.5} animateOnce={true} animateIn="fadeInUp"><Heading color="heading" fontSize={[4, 6]} mb={3}>{children}</Heading></ScrollAnimation>
@@ -15,6 +16,7 @@ const Paragraph = ({ children }) => <ScrollAnimation offset={0} duration={0.5} a
 const UlList = ({ children }) => <ScrollAnimation offset={0} duration={0.5} animateOnce={true} animateIn="fadeInUp"><List ml={3}>{children}</List></ScrollAnimation>
 const LiListItem = ({ children }) => <ScrollAnimation offset={0} duration={0.5} animateOnce={true} animateIn="fadeInUp"><ListItem fontSize={3} mb={3}>{children}</ListItem></ScrollAnimation>
 const ImageWrapper = ({ children }) => <ScrollAnimation offset={0} duration={0.5} animateOnce={true} animateIn="fadeInUp"><ImageContainer>{children}</ImageContainer></ScrollAnimation>
+const CaptionWrapper = ({ children }) => <ScrollAnimation offset={0} duration={0.5} animateOnce={true} animateIn="fadeInUp"><ImageCaption>{children}</ImageCaption></ScrollAnimation>
 
 const renderAst = new rehypeReact({
   createElement: React.createElement,
@@ -30,6 +32,7 @@ const renderAst = new rehypeReact({
     "li": LiListItem,
     "img": Image,
     "figure": ImageWrapper,
+    "aside": CaptionWrapper,
    },
 }).Compiler;
 
