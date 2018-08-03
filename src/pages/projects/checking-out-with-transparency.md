@@ -62,6 +62,13 @@ I saw the product page as an opportunity to reinforce the quality of the flowers
 ![Something Here](/img/urbanstems-product-desktop.jpg)
 
 </figure>
+<figure>
+
+![Something Here](/img/urbanstems-product-carousel.gif)
+
+![Something Here](/img/urbanstems-product-carousel.jpg)
+
+</figure>
 
 ## Converting The Customer
 
