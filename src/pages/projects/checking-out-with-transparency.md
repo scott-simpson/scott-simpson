@@ -27,7 +27,6 @@ cardText: dark
 
 ![Something Here](/img/checkout-transparency-1.jpg)
 
-<figcaption>This is a caption for this image</figcaption>
 </figure>
 
 ## The Opportunity
