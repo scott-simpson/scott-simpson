@@ -55,6 +55,14 @@ When customers landed on our storefront, I wanted the selection to be simple and
 
 I saw the product page as an opportunity to reinforce the quality of the flowers and the transparency of our offering. I designed the page featuring a large carousel of beautiful product photography. I also collaborated with the marketing team to make the language concise and to highlight our value props as well as our happiness guarantee. Working with our photographer as well as the marketing team, I helped establish a product photography style and system that we used to showcase each product.
 
+<figure>
+
+![Something Here](/img/urbanstems-product-mobile.jpg)
+
+![Something Here](/img/urbanstems-product-desktop.jpg)
+
+</figure>
+
 ## Converting The Customer
 
 In our checkout flow, I decided to reduce distraction by having the customer focus on one step at a time. We broke the process into 4 different parts: recipient, delivery, message and payment. We wanted the process to be easier for returning customers, particularly if they had already sent to a recipient before. We were able to speed up the flow for these customers by bypassing some steps if they had chosen a past recipient.
