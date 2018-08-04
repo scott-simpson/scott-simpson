@@ -50,6 +50,13 @@ When customers landed on our storefront, I wanted the selection to be simple and
 ![Something Here](/img/urbanstems-storefront-mobile.jpg)
 
 </figure>
+<figure>
+
+![Something Here](/img/urbanstems-storefront-cards.jpg)
+
+![Something Here](/img/urbanstems-storefront-address.gif)
+
+</figure>
 
 ## Communicating Quality & Speed
 
@@ -78,7 +85,6 @@ In our checkout flow, I decided to reduce distraction by having the customer foc
 
 ![Something Here](/img/checkout-transparency-4.jpg)
 
-<figcaption>This is a caption for this image</figcaption>
 </figure>
 
 We a/b tested this multiple step checkout flow with a single page checkout to see what converted better. Interestingly, the multiple step flow was more effective and from add to cart through to a completed payment converted at nearly 85%.
