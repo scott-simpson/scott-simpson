@@ -39,6 +39,12 @@ Why not offer transparent pricing and be upfront about delivery costs? Why not o
 
 We quickly identified that our user flow had to be different than other on-demand services. While most other services are focused around sending something to yourself, the majority of our customers want to send flowers as a gift. This comes with a few challenges. Customers don’t always know the address of the recipient they’re sending to and whether or not they’ll be home during the delivery time. I collaborated with different teams, from engineering to operations, to establish this initial outline of our user flow to address some of these issues.
 
+<figure>
+
+![Something Here](/img/urbanstems-conversion-flow.png)
+
+</figure>
+
 ## Simplifying The Offering
 
 When customers landed on our storefront, I wanted the selection to be simple and for the page to communicate clearly the quality and variety of the product. I opted to keep all the product on one page in collections rather than divide it up onto multiple storefronts. This would make it easier for the customer to comparison shop and would communicate the different product categories all in one place.
