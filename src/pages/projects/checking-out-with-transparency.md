@@ -54,7 +54,7 @@ When customers landed on our storefront, I wanted the selection to be simple and
 
 ![Something Here](/img/urbanstems-storefront-cards.jpg)
 
-![Something Here](/img/urbanstems-storefront-address.gif)
+![Something Here](/img/urbanstems-storefront-deliverybar.gif)
 
 </figure>
 
