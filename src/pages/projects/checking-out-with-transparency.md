@@ -51,6 +51,13 @@ When customers landed on our storefront, I wanted the selection to be simple and
 
 <figure>
 
+![Something Here](/img/urbanstems-storefront-sketch.jpg)
+
+![Something Here](/img/urbanstems-storefront-wireframe.jpg)
+
+</figure>
+<figure>
+
 ![Something Here](/img/urbanstems-storefront-desktop.jpg)
 
 ![Something Here](/img/urbanstems-storefront-mobile.jpg)
