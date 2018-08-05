@@ -26,7 +26,6 @@ cardText: light
 
 ![Caption goes here](/img/design-system-1.jpg)
 
-<figcaption>This is a caption for this image</figcaption>
 </figure>
 
 ## The Opportunity
