@@ -42,11 +42,7 @@ To visualize our component system, we decided to use React Storybook. This libra
 
 We started by going through our site and doing an audit of our UI and breaking it down into components. We categorized elements into categories and whether they were individual components or modules. Defining them this way helped to also determine the folder structure on our frontend app. Ideally we wanted the naming conventions in Figma to match with the components used in development.
 
-<figure>
-
-![Caption goes here](/img/urbanstems-component-list.png)
-
-</figure>
+![](/img/urbanstems-component-list.png)
 
 ## Starting Small
 
