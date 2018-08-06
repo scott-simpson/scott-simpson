@@ -45,6 +45,14 @@ We quickly identified that our user flow had to be different than other on-deman
 
 </figure>
 
+<figure>
+
+![Something Here](/img/urbanstems-homepage-mobile.jpg)
+
+![Something Here](/img/urbanstems-homepage-desktop.jpg)
+
+</figure>
+
 ## Simplifying The Offering
 
 When customers landed on our storefront, I wanted the selection to be simple and for the page to communicate clearly the quality and variety of the product. I opted to keep all the product on one page in collections rather than divide it up onto multiple storefronts. This would make it easier for the customer to comparison shop and would communicate the different product categories all in one place.
