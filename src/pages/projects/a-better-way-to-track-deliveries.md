@@ -35,12 +35,12 @@ A timeline of order history seemed like the most obvious place that the two expe
 
 <figure>
 
-![Order tracking wireframe](/img/urbanstems-tracking-wireframe-1.jpg)
+![Order tracking wireframe](/img/urbanstems-ordertracking-wireframe-1.jpg)
 
 </figure>
 <figure>
 
-![Order tracking wireframe](/img/urbanstems-tracking-wireframe-2.jpg)
+![Order tracking wireframe](/img/urbanstems-ordertracking-wireframe-2.jpg)
 
 </figure>
 
