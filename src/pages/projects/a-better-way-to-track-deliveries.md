@@ -32,15 +32,9 @@ One of the main challenges of designing our order tracking system was to make th
 ## Building The Timeline
 
 A timeline of order history seemed like the most obvious place that the two experiences overlapped, so I started there. I worked with the engineering team to list out the different order statuses for each experience. From this, I created a wireframe showing the experience along with the possible order history states.
-
 <figure>
 
-![Order tracking wireframe](/img/urbanstems-ordertracking-wf-1.jpg)
-
-</figure>
-<figure>
-
-![Order tracking wireframe](/img/urbanstems-ordertracking-wf-2.jpg)
+![Order tracking wireframe](/img/urbanstems-ordertracking-wireframes.jpg)
 
 </figure>
 
