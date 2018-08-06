@@ -48,6 +48,12 @@ A timeline of order history seemed like the most obvious place that the two expe
 
 From the wireframe, I designed a few different iterations of the order tracker in Figma and added more detail. In the design, I included the recipient’s delivery address, the order timeline, a map as well as the carrier and courier info where applicable. I also designed a list view and basic navigation so that customers can easily switch between orders.
 
+<figure>
+
+![Order tracking wireframe](/img/urbanstems-ordertracking-design-1.jpg)
+
+</figure>
+
 ## The Small Details
 
 Working with the engineering team to pull in the order statuses, I built and tested a prototype in React. To make it feel a little more like the order was updating in realtime, I added a small animation.
