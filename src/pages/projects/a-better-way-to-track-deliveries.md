@@ -35,3 +35,6 @@ From the wireframe, I designed a few different iterations of the order tracker i
 
 ## The Small Details
 Working with the engineering team to pull in the order statuses, I built and tested a prototype in React. To make it feel a little more like the order was updating in realtime, I added a small animation.
+
+## The Future
+I'd like to add some small touches to the order tracking system that will further improve the customer experience. For both on-demand and nationwide customers, I'd like to display who in the facility is prepping their order. We already keep track of that information, so it would be a matter of exposing that to the customer. For on-demand customers, I'd like to show the courier's location on the map.
