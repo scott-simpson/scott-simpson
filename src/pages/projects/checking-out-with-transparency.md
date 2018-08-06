@@ -79,7 +79,7 @@ I saw the product page as an opportunity to reinforce the quality of the flowers
 
 ![Something Here](/img/urbanstems-product-wireframe.jpg)
 
-![Something Here](/img/urbanstems-storefront-sketch.jpg)
+![Something Here](/img/urbanstems-productpage-sketch.jpg)
 
 </figure>
 <figure>
