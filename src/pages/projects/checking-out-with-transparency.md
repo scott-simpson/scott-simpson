@@ -54,6 +54,13 @@ We quickly identified that our user flow had to be different than other on-deman
 ![Something Here](/img/urbanstems-productpage-sketch.jpg)
 
 </figure>
+<figure>
+
+![Something Here](/img/urbanstems-homepage-mobile.jpg)
+
+![Something Here](/img/urbanstems-homepage-desktop.jpg)
+
+</figure>
 
 ## Simplifying The Offering
 
