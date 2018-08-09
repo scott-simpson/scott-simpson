@@ -24,6 +24,7 @@ module.exports = {
       options: {
         plugins: [
           `gatsby-plugin-netlify-cms-paths`,
+          `gatsby-remark-copy-images`,
           {
             resolve: `gatsby-remark-images`,
             options: {

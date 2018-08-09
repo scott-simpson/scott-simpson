@@ -68,7 +68,7 @@ export default class IndexPage extends Component {
                 <Box ml={[0, '8.333%']} py={["7%", "4%", "14%"]} width={[1, 1, 8/12]}>
                   <ScrollAnimation offset={0} animateOnce={true} duration={0.75} animateIn="fadeInUp">
                     <HeadingSerif fontFamily="serif" lineHeight={["1.6em", "0.9em"]} color="heading" fontSize={[7, 9, 10]}>{about.frontmatter.name}</HeadingSerif>
-                    <Text my={[2, 4]} lineHeight={1} fontSize={[3, 4]}>Im Cofounder and Head of Product at <Anchor href="https://urbanstems.com">UrbanStems</Anchor>. My focus is on creating product design systems that help companies and teams scale.</Text>
+                    <Text my={[2, 4]} lineHeight={1} fontSize={[3, 4]}>I'm Cofounder and Head of Product at <Anchor href="https://urbanstems.com">UrbanStems</Anchor>. My focus is on creating product design systems that help companies and teams scale.</Text>
                   </ScrollAnimation>
                 </Box>
               </Wrap>

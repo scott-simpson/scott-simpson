@@ -4,7 +4,7 @@ import { Flex, Box } from 'grid-styled';
 import ScrollAnimation from 'react-animate-on-scroll';
 
 const ImageContainer = styled(Flex)`
-  margin: 0 0 16px -5%;
+  margin: 0 0 32px -5%;
   width: 110%;
   > div {
     flex: 1;
