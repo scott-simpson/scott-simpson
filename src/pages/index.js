@@ -14,8 +14,6 @@ import Anchor from '../components/Anchor';
 import Project from '../components/Project';
 // import Transition from '../components/Transition';
 
-import '../css/index.css';
-
 const Section = styled.section`
   background: ${props => props.theme.colors.white};
   margin: auto;
