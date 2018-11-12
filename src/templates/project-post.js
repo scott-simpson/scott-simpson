@@ -1,19 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
-import styled from 'styled-components';
-import { Heading, Text } from 'rebass';
-import { Flex, Box } from 'grid-styled';
+import { Heading, Text, Flex, Box } from 'rebass';
 import ScrollAnimation from 'react-animate-on-scroll';
 
+import Layout from '../components/Layout';
 import Content, { HTMLContent } from '../components/Content';
 import Allcaps from '../components/Allcaps';
 import Wrap from '../components/Wrap';
-import Transition from '../components/Transition';
-
-const HeadingSerif = styled(Heading)`
-  font-family: ${props => props.theme.fonts.serif}; 
-`;
+// import Transition from '../components/Transition';
 
 export const ProjectPost = ({
   content,
@@ -27,13 +22,13 @@ export const ProjectPost = ({
 }) => {
   const ProjectContent = contentComponent || Content;
   return (
-    <Transition>
+    <Layout>
       {helmet || ''}
       <Wrap>
         <article>
           <Flex flexWrap="wrap" justifyContent="center">
             <Box pt={[5, 6]} pb={[3, 4]} width={[1, 9/12, 8/12, 6/12]}>
-              <ScrollAnimation offset={0} duration={0.5} animateOnce={true} animateIn="fadeInUp"><HeadingSerif color="heading" fontSize={[7, 8, 9]}>{title}</HeadingSerif></ScrollAnimation>
+              <ScrollAnimation offset={0} duration={0.5} animateOnce={true} animateIn="fadeInUp"><Heading color="heading" fontFamily="serif" fontSize={[7, 8, 9]} lineHeight="1.25em">{title}</Heading></ScrollAnimation>
               <ScrollAnimation delay={500} offset={0} duration={0.5} animateOnce={true} animateIn="fadeInUp"><Text pt={[3, 4]} pb={4} fontSize={[4, 5]}>{description}</Text></ScrollAnimation>
               <Flex pt={2} flexWrap="wrap">
                 <Box pb={3} width={[1, 2/12]}>
@@ -78,13 +73,12 @@ export const ProjectPost = ({
           </Flex>
         </article>
       </Wrap>
-    </Transition>
+    </Layout>
   )
 };
 
 const ProjectTemplate = ({ data }) => {
-  const { markdownRemark: post } = data
-
+  const post = data.markdownRemark;
   return (
     <ProjectPost
       content={post.htmlAst}
@@ -96,16 +90,24 @@ const ProjectTemplate = ({ data }) => {
       helmet={<Helmet title={`${post.frontmatter.title} | Project`} />}
       title={post.frontmatter.title}
     />
-  )
-}
+  );
+};
 
 export default ProjectTemplate;
 
-ProjectPost.propTypes = {
-  content: PropTypes.string.isRequired,
-  description: PropTypes.string,
-  title: PropTypes.string,
-  helmet: PropTypes.instanceOf(Helmet),
+ProjectTemplate.propTypes = {
+  data: PropTypes.shape({
+    allMarkdownRemark: PropTypes.shape({
+      frontmatter: PropTypes.shape({
+        date: PropTypes.string,
+        description: PropTypes.string,
+        role: PropTypes.array,
+        technology: PropTypes.array,
+        title: PropTypes.string,
+      }),
+      helmet: PropTypes.instanceOf(Helmet),
+    }),
+  }),
 };
 
 export const pageQuery = graphql`

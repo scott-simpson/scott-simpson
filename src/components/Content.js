@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import rehypeReact from 'rehype-react';
 import ScrollAnimation from 'react-animate-on-scroll';
-import { Heading, Text, Blockquote, Divider, Link, Image } from 'rebass';
+import { Heading, Text, Blockquote, Divider, Image } from 'rebass';
 import Anchor from './Anchor';
 import ListItem from './ListItem';
 import List from './List';
@@ -20,7 +20,7 @@ const CaptionWrapper = ({ children }) => <ScrollAnimation offset={0} duration={0
 
 const renderAst = new rehypeReact({
   createElement: React.createElement,
-  components: { 
+  components: {
     "h1": HeadingPrimary,
     "h2": HeadingSecondary,
     "h3": HeadingTertiary,

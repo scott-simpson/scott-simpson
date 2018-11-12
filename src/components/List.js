@@ -1,7 +1,6 @@
-import React, {PropTypes} from 'react';
-import sys from 'system-components';
+import system from '@rebass/components';
 
-export const List = sys({
+export const List = system({
   m: 0,
   p: 0,
   is: 'ul',

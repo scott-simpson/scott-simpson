@@ -10,7 +10,7 @@ const colors = {
 
 const fonts = {
   sans: '"Untitled-Sans", "Helvetica Neue", Helvetica, sans-serif',
-  serif: '"leitura-news"',
+  serif: '"Untitled-Serif"',
   mono: 'Menlo, monospace',
 }
 
@@ -46,7 +46,7 @@ const fontSizes = [
   32,
   38,
   56,
-  82,
+  76,
 ]
 
 const theme = {

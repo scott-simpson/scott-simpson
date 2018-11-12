@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Flex, Box } from 'grid-styled';
-import { Heading, Text, Link } from 'rebass';
+import { Link, Box } from 'rebass';
 
 import Wrap from './Wrap';
 
@@ -41,7 +40,7 @@ const Scott = styled(Link)`
   color: ${props => props.theme.colors.heading};
   text-decoration: none;
   & span {
-    color: ${props => props.theme.colors.blue}; 
+    color: ${props => props.theme.colors.blue};
   }
   @media (min-width: ${props => props.theme.breakpoints[1]}) {
     font-size: ${props => props.theme.fontSizes[6] + 'px'};

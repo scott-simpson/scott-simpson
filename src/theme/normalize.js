@@ -1,18 +1,20 @@
-import styledNormalize from 'styled-normalize'
-import { injectGlobal } from 'styled-components'
-import UntitledSans from '../fonts/UntitledSansTest-Light.woff'
-import UntitledSansMedium from '../fonts/UntitledSansTest-Medium.woff'
-import UntitledSansBold from '../fonts/UntitledSansTest-Bold.woff'
+import { createGlobalStyle } from 'styled-components';
+import UntitledSans from '../fonts/UntitledSansTest-Light.woff';
+import UntitledSansMedium from '../fonts/UntitledSansTest-Medium.woff';
+import UntitledSansBold from '../fonts/UntitledSansTest-Bold.woff';
+import UntitledSerifBold from '../fonts/TiemposHeadlineTest-Medium.woff';
 
-export default () => injectGlobal`
-  ${styledNormalize}
-
+const GlobalStyle = createGlobalStyle`
+  * {
+    box-sizing: border-box;
+  }
   body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     color: #37393C;
+    font-family:  "Untitled-Sans", "Helvetica Neue", Helvetica, sans-serif;
     font-weight: 400;
-    line-height: 1.7;  
+    line-height: 1.7;
   }
   ::selection {
     background-color: #37393C;
@@ -95,4 +97,10 @@ export default () => injectGlobal`
     font-weight: 600;
     src: url(${UntitledSansBold}) format('woff')
   }
+  @font-face {
+    font-family: 'Untitled-Serif';
+    font-weight: 600;
+    src: url(${UntitledSerifBold}) format('woff')
+  }
 `
+export default GlobalStyle;

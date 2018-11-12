@@ -1,8 +1,7 @@
 import React from 'react';
 import Link from 'gatsby-link';
 import Img from 'gatsby-image';
-import { Flex, Box } from 'grid-styled';
-import { Heading, Text } from 'rebass';
+import { Heading, Text, Flex, Box } from 'rebass';
 import styled from 'styled-components';
 
 import Allcaps from './Allcaps';
@@ -37,12 +36,6 @@ const ProjectLink = styled(Link)`
   text-decoration: none;
 `;
 
-const Meta = styled(Text)`
-  position: absolute;
-  bottom: 0;
-  left: 0;
-`;
-
 const Project = ({
   slug,
   cardImage,
@@ -55,7 +48,7 @@ const Project = ({
 }) => {
   let headlineColor = props => props.theme.colors.heading;
   let bodyColor = props => props.theme.colors.body;
-  if(cardText == 'light') {
+  if(cardText === 'light') {
     headlineColor = '#ffffff';
     bodyColor = '#f6f7f9';
   }
@@ -64,13 +57,13 @@ const Project = ({
       <ProjectLink to={slug}>
         <Flex flexWrap="wrap" alignItems="center">
           <Box p={[4, 5]} order={[2, 1]} width={[1, 5/12]}>
-            <Heading color={headlineColor} fontSize={[4, 6]} pb={2}>{title}</Heading>
+            <Heading color={headlineColor} letterSpacing={["-1px" ]}fontSize={[4, 6]} pb={2}>{title}</Heading>
             <Text color={bodyColor} lineHeight={1} fontSize={[1, 3]}>{description}</Text>
             <Allcaps fontSize={[0, 1]} color={bodyColor} pt={[3, 5]}>{client}, {date}</Allcaps>
           </Box>
           <Box order={[1, 2]} width={[1, 7/12]}>
             <Img
-              sizes={cardImage.childImageSharp.sizes}
+              fluid={cardImage.childImageSharp.fluid}
               alt={title}
             />
           </Box>
@@ -81,4 +74,3 @@ const Project = ({
 }
 
 export default Project;
-

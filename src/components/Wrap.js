@@ -1,6 +1,5 @@
-import React from 'react';
 import styled from 'styled-components';
-import { Flex } from 'grid-styled';
+import { Flex } from 'rebass';
 
 const Wrap = styled(Flex)`
   max-width: 90%;
