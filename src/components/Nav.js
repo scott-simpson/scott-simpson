@@ -50,7 +50,7 @@ const Nav = () => {
     <NavContainer>
       <Wrap alignItems='center'>
         <Box>
-          <Scott to="/">Scott<span>.</span></Scott>
+          <Scott to="/">Scott<span> /</span></Scott>
         </Box>
         <Box ml="auto">
           <NavA activeStyle={{ color: '#1C21FF' }} to='/projects'>Projects</NavA>
