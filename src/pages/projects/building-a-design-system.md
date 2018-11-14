@@ -50,7 +50,7 @@ Developing a component library can be a big task, particularly with a small team
 
 <figure>
 
-![Caption goes here](/img/urbanstems-design-system-buttons.jpg)
+![Caption goes here](/img/urbanstems-design-system-buttons.png)
 
 ![Caption goes here](/img/design-system-1.jpg)
 
