@@ -24,7 +24,7 @@ cardText: light
 ---
 <figure>
 
-![Product design system overview](/img/design-system-1.jpg)
+![Product design system overview](/img/urbanstems-design-system-overview.jpg)
 
 </figure>
 
@@ -58,7 +58,7 @@ Developing a component library can be a big task, particularly with a small team
 
 <figure>
 
-![Product design system overview](/img/urbanstems-design-system-feature-card.jpg)
+![Product design system overview](/img/urbanstems-design-system-homepage-card.jpg)
 
 </figure>
 
