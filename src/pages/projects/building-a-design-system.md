@@ -48,6 +48,14 @@ We started by going through our site and doing an audit of our UI and breaking i
 
 Developing a component library can be a big task, particularly with a small team. I decided the best way to transition our site over to a component based system was piece by piece. I started small with stateless components that were used universally like layout, button and navigation components. I then moved onto form fields and more specialized components like product cards and line items.
 
+<figure>
+
+![Caption goes here](/img/urbanstems-design-system-buttons.jpg)
+
+![Caption goes here](/img/design-system-1.jpg)
+
+</figure>
+
 We’re still in the process of converting our site over to our new design system. It’s an iterative task that we’re tackling bit by bit.
 
 ## Maintaining Consistency
