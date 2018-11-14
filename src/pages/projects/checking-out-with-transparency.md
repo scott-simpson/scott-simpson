@@ -8,7 +8,7 @@ description: >-
   brands in the country, processing nearly $15m in annual revenue with a 14%
   conversion rate.
 shortDescription: Building the smoothest and most trustworthy experience to send flowers online.
-date: '2018-07-23'
+date: 2018-11-13T05:00:00.000Z
 client: UrbanStems
 role:
   - UI/UX
