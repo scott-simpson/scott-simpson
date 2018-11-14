@@ -52,7 +52,7 @@ Developing a component library can be a big task, particularly with a small team
 
 ![Button design system](/img/urbanstems-design-system-buttons.png)
 
-![Typography design system](/img/urbanstems-design-system-typography.png)
+![Typography design system](/img/urbanstems-design-system-type.png)
 
 </figure>
 
