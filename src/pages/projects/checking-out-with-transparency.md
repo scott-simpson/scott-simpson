@@ -18,7 +18,7 @@ technology:
   - React
   - HTML
   - CSS
-  - JSX
+  - JS
 cardImage: /img/portfolio-card-1.jpg
 cardBackground: '#ffe9e9'
 cardText: dark
