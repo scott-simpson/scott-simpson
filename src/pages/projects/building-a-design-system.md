@@ -8,7 +8,7 @@ description: >
   centralized, React-based component system that both the design and engineering
   teams use in production
 shortDescription: Building a design system and language to maintain consistency and scale.
-date: '2018-07-23'
+date: 2018-11-12T05:00:00.000Z
 client: UrbanStems
 role:
   - UI/UX
