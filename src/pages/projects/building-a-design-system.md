@@ -17,7 +17,7 @@ technology:
   - React
   - HTML
   - CSS
-  - JSX
+  - JS
 cardImage: /img/portfolio-card-2.jpg
 cardBackground: '#04003d'
 cardText: light
@@ -46,7 +46,7 @@ We started by going through our site and doing an audit of our UI and breaking i
 
 ## Starting Small
 
-Developing a component library can be a big task, particularly with such a small team. I decided the best way to transition our site over to a component based system was piece by piece. I started small with stateless components that were used universally like layout, button and navigation components. I then moved onto form fields and more specialized components like product cards and line items.
+Developing a component library can be a big task, particularly with a small team. I decided the best way to transition our site over to a component based system was piece by piece. I started small with stateless components that were used universally like layout, button and navigation components. I then moved onto form fields and more specialized components like product cards and line items.
 
 We’re still in the process of converting our site over to our new design system. It’s an iterative task that we’re tackling bit by bit.
 
