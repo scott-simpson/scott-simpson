@@ -70,6 +70,12 @@ Developing a component library can be a big task, particularly with a small team
 
 </figure>
 
+<figure>
+
+![Design system product cards](/img/urbanstems-design-system-product-cards.png)
+
+</figure>
+
 We’re still in the process of converting our site over to our new design system. It’s an iterative task that we’re tackling bit by bit.
 
 ## Maintaining Consistency
