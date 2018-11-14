@@ -5,9 +5,9 @@ title: Product Designer
 intro: >-
   My name is Scott Simpson and I’m a product designer and entrepreneur based out
   of Washington, DC.
-location: 'Washington, DC'
-working: UrbanStems
-countries: '41'
+location: "\U0001F1FA\U0001F1F8 Washington, DC"
+working: "\U0001F339 UrbanStems"
+countries: ✈️ 41
 ---
 I enjoy growing companies and building the design systems, strategies, and great user experiences necessary to achieve that. My expertise spans the space between design and development. I approach new challenges with the desire to learn, experiment and iterate.
 
