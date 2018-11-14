@@ -7,7 +7,7 @@ description: >-
   deliveries. We created a beautiful, realtime order tracking system for both
   our on-demand and nationwide customers.
 shortDescription: 'Giving customers an easy, transparent way to track their deliveries.'
-date: '2018-07-23'
+date: 2018-11-11T05:00:00.000Z
 client: UrbanStems
 role:
   - UI/UX
