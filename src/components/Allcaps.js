@@ -2,8 +2,9 @@ import styled from 'styled-components';
 import { Text } from 'rebass';
 
 const Allcaps = styled(Text)`
+  font-weight: 600;
   text-transform: uppercase;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   line-height: 1.
 `;
 

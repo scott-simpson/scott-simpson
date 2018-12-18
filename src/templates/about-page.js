@@ -2,6 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { Heading, Text, Link, Flex, Box } from 'rebass';
+import Img from 'gatsby-image';
+import ScrollAnimation from 'react-animate-on-scroll';
 
 import Layout from '../components/Layout';
 import WavesSVG from '../img/waves.svg';
@@ -30,53 +32,48 @@ const Waves = styled(WavesSVG)`
   z-index: 2;
 `;
 
-export const AboutPageTemplate = ({ title, intro, content, contentComponent }) => {
+const ProfileImage = styled(Img)`
+  box-shadow: 0px 20px 40px -10px rgba(0,0,0,0.1);
+  left: 50%;
+  top: -8%;
+  transform: translateX(-50%);
+  width: 90%;
+  z-index: 3;
+  @media (min-width: ${props => props.theme.breakpoints[0]}) {
+     width: 80%;
+   }
+   @media (min-width: ${props => props.theme.breakpoints[1]}) {
+     right: -10%;
+     left: inherit;
+     top: 50%;
+     transform: translateY(-50%);
+     width: 100%;
+   }
+`;
+
+export const AboutPageTemplate = ({ title, intro, content, contentComponent, data }) => {
   const PageContent = contentComponent || Content
 
   return (
     <Layout>
       <Section>
         <Flex flexWrap="wrap">
-          <Box width={[1, 1, 7/12]}>
-            <Wrap>
-              <Box ml={[0, '8.333%']} py={["7%", "14%"]} width={[1, 1, 9/12]}>
-                <Text fontSize={[5, 7]} pt={2} pb={4}>{intro}</Text>
-                <PageContent className="content" content={content} />
-              </Box>
-            </Wrap>
-          </Box>
           <WavesContainer width={[1, 1, 5/12]}>
+              <ProfileImage fluid={data.file.childImageSharp.fluid} />
             <Waves />
           </WavesContainer>
-        </Flex>
-      </Section>
-      <Section>
-        <Wrap flexWrap="wrap">
-          <Box width={6/12}>
-            <Flex flexWrap="wrap">
-              <Box width={4/12}>2014 - Present</Box>
-              <Box width={8/12} pb={4}>
-                <Heading fontSize={[1, 2]} pb={1}><Link color="heading" href="https://urbanstems.com">UrbanStems</Link></Heading>
-                <Text>Cofounder & Head of Product</Text>
-              </Box>
-              <Box width={4/12}>2012 - 2013</Box>
-              <Box width={8/12} pb={4}>
-                <Heading fontSize={[1, 2]} pb={1}><Link color="heading" href="https://isl.co">iStrategyLabs</Link></Heading>
-                <Text>Designer</Text>
-              </Box>
-              <Box width={4/12}>2010 - 2012</Box>
-              <Box width={8/12} pb={4}>
-                <Heading fontSize={[1, 2]} pb={1}><Link color="heading" href="https://scottsimpson.co">Scott Simpson</Link></Heading>
-                <Text>Freelance Designer</Text>
-              </Box>
-              <Box width={4/12}>2009 - 2010</Box>
-              <Box width={8/12} pb={4}>
-                <Heading fontSize={[1, 2]} pb={1}><Link color="heading" href="http://southpawagency.com/">SouthPaw (Nexus/H)</Link></Heading>
-                <Text>Designer</Text>
-              </Box>
-            </Flex>
+          <Box bg="white" alignItems="horizontal" width={[11/12, 11/12, 7/12]}>
+            <ScrollAnimation offset={0} animateOnce={true} duration={0.75} animateIn="fadeInUp">
+              <Wrap>
+                <Box ml={[0, '16.667%']} py={["7%", "10%"]} width={[1, 1, 9/12]}>
+                  <Heading pb={3} color="heading" fontFamily="serif" fontSize={[7, 8]} lineHeight="1.25em">About Me</Heading>
+                  <Text fontSize={[4, 6]} pt={2} pb={4}>{intro}</Text>
+                  <PageContent className="content" content={content} />
+                </Box>
+              </Wrap>
+            </ScrollAnimation>
           </Box>
-        </Wrap>
+        </Flex>
       </Section>
     </Layout>
   )
@@ -97,6 +94,7 @@ const AboutPage = ({ data }) => {
   return (
     <AboutPageTemplate
       contentComponent={HTMLContent}
+      data={data}
       title={post.frontmatter.title}
       intro={post.frontmatter.intro}
       content={post.htmlAst}
@@ -118,6 +116,13 @@ export const aboutPageQuery = graphql`
         title
         intro
       }
-    }
+    },
+    file(relativePath: { regex: "/scott.jpg/" }) {
+      childImageSharp {
+        fluid(maxWidth: 1240) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    },
   }
 `

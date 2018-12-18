@@ -8,6 +8,7 @@ import Allcaps from './Allcaps';
 
 const ProjectContainer = styled.article`
   background: #ffe9e9;
+  border-radius: 4px;
   position: relative;
   overflow: hidden;
   transform: scale(0.99);
@@ -15,7 +16,7 @@ const ProjectContainer = styled.article`
   transition: all 0.3s ease-in-out;
   z-index: 2;
   &:hover {
-    box-shadow: 0px 20px 20px -10px rgba(0,0,0,0.08);
+    box-shadow: rgba(12, 12, 33, 0.2) 0px 15px 46px -15px;
     transform: scale(1);
   }
   & img {
@@ -30,7 +31,7 @@ const ProjectContainer = styled.article`
 `;
 
 const ProjectLink = styled(Link)`
-  color: ${props => props.theme.colors.body};
+  color: ${props => props.theme.colors.heading};
   display: block;
   padding: 0;
   text-decoration: none;
@@ -56,12 +57,12 @@ const Project = ({
     <ProjectContainer style={{ backgroundColor: cardBackground }}>
       <ProjectLink to={slug}>
         <Flex flexWrap="wrap" alignItems="center">
-          <Box p={[4, 5]} order={[2, 1]} width={[1, 5/12]}>
-            <Heading color={headlineColor} letterSpacing={["-1px" ]}fontSize={[4, 6]} pb={2}>{title}</Heading>
+          <Box p={[4, 5]} order={[2, 2, 1]} width={[1, 1, 5/12]}>
+            <Heading color={headlineColor} fontFamily="serif" lineHeight="1.25em" fontSize={[4, 7]} pb={2}>{title}</Heading>
             <Text color={bodyColor} lineHeight={1} fontSize={[1, 3]}>{description}</Text>
             <Allcaps fontSize={[0, 1]} color={bodyColor} pt={[3, 5]}>{client}, {date}</Allcaps>
           </Box>
-          <Box order={[1, 2]} width={[1, 7/12]}>
+          <Box order={[1, 1, 2]} width={[1, 1, 7/12]}>
             <Img
               fluid={cardImage.childImageSharp.fluid}
               alt={title}

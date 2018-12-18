@@ -1,7 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
 import UntitledSans from '../fonts/UntitledSansTest-Light.woff';
 import UntitledSansMedium from '../fonts/UntitledSansTest-Medium.woff';
-import UntitledSansBold from '../fonts/UntitledSansTest-Bold.woff';
 import UntitledSerifBold from '../fonts/TiemposHeadlineTest-Medium.woff';
 
 const GlobalStyle = createGlobalStyle`
@@ -89,13 +88,8 @@ const GlobalStyle = createGlobalStyle`
   }
   @font-face {
     font-family: 'Untitled-Sans';
-    font-weight: 500;
-    src: url(${UntitledSansMedium}) format('woff')
-  }
-  @font-face {
-    font-family: 'Untitled-Sans';
     font-weight: 600;
-    src: url(${UntitledSansBold}) format('woff')
+    src: url(${UntitledSansMedium}) format('woff')
   }
   @font-face {
     font-family: 'Untitled-Serif';

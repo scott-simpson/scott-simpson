@@ -16,10 +16,6 @@ const Section = styled.section`
   max-width: 1600px;
 `;
 
-const HeadingSerif = styled(Heading)`
-  font-family: ${props => props.theme.fonts.serif};
-`;
-
 const Projects = ({ data }) => {
   const { edges: dataObj } = data.allMarkdownRemark;
   const projects = dataObj.filter(project => project.node.frontmatter.templateKey === 'project-post');
@@ -28,10 +24,10 @@ const Projects = ({ data }) => {
   return (
     <Layout>
       <Section>
-        <Flex my={["4%", "6%"]} justifyContent="center">
+        <Flex my={["4%", "4%"]} justifyContent="center">
           <Box>
             <ScrollAnimation offset={0} duration={0.75} animateOnce={true} animateIn="fadeInUp">
-              <HeadingSerif textAlign="center" fontSize={[7, 8, 9]}>Projects</HeadingSerif>
+              <Heading  color="heading" fontFamily="serif" textAlign="center" fontSize={[7, 8]}>Projects</Heading>
               <Text fontSize={[3, 4]} textAlign="center">A little taste of some of the work I've been doing</Text>
             </ScrollAnimation>
           </Box>

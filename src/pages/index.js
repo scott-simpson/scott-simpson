@@ -75,29 +75,29 @@ const Index = ({ data }) => {
         <Flex flexWrap="wrap">
           <Box py={[2, 2, 4]} width={[1, 1, 7/12]}>
             <Wrap>
-              <Box ml={[0, '8.333%']} py={["7%", "4%", "14%"]} width={[1, 1, 8/12]}>
+              <Box ml={[0, '8.333%']} py={["7%", "4%", "4%", "10%", "14%"]} width={[1, 1, 8/12]}>
                 <ScrollAnimation offset={0} animateOnce={true} duration={0.75} animateIn="fadeInUp">
-                  <Heading fontFamily="serif" lineHeight={["1.6em", "0.9em"]} color="heading" fontSize={[7, 9, 10]}>{about.frontmatter.name}</Heading>
-                  <Text my={[2, 4]} lineHeight={1} fontSize={[3, 4]}>I'm Cofounder and Head of Product at <Anchor href="https://urbanstems.com">UrbanStems</Anchor>. My focus is on creating product design systems that help companies and teams scale.</Text>
+                  <Heading fontFamily="serif" lineHeight={["1.6em", "0.9em"]} color="heading" fontSize={[7, 8, 9, 10]}>{about.frontmatter.name}</Heading>
+                  <Text my={[2, 4]} lineHeight={1} fontSize={[3, 4]}>I'm Cofounder and Head of Product at <Anchor href="https://urbanstems.com">UrbanStems</Anchor>. My focus is building user-centric products that make a positive impact. I enjoy creating user experiences and design systems that help companies and products scale.</Text>
                 </ScrollAnimation>
               </Box>
             </Wrap>
             <Wrap pt={[0, 0, 2]} pb={[4, 5]} flexWrap="wrap">
-              <Box pb={3} ml={[0, '8.333%']} width={[1, 3/12]}>
+              <Box pb={3} ml={[0, '8.333%']} width={[1, 1, 1, 3/12]}>
                 <ScrollAnimation offset={0} animateOnce={true} duration={0.75} delay={500} animateIn="fadeInUp">
-                  <Allcaps fontSize={0} color="blue">Location</Allcaps>
+                  <Allcaps fontSize={0}>Location</Allcaps>
                   <Text fontSize={[2, 3]}>{about.frontmatter.location}</Text>
                 </ScrollAnimation>
               </Box>
-              <Box pb={3} width={[1, 3/12]}>
+              <Box pb={3} ml={[0, '8.333%', '8.333%', 0]} width={[1, 1, 1, 3/12]}>
                 <ScrollAnimation offset={0} animateOnce={true} duration={0.75} delay={500} animateIn="fadeInUp">
-                  <Allcaps fontSize={0} color="blue">Working At</Allcaps>
+                  <Allcaps fontSize={0}>Working At</Allcaps>
                   <Text fontSize={[2, 3]}>{about.frontmatter.working}</Text>
                 </ScrollAnimation>
               </Box>
-              <Box pb={3} width={[1, 3/12]}>
+              <Box pb={3} ml={[0, '8.333%', '8.333%', 0]} width={[1, 1, 1, 3/12]}>
                 <ScrollAnimation offset={0} animateOnce={true} duration={0.75} delay={500} animateIn="fadeInUp">
-                  <Allcaps fontSize={0} color="blue">Countries Visited</Allcaps>
+                  <Allcaps fontSize={0}>Countries Visited</Allcaps>
                   <Text fontSize={[2, 3]}>{about.frontmatter.countries}</Text>
                 </ScrollAnimation>
               </Box>
@@ -113,7 +113,7 @@ const Index = ({ data }) => {
       <Section>
         <Wrap my={["4%", "6%"]} justifyContent="center" flexWrap="wrap">
           <Box width={1}>
-            <Heading fontFamily="serif" pb={[2, 4]} fontSize={[5, 7]} textAlign="center">Selected Projects</Heading>
+            <Heading color="heading" fontFamily="serif" pb={[2, 4]} fontSize={[5, 8]} textAlign="center">Selected Projects</Heading>
           </Box>
           {projects
             .map(({ node: project }) => (

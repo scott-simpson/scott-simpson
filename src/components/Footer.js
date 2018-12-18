@@ -19,6 +19,9 @@ const NavA = styled(Link) `
   font-size: ${props => props.theme.fontSizes[1] + 'px'}
   color: ${props => props.theme.colors.body};
   text-decoration: none;
+  &:active, &:visited {
+    color: ${props => props.theme.colors.body};
+  }
   &:hover {
     color: ${props => props.theme.colors.blue};
   }
@@ -51,7 +54,7 @@ const Footer = () => (
   <FooterContainer>
     <Wrap flexWrap="wrap" alignItems="center" justifyContent="center" py={4}>
       <Box order={[2, 1]} width={[1, 6/12, 5/12]}>
-        <Scott to="/">Scott<span>.</span></Scott>
+        <Scott to="/">Scott <span>/</span></Scott>
       </Box>
       <Box order={[1, 2]} width={[1, 6/12, 6/12]}>
         <Nav>
