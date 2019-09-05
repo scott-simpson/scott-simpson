@@ -20,7 +20,7 @@ technology:
   - CSS
   - JS
 cardImage: /img/portfolio-card-1.jpg
-cardBackground: '#ffe9e9'
+cardBackground: '#fdf2ec'
 cardText: dark
 ---
 <figure>
