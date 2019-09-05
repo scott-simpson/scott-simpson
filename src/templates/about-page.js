@@ -1,15 +1,16 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import { Heading, Text, Link, Flex, Box } from 'rebass';
+import { Heading, Text, Flex, Box } from 'rebass';
+import Link from 'gatsby-link';
 import Img from 'gatsby-image';
 import ScrollAnimation from 'react-animate-on-scroll';
 
 import Layout from '../components/Layout';
 import WavesSVG from '../img/waves.svg';
+import Resume from '../img/scott-simpson-resume.pdf';
 import Content, { HTMLContent } from '../components/Content';
 import Wrap from '../components/Wrap';
-// import Transition from '../components/Transition';
 
 const Section = styled.section`
   background: ${props => props.theme.colors.white};
@@ -30,6 +31,18 @@ const Waves = styled(WavesSVG)`
   width: 100%;
   height: 100%;
   z-index: 2;
+`;
+
+const ResumeButton = styled.a`
+  background: ${props => props.theme.colors.blue};
+  color: ${props => props.theme.colors.white};
+  padding: 16px;
+  border-radius: 3px;
+  text-decoration: none;
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: hsl(239, 100%, 40%)
+  }
 `;
 
 const ProfileImage = styled(Img)`
@@ -69,6 +82,7 @@ export const AboutPageTemplate = ({ title, intro, content, contentComponent, dat
                   <Heading pb={3} color="heading" fontFamily="serif" fontSize={[7, 8]} lineHeight="1.25em">About Me</Heading>
                   <Text fontSize={[4, 6]} pt={2} pb={4}>{intro}</Text>
                   <PageContent className="content" content={content} />
+                  <ResumeButton href={Resume}>Download Resume</ResumeButton>
                 </Box>
               </Wrap>
             </ScrollAnimation>

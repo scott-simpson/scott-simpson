@@ -90,13 +90,13 @@ const Index = ({ data }) => {
                 </ScrollAnimation>
               </Box>
               <Box pb={3} ml={[0, '8.333%', '8.333%', 0]} width={[1, 1, 1, 3/12]}>
-                <ScrollAnimation offset={0} animateOnce={true} duration={0.75} delay={500} animateIn="fadeInUp">
+                <ScrollAnimation offset={0.} animateOnce={true} duration={0.75} delay={600} animateIn="fadeInUp">
                   <Allcaps fontSize={0}>Working At</Allcaps>
                   <Text fontSize={[2, 3]}>{about.frontmatter.working}</Text>
                 </ScrollAnimation>
               </Box>
               <Box pb={3} ml={[0, '8.333%', '8.333%', 0]} width={[1, 1, 1, 3/12]}>
-                <ScrollAnimation offset={0} animateOnce={true} duration={0.75} delay={500} animateIn="fadeInUp">
+                <ScrollAnimation offset={0} animateOnce={true} duration={0.75} delay={700} animateIn="fadeInUp">
                   <Allcaps fontSize={0}>Countries Visited</Allcaps>
                   <Text fontSize={[2, 3]}>{about.frontmatter.countries}</Text>
                 </ScrollAnimation>
@@ -113,7 +113,7 @@ const Index = ({ data }) => {
       <Section>
         <Wrap my={["4%", "6%"]} justifyContent="center" flexWrap="wrap">
           <Box width={1}>
-            <Heading color="heading" fontFamily="serif" pb={[2, 4]} fontSize={[5, 8]} textAlign="center">Selected Projects</Heading>
+            <Heading color="heading" fontFamily="serif" pb={[2, 4]} fontSize={[5, 8]} textAlign="center">Recent Projects</Heading>
           </Box>
           {projects
             .map(({ node: project }) => (

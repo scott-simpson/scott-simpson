@@ -28,7 +28,7 @@ const Projects = ({ data }) => {
           <Box>
             <ScrollAnimation offset={0} duration={0.75} animateOnce={true} animateIn="fadeInUp">
               <Heading  color="heading" fontFamily="serif" textAlign="center" fontSize={[7, 8]}>Projects</Heading>
-              <Text fontSize={[3, 4]} textAlign="center">A little taste of some of the work I've been doing</Text>
+              <Text fontSize={[3, 4]} textAlign="center">Some recent work I've been doing</Text>
             </ScrollAnimation>
           </Box>
         </Flex>
