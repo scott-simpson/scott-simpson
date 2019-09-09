@@ -5,7 +5,7 @@ shortTitle: Checking Out With Transparency
 description: >-
   Our challenge was to build the smoothest and most trustworthy experience to
   send flowers online. We ended up creating one of the most popular floral
-  brands in the country, processing nearly $15m in annual revenue with a 14%
+  brands in the country, processing nearly $2m in monthly revenue with a 12%
   conversion rate.
 shortDescription: Building the smoothest and most trustworthy experience to send flowers online.
 date: 2018-11-13T05:00:00.000Z
