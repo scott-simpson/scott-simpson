@@ -78,7 +78,7 @@ const Index = ({ data }) => {
               <Box ml={[0, '8.333%']} py={["7%", "4%", "4%", "10%", "14%"]} width={[1, 1, 8/12]}>
                 <ScrollAnimation offset={0} animateOnce={true} duration={0.75} animateIn="fadeInUp">
                   <Heading fontFamily="serif" lineHeight={["1.6em", "0.9em"]} color="heading" fontSize={[7, 8, 9, 10]}>{about.frontmatter.name}</Heading>
-                  <Text my={[2, 4]} lineHeight={1} fontSize={[3, 4]}>I'm Cofounder and Head of Product at <Anchor href="https://urbanstems.com">UrbanStems</Anchor>. My focus is building user-centric products that make a positive impact. I enjoy creating user experiences and design systems that help companies and products scale.</Text>
+                  <Text my={[2, 4]} lineHeight={1} fontSize={[3, 4]}>I'm a partner at <Anchor href="https://citra.co">Citra</Anchor> where I'm helping early stage startups build and grow their products. I'm also a Cofounder at <Anchor href="https://urbanstems.com">UrbanStems</Anchor> My focus is building user-centric products that make a positive impact. I enjoy creating user experiences and design systems that help companies and products scale.</Text>
                 </ScrollAnimation>
               </Box>
             </Wrap>
