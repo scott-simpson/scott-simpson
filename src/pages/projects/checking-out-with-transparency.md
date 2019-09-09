@@ -19,7 +19,7 @@ technology:
   - HTML
   - CSS
   - JS
-cardImage: /img/portfolio-card-1.jpg
+cardImage: /img/checking-out-with-transparency-urbanstems.jpg
 cardBackground: '#fdf2ec'
 cardText: dark
 ---
