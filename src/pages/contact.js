@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import { Heading, Text, Flex, Box, Button } from 'rebass';
 import ScrollAnimation from 'react-animate-on-scroll';
 
+import SEO from '../components/Seo';
 import Layout from '../components/Layout';
 import WavesSVG from '../img/waves.svg';
 import Wrap from '../components/Wrap';
@@ -62,6 +63,7 @@ const Label = styled.label`
 
 const  ContactPage = () => (
   <Layout>
+    <SEO title="Scott Simpson. Contact." keywords={[`scott simpson`, `ux`, `product`, `design`, `dc`]} />
     <Section>
       <Flex flexWrap="wrap">
         <WavesContainer width={[1, 1, 5/12]}>
@@ -71,7 +73,7 @@ const  ContactPage = () => (
           <ScrollAnimation offset={0} animateOnce={true} duration={0.75} animateIn="fadeInUp">
             <Wrap>
               <Box ml={[0, '16.667%']} py={["7%", "10%"]} width={[1, 1, 9/12]}>
-                <Heading pb={3} color="heading" fontFamily="serif" fontSize={[7, 8]} lineHeight="1.25em">Contact</Heading>
+                <Heading pb={3} color="heading" fontFamily="serif" fontSize={[7, 9]} lineHeight="1.25em">Contact</Heading>
                 <Text fontSize={[5, 6]} pt={2} pb={4}>Have an idea for a product? Want to get coffee and talk about design? Fill out the form below and I'll get back to you quickly.</Text>
                 <form name="contact" method="POST" netlify>
                   <Flex flexWrap="wrap">

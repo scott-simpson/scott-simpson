@@ -1,7 +1,4 @@
 import { createGlobalStyle } from 'styled-components';
-import UntitledSans from '../fonts/UntitledSansTest-Light.woff';
-import UntitledSansMedium from '../fonts/UntitledSansTest-Medium.woff';
-import UntitledSerifBold from '../fonts/TiemposHeadlineTest-Medium.woff';
 
 const GlobalStyle = createGlobalStyle`
   * {
@@ -11,8 +8,8 @@ const GlobalStyle = createGlobalStyle`
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     color: #37393C;
-    font-family:  "Untitled-Sans", "Helvetica Neue", Helvetica, sans-serif;
-    font-weight: 400;
+    font-family:  "neue-haas-unica", "Helvetica Neue", Helvetica, sans-serif;
+    font-weight: 300;
     line-height: 1.7;
   }
   ::selection {
@@ -80,21 +77,6 @@ const GlobalStyle = createGlobalStyle`
   }
   .fadeInUpAbsolute {
     animation: fadeInUpAbsolute 0.75s cubic-bezier(.39,.575,.28,.995);
-  }
-  @font-face {
-    font-family: 'Untitled-Sans';
-    font-weight: 400;
-    src: url(${UntitledSans}) format('woff')
-  }
-  @font-face {
-    font-family: 'Untitled-Sans';
-    font-weight: 600;
-    src: url(${UntitledSansMedium}) format('woff')
-  }
-  @font-face {
-    font-family: 'Untitled-Serif';
-    font-weight: 600;
-    src: url(${UntitledSerifBold}) format('woff')
   }
 `
 export default GlobalStyle;

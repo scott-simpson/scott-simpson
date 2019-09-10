@@ -16,7 +16,7 @@ const ProjectContainer = styled.article`
   transition: all 0.3s ease-in-out;
   z-index: 2;
   &:hover {
-    box-shadow: rgba(12, 12, 33, 0.2) 0px 15px 46px -15px;
+    box-shadow: rgba(12, 12, 33, 0.2) 0px 15px 30px -15px;
     transform: scale(1);
   }
   & img {
@@ -26,7 +26,7 @@ const ProjectContainer = styled.article`
     z-index: 1;
   }
   &:hover img {
-    transform: scale(0.97);
+    transform: scale(1.01);
   }
 `;
 
@@ -59,8 +59,8 @@ const Project = ({
         <Flex flexWrap="wrap" alignItems="center">
           <Box p={[4, 5]} order={[2, 2, 1]} width={[1, 1, 5/12]}>
             <Heading color={headlineColor} fontFamily="serif" lineHeight="1.25em" fontSize={[4, 7]} pb={2}>{title}</Heading>
-            <Text color={bodyColor} lineHeight={1} fontSize={[1, 3]}>{description}</Text>
-            <Allcaps fontSize={[0, 1]} color={bodyColor} pt={[3, 5]}>{client}, {date}</Allcaps>
+            <Text color={bodyColor} lineHeight={1} fontSize={[1, 4]}>{description}</Text>
+            <Allcaps fontSize={[0, 1]} color={bodyColor} pt={[3, 5]}>{client} – {date}</Allcaps>
           </Box>
           <Box order={[1, 1, 2]} width={[1, 1, 7/12]}>
             <Img

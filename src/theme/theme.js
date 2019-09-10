@@ -9,8 +9,8 @@ const colors = {
 }
 
 const fonts = {
-  sans: '"Untitled-Sans", "Helvetica Neue", Helvetica, sans-serif',
-  serif: '"Untitled-Serif"',
+  sans: '"neue-haas-unica", "Helvetica Neue", Helvetica, sans-serif',
+  serif: '"miller-display", Georgia, serif',
   mono: 'Menlo, monospace',
 }
 

@@ -8,12 +8,18 @@ import Wrap from './Wrap';
 const Nav = () => {
 
   const NavA = styled(Link)`
+    border-top: 4px solid rgba(255,255,255, 0);
     color: ${props => props.theme.colors.body};
     display: inline-block;
     font-size: ${props => props.theme.fontSizes[1] + 'px'};
+    font-weight: 400;
     line-height: 1;
-    padding: 16px;
+    margin-left: 16px;
+    margin-right: 16px;
+    padding-top: 16px;
+    padding-bottom: 16px;
     text-decoration: none;
+    transition: all 0.3s ease-in-out;
     &:hover, &:active, &:visited {
       color: ${props => props.theme.colors.body};
     }
@@ -25,7 +31,10 @@ const Nav = () => {
     }
     @media (min-width: ${props => props.theme.breakpoints[1]}) {
       font-size: ${props => props.theme.fontSizes[3] + 'px'};
-      padding: 24px;
+      margin-left: 24px;
+      margin-right: 24px;
+      padding-top: 24px;
+      padding-bottom: 24px;
     }
   `;
 
@@ -42,7 +51,7 @@ const Nav = () => {
       color: ${props => props.theme.colors.blue};
     }
     @media (min-width: ${props => props.theme.breakpoints[1]}) {
-      font-size: ${props => props.theme.fontSizes[6] + 'px'};
+      font-size: ${props => props.theme.fontSizes[7] + 'px'};
     }
   `;
 
@@ -53,9 +62,9 @@ const Nav = () => {
           <Scott to="/">Scott<span> /</span></Scott>
         </Box>
         <Box ml="auto">
-          <NavA activeStyle={{ color: '#1C21FF' }} to='/projects'>Projects</NavA>
-          <NavA activeStyle={{ color: '#1C21FF' }} to='/about'>About</NavA>
-          <NavA activeStyle={{ color: '#1C21FF' }} to='/contact'>Contact</NavA>
+          <NavA partiallyActive={true} activeStyle={{ color: '#1C21FF', borderTop: '4px solid #1C21FF' }} to='/projects'>Projects</NavA>
+          <NavA partiallyActive={true} activeStyle={{ color: '#1C21FF', borderTop: '4px solid #1C21FF' }} to='/about'>About</NavA>
+          <NavA partiallyActive={true} activeStyle={{ color: '#1C21FF', borderTop: '4px solid #1C21FF' }} to='/contact'>Contact</NavA>
         </Box>
       </Wrap>
     </NavContainer>

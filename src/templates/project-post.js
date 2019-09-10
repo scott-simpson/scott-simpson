@@ -4,6 +4,7 @@ import Helmet from 'react-helmet';
 import { Heading, Text, Flex, Box } from 'rebass';
 import ScrollAnimation from 'react-animate-on-scroll';
 
+import SEO from '../components/Seo';
 import Layout from '../components/Layout';
 import Content, { HTMLContent } from '../components/Content';
 import Allcaps from '../components/Allcaps';
@@ -23,7 +24,7 @@ export const ProjectPost = ({
   const ProjectContent = contentComponent || Content;
   return (
     <Layout>
-      {helmet || ''}
+      <SEO title={`Scott Simpson. ${title} - Project.`} keywords={[`scott simpson`, `ux`, `product`, `design`, `dc`]} />
       <Wrap>
         <article>
           <Flex flexWrap="wrap" justifyContent="center">

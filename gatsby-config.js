@@ -1,4 +1,11 @@
 module.exports = {
+  siteMetadata: {
+    title: `Scott Simpson. Product and UX Designer. DC`,
+    description: `Scott Simpson is a digital product and UX designer based in Washington DC. He partners with leading brands to design, build and ship innovative digital products.`,
+    author: `@scott-simpson`,
+    shortTitle: `Scott Simpson`,
+    siteUrl: `https://scottsimpson.co`,
+  },
   plugins: [
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-styled-components',

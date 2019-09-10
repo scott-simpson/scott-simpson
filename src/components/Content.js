@@ -12,7 +12,7 @@ import ImageCaption from './ImageCaption';
 const HeadingPrimary = ({ children }) => <ScrollAnimation offset={0} duration={0.5} animateOnce={true} animateIn="fadeInUp"><Heading color="heading" fontSize={[5, 7]} mb={3}>{children}</Heading></ScrollAnimation>
 const HeadingSecondary = ({ children }) => <ScrollAnimation offset={0} duration={0.5} animateOnce={true} animateIn="fadeInUp"><Heading color="heading" fontSize={[4, 6]} mb={3}>{children}</Heading></ScrollAnimation>
 const HeadingTertiary = ({ children }) => <ScrollAnimation offset={0} duration={0.5} animateOnce={true} animateIn="fadeInUp"><Heading color="heading" fontSize={[3, 5]} mb={3}>{children}</Heading></ScrollAnimation>
-const Paragraph = ({ children }) => <ScrollAnimation offset={0} duration={0.5} animateOnce={true} animateIn="fadeInUp"><Text lineHeight={[0, 1]} fontSize={[2, 3]} mb={4}>{children}</Text></ScrollAnimation>
+const Paragraph = ({ children }) => <ScrollAnimation offset={0} duration={0.5} animateOnce={true} animateIn="fadeInUp"><Text lineHeight={[0, 1]} fontSize={[2, 4]} mb={4}>{children}</Text></ScrollAnimation>
 const UlList = ({ children }) => <ScrollAnimation offset={0} duration={0.5} animateOnce={true} animateIn="fadeInUp"><List ml={3}>{children}</List></ScrollAnimation>
 const LiListItem = ({ children }) => <ScrollAnimation offset={0} duration={0.5} animateOnce={true} animateIn="fadeInUp"><ListItem fontSize={3} mb={3}>{children}</ListItem></ScrollAnimation>
 const ImageWrapper = ({ children }) => <ScrollAnimation offset={0} duration={0.5} animateOnce={true} animateIn="fadeInUp"><ImageContainer>{children}</ImageContainer></ScrollAnimation>

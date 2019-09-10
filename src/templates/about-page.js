@@ -6,6 +6,7 @@ import Link from 'gatsby-link';
 import Img from 'gatsby-image';
 import ScrollAnimation from 'react-animate-on-scroll';
 
+import SEO from '../components/Seo';
 import Layout from '../components/Layout';
 import WavesSVG from '../img/waves.svg';
 import Resume from '../img/scott-simpson-resume.pdf';
@@ -69,6 +70,7 @@ export const AboutPageTemplate = ({ title, intro, content, contentComponent, dat
 
   return (
     <Layout>
+      <SEO title={`Scott Simpson. About.`} keywords={[`scott simpson`, `ux`, `product`, `design`, `dc`]} />
       <Section>
         <Flex flexWrap="wrap">
           <WavesContainer width={[1, 1, 5/12]}>
@@ -79,7 +81,7 @@ export const AboutPageTemplate = ({ title, intro, content, contentComponent, dat
             <ScrollAnimation offset={0} animateOnce={true} duration={0.75} animateIn="fadeInUp">
               <Wrap>
                 <Box ml={[0, '16.667%']} py={["7%", "10%"]} width={[1, 1, 9/12]}>
-                  <Heading pb={3} color="heading" fontFamily="serif" fontSize={[7, 8]} lineHeight="1.25em">About Me</Heading>
+                  <Heading pb={3} color="heading" fontFamily="serif" fontSize={[7, 9]} lineHeight="1.25em">About Me</Heading>
                   <Text fontSize={[4, 6]} pt={2} pb={4}>{intro}</Text>
                   <PageContent className="content" content={content} />
                   <ResumeButton href={Resume}>Download Resume</ResumeButton>

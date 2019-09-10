@@ -5,6 +5,7 @@ import styled from 'styled-components';
 import { Heading, Text, Flex, Box } from 'rebass';
 import ScrollAnimation from 'react-animate-on-scroll';
 
+import SEO from '../components/Seo';
 import Layout from '../components/Layout';
 import Wrap from '../components/Wrap';
 import Project from '../components/Project';
@@ -23,12 +24,13 @@ const Projects = ({ data }) => {
 
   return (
     <Layout>
+      <SEO title="Scott Simpson. Projects." keywords={[`scott simpson`, `ux`, `product`, `design`, `dc`]} />
       <Section>
         <Flex my={["4%", "4%"]} justifyContent="center">
           <Box>
             <ScrollAnimation offset={0} duration={0.75} animateOnce={true} animateIn="fadeInUp">
-              <Heading  color="heading" fontFamily="serif" textAlign="center" fontSize={[7, 8]}>Projects</Heading>
-              <Text fontSize={[3, 4]} textAlign="center">Some recent work I've been doing</Text>
+              <Heading  color="heading" fontFamily="serif" textAlign="center" fontSize={[7, 9]}>Projects</Heading>
+              <Text fontSize={[3, 4]} textAlign="center">Some of my recent product and UX work.</Text>
             </ScrollAnimation>
           </Box>
         </Flex>
