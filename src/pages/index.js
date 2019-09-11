@@ -17,8 +17,6 @@ import Project from '../components/Project';
 
 const Section = styled.section`
   background: ${props => props.theme.colors.white};
-  margin: auto;
-  max-width: 1600px;
 `;
 
 const BlueBox = styled(Box)`
@@ -72,45 +70,43 @@ const Index = ({ data }) => {
   console.log(about);
   return (
     <Layout>
-      <SEO title="Scott Simpson. Product and UX Designer. DC" keywords={[`scott simpson`, `ux`, `product`, `design`, `dc`]} />
+      <SEO title="Scott Simpson. UX and Product Designer. DC" keywords={[`scott simpson`, `ux`, `product`, `design`, `dc`]} />
       <Section>
-        <Flex flexWrap="wrap">
-          <Box py={[2, 2, 4]} width={[1, 1, 7/12]}>
-            <Wrap>
-              <Box ml={[0, '8.333%']} py={["7%", "4%", "4%", "10%", "14%"]} width={[1, 1, 8/12]}>
+        <Wrap flexWrap="wrap">
+          <Box py={[2, 2, 4]} mr={[0, '8.33%']} width={[1, 1, 8/10, 6/12]}>
+              <Box mr={[0, '16.66%']} py={["7%", "4%", "8%", "18%",]} width={1}>
                 <ScrollAnimation offset={0} animateOnce={true} duration={0.75} animateIn="fadeInUp">
-                  <Heading fontFamily="serif" lineHeight={["1.6em", "0.9em"]} color="heading" fontSize={[7, 8, 9, 10]}>{about.frontmatter.name}</Heading>
-                  <Text my={[2, 4]} lineHeight={1} fontSize={[3, 5]}>I'm a consultant at <Anchor href="https://citra.co">Citra</Anchor> where I'm helping startups build and grow their products and services. I'm also a Cofounder at <Anchor href="https://urbanstems.com">UrbanStems</Anchor>. My focus is building user-centric products and experiences that make a positive impact and help companies scale.</Text>
+                  <Heading fontFamily="serif" lineHeight={["1.25em"]} color="heading" fontSize={[7, 8, 9]}>Hi, I’m {about.frontmatter.name} &mdash; <br />A UX and Product Designer.</Heading>
+                  <Text my={[2, 4]} lineHeight={1} fontSize={[3, 4, 5]}>I'm a consultant at <Anchor href="https://citra.co">Citra</Anchor> and previously Cofounder/Head of Product at <Anchor href="https://urbanstems.com">UrbanStems</Anchor>. My focus is building user-centric products and experiences that make a positive impact and help companies scale.</Text>
                 </ScrollAnimation>
               </Box>
-            </Wrap>
-            <Wrap pt={[0, 0, 2]} pb={[4, 5]} flexWrap="wrap">
-              <Box pb={3} ml={[0, '8.333%']} width={[1, 1, 1, 3/12]}>
-                <ScrollAnimation offset={0} animateOnce={true} duration={0.75} delay={500} animateIn="fadeInUp">
-                  <Allcaps fontSize={0}>Location</Allcaps>
-                  <Text fontSize={[2, 3]}>{about.frontmatter.location}</Text>
-                </ScrollAnimation>
-              </Box>
-              <Box pb={3} ml={[0, '8.333%', '8.333%', 0]} width={[1, 1, 1, 3/12]}>
-                <ScrollAnimation offset={0.} animateOnce={true} duration={0.75} delay={600} animateIn="fadeInUp">
-                  <Allcaps fontSize={0}>Working At</Allcaps>
-                  <Text fontSize={[2, 3]}>{about.frontmatter.working}</Text>
-                </ScrollAnimation>
-              </Box>
-              <Box pb={3} ml={[0, '8.333%', '8.333%', 0]} width={[1, 1, 1, 3/12]}>
-                <ScrollAnimation offset={0} animateOnce={true} duration={0.75} delay={700} animateIn="fadeInUp">
-                  <Allcaps fontSize={0}>Countries Visited</Allcaps>
-                  <Text fontSize={[2, 3]}>{about.frontmatter.countries}</Text>
-                </ScrollAnimation>
-              </Box>
-            </Wrap>
+              <Flex flexWrap="wrap">
+                <Box pb={3} width={[1, 4/12]}>
+                  <ScrollAnimation offset={0} animateOnce={true} duration={0.75} delay={500} animateIn="fadeInUp">
+                    <Allcaps fontSize={0}>Location</Allcaps>
+                    <Text fontSize={[2, 3]}>{about.frontmatter.location}</Text>
+                  </ScrollAnimation>
+                </Box>
+                <Box pb={3} ml={[0, '8.333%']} width={[1, 3/12]}>
+                  <ScrollAnimation offset={0.} animateOnce={true} duration={0.75} delay={600} animateIn="fadeInUp">
+                    <Allcaps fontSize={0}>Working At</Allcaps>
+                    <Text fontSize={[2, 3]}>{about.frontmatter.working}</Text>
+                  </ScrollAnimation>
+                </Box>
+                <Box pb={3} ml={[0, '8.333%']} width={[1, 3/12]}>
+                  <ScrollAnimation offset={0} animateOnce={true} duration={0.75} delay={700} animateIn="fadeInUp">
+                    <Allcaps fontSize={0}>Countries Visited</Allcaps>
+                    <Text fontSize={[2, 3]}>{about.frontmatter.countries}</Text>
+                  </ScrollAnimation>
+                </Box>
+              </Flex>
           </Box>
           <WavesContainer width={[1, 1, 5/12]}>
             <ProfileImage fluid={data.file.childImageSharp.fluid} />
             <Waves />
             <BlueBox />
           </WavesContainer>
-        </Flex>
+        </Wrap>
       </Section>
       <Section>
         <Wrap my={["4%", "8%"]} justifyContent="center" flexWrap="wrap">

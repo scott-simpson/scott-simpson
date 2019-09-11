@@ -5,7 +5,7 @@ const Wrap = styled(Flex)`
   max-width: 90%;
   @media (min-width: ${props => props.theme.breakpoints[0]}) {
     max-width: 1600px;
-    width: 95%;
+    width: 92.5%;
   }
 `;
 
