@@ -11,7 +11,7 @@ shortDescription: Building the smoothest and most trustworthy experience to send
 date: 2018-11-13T05:00:00.000Z
 client: UrbanStems
 role:
-  - UI/UX
+  - UX/UI
   - Frontend
   - Cofounder
 technology:
