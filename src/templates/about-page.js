@@ -2,7 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { Heading, Text, Flex, Box } from 'rebass';
-import Link from 'gatsby-link';
 import Img from 'gatsby-image';
 import ScrollAnimation from 'react-animate-on-scroll';
 
