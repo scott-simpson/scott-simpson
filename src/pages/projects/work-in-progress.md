@@ -22,4 +22,8 @@ cardImage: /img/portfolio-card-3.jpg
 cardBackground: '#ffffff'
 cardText: dark
 ---
-Body text
+<figure>
+
+![Something Here](/img/siptip-homepage-desktop.jpg)
+
+</figure>
