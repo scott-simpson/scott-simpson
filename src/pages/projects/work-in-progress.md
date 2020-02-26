@@ -24,6 +24,13 @@ cardText: dark
 ---
 <figure>
 
+![Siptip Homepage Mobile](/img/siptip-homepage-des-mobile.jpg)
+
+![Siptip Homepage Desktop](/img/siptip-homepage-des-desktop.jpg)
+
+</figure>
+<figure>
+
 ![Siptip Homepage Mobile](/img/siptip-homepage-wf-mobile.jpg)
 
 ![Siptip Homepage Desktop](/img/siptip-homepage-wf-desktop.jpg)
@@ -31,8 +38,8 @@ cardText: dark
 </figure>
 <figure>
 
-![Siptip Homepage Mobile](/img/siptip-homepage-des-mobile.jpg)
+![Siptip Homepage Mobile](/img/siptip-storefront-des-mobile.jpg)
 
-![Siptip Homepage Desktop](/img/siptip-homepage-des-desktop.jpg)
+![Siptip Homepage Desktop](/img/siptip-storefront-des-desktop.jpg)
 
 </figure>
