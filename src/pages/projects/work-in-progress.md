@@ -24,16 +24,15 @@ cardText: dark
 ---
 <figure>
 
-![Siptip Homepage Mobile](/img/siptip-homepage-wireframe-mobile.jpg)
+![Siptip Homepage Mobile](/img/siptip-homepage-wf-mobile.jpg)
 
-![Siptip Homepage Desktop](/img/siptip-homepage-wireframe-desktop.jpg)
+![Siptip Homepage Desktop](/img/siptip-homepage-wf-desktop.jpg)
 
 </figure>
-
 <figure>
 
-![Siptip Homepage Mobile](/img/siptip-homepage-mobile.jpg)
+![Siptip Homepage Mobile](/img/siptip-homepage-des-mobile.jpg)
 
-![Siptip Homepage Desktop](/img/siptip-homepage-desktop.jpg)
+![Siptip Homepage Desktop](/img/siptip-homepage-des-desktop.jpg)
 
 </figure>
