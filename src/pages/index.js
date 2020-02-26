@@ -114,23 +114,27 @@ const Index = ({ data }) => {
             <Heading color="heading" fontFamily="serif" pb={[2, 4]} fontSize={[5, 8]} textAlign="center">Recent Projects</Heading>
           </Box>
           {projects
-            .map(({ node: project }) => (
-              <Box key={project.fields.slug} width={[1, 1, 11/12]} my={2}>
-                <ScrollAnimation offset={0} duration={0.5} animateOnce={true} animateIn="fadeInUp">
-                  <Project
-                    slug={project.fields.slug}
-                    cardImage={project.frontmatter.cardImage}
-                    cardBackground={project.frontmatter.cardBackground}
-                    cardText={project.frontmatter.cardText}
-                    client={project.frontmatter.client}
-                    title={project.frontmatter.shortTitle}
-                    description={project.frontmatter.shortDescription}
-                    date={project.frontmatter.date}
-                  />
-                </ScrollAnimation>
-              </Box>
-            ))
-          }
+            .map(({ node: project }) => {
+              if (project.title === 'Work in Progress') {
+                return null
+              } else {
+                return (
+                <Box key={project.fields.slug} width={[1, 1, 11/12]} my={2}>
+                  <ScrollAnimation offset={0} duration={0.5} animateOnce={true} animateIn="fadeInUp">
+                    <Project
+                      slug={project.fields.slug}
+                      cardImage={project.frontmatter.cardImage}
+                      cardBackground={project.frontmatter.cardBackground}
+                      cardText={project.frontmatter.cardText}
+                      client={project.frontmatter.client}
+                      title={project.frontmatter.shortTitle}
+                      description={project.frontmatter.shortDescription}
+                      date={project.frontmatter.date}
+                    />
+                  </ScrollAnimation>
+                </Box>
+              )
+          }})}
         </Wrap>
       </Section>
     </Layout>

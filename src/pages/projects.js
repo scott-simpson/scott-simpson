@@ -35,8 +35,12 @@ const Projects = ({ data }) => {
           </Box>
         </Flex>
         <Wrap my={2} justifyContent="center" flexWrap="wrap">
-          {projects
-            .map(({ node: project }) => (
+        {projects
+          .map(({ node: project }) => {
+            if (project.title === 'Work in Progress') {
+              return null
+            } else {
+              return (
               <Box key={project.fields.slug} width={[1, 1, 11/12]} my={2}>
                 <ScrollAnimation offset={0} delay={500} duration={0.75} animateOnce={true} animateIn="fadeInUp">
                   <Project
@@ -51,8 +55,8 @@ const Projects = ({ data }) => {
                   />
                 </ScrollAnimation>
               </Box>
-            ))
-          }
+            )
+          }})}
         </Wrap>
       </Section>
     </Layout>
