@@ -115,7 +115,7 @@ const Index = ({ data }) => {
           </Box>
           {projects
             .map(({ node: project }) => {
-              if (project.title === 'Work in Progress') {
+              if (project.frontmatter.shortTitle === 'Work in Progress') {
                 return null
               } else {
                 return (

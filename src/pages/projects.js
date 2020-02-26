@@ -37,7 +37,7 @@ const Projects = ({ data }) => {
         <Wrap my={2} justifyContent="center" flexWrap="wrap">
         {projects
           .map(({ node: project }) => {
-            if (project.title === 'Work in Progress') {
+            if (project.frontmatter.shortTitle === 'Work in Progress') {
               return null
             } else {
               return (
