@@ -24,6 +24,7 @@ cardText: dark
 ---
 <figure>
 
-![Something Here](/img/siptip-homepage-desktop.jpg)
+![Siptip Homepage Mobile](/img/siptip-homepage-mobile.jpg)
+![Siptip Homepage Desktop](/img/siptip-homepage-desktop.jpg)
 
 </figure>
