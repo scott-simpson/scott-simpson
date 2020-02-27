@@ -50,3 +50,8 @@ cardText: dark
 ![Siptip Homepage Desktop](/img/siptip-product-des-desktop.jpg)
 
 </figure>
+<figure>
+
+![Siptip Design Details](/img/siptip-element-details.jpg)
+
+</figure>
