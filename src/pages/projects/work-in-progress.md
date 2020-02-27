@@ -52,6 +52,7 @@ cardText: dark
 </figure>
 <figure>
 
+![Siptip Design Details](/img/siptip-quiz-1.jpg)
 ![Siptip Design Details](/img/siptip-element-details.jpg)
 
 </figure>
