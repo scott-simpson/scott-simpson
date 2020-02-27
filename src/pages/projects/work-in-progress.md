@@ -59,6 +59,13 @@ cardText: dark
 </figure>
 <figure>
 
+![Siptip Product Page Mobile](/img/siptip-product-wf-mobile.jpg)
+
+![Siptip Product Page Desktop](/img/siptip-product-wf-desktop.jpg)
+
+</figure>
+<figure>
+
 ![Siptip Design Details](/img/siptip-quiz-1.jpg)
 
 ![Siptip Design Details](/img/siptip-element-details.jpg)
