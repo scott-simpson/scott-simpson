@@ -24,9 +24,16 @@ cardText: dark
 ---
 <figure>
 
-![Packing App Home](/img/packing-app-1.jpg)
+![Packing App Home](/img/packing-ap-1.jpg)
 
 ![Paking App Trip](/img/packing-app-2.jpg)
+
+</figure>
+<figure>
+
+![Packing App New Trip](/img/packing-ap-3.jpg)
+
+![Paking App New Trip](/img/packing-app-4.jpg)
 
 </figure>
 <figure>
