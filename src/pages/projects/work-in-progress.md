@@ -31,23 +31,30 @@ cardText: dark
 </figure>
 <figure>
 
-![Siptip Homepage Mobile](/img/siptip-homepage-wf-mobile.jpg)
+![Siptip Homepage Wireframe Mobile](/img/siptip-homepage-wf-mobile.jpg)
 
-![Siptip Homepage Desktop](/img/siptip-homepage-wf-desktop.jpg)
-
-</figure>
-<figure>
-
-![Siptip Homepage Mobile](/img/siptip-storefront-des-mobile.jpg)
-
-![Siptip Homepage Desktop](/img/siptip-storefront-des-desktop.jpg)
+![Siptip Homepage Wireframe Desktop](/img/siptip-homepage-wf-desktop.jpg)
 
 </figure>
 <figure>
 
-![Siptip Homepage Mobile](/img/siptip-product-des-mobile.jpg)
+![Siptip Storefront Mobile](/img/siptip-storefront-des-mobile.jpg)
 
-![Siptip Homepage Desktop](/img/siptip-product-des-desktop.jpg)
+![Siptip Storefront Desktop](/img/siptip-storefront-des-desktop.jpg)
+
+</figure>
+<figure>
+
+![Siptip Storefront Wireframe Mobile](/img/siptip-storefront-wf-mobile.jpg)
+
+![Siptip Storefront Wireframe Desktop](/img/siptip-storefront-wf-desktop.jpg)
+
+</figure>
+<figure>
+
+![Siptip Product Page Mobile](/img/siptip-product-des-mobile.jpg)
+
+![Siptip Product Page Desktop](/img/siptip-product-des-desktop.jpg)
 
 </figure>
 <figure>
