@@ -3,10 +3,10 @@ templateKey: project-post
 title: Work in Progress
 shortTitle: Work in Progress
 description: >-
-  The Challenge was to give customers an easy, transparent way to track their
-  deliveries. We created a beautiful, realtime order tracking system for both
-  our on-demand and nationwide customers.
-shortDescription: This is a short description
+  Some UX/UI design projects that I've been working on in 2019/2020. These
+  include designing and building a better packing app experience as well as an
+  ecommerce website for Siptip, a wine delivery startup.
+shortDescription: Some UX/UI design projects that I've been working on in 2019/2020.
 date: 2020-02-26T21:14:22.733Z
 client: Various
 role:
@@ -14,10 +14,9 @@ role:
   - UX Design
   - UI Design
 technology:
-  - React
   - HTML
   - CSS
-  - JSX
+  - React Native
 cardImage: /img/portfolio-card-3.jpg
 cardBackground: '#ffffff'
 cardText: dark
