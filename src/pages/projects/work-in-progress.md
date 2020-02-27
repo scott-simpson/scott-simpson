@@ -31,7 +31,7 @@ cardText: dark
 </figure>
 <figure>
 
-![Packing App New Trip](/img/packing-ap-3.jpg)
+![Packing App New Trip](/img/packing-app-3.jpg)
 
 ![Paking App New Trip](/img/packing-app-4.jpg)
 
