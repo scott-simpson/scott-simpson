@@ -3,9 +3,9 @@ templateKey: project-post
 title: Work in Progress
 shortTitle: Work in Progress
 description: >-
-  Some UX/UI design projects that I've been working on in 2019/2020. These
-  include designing and building a better packing app experience as well as an
-  ecommerce website for Siptip, a wine delivery startup.
+  A sample of some UX/UI design projects that I've been working on in 2019/2020.
+  These include designing and building a better packing app experience as well
+  as an ecommerce website for Siptip, a wine delivery startup.
 shortDescription: Some UX/UI design projects that I've been working on in 2019/2020.
 date: 2020-02-26T21:14:22.733Z
 client: Various
