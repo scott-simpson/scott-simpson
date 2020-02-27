@@ -24,6 +24,13 @@ cardText: dark
 ---
 <figure>
 
+![Packing App Home](/img/packing-app-1.jpg)
+
+![Paking App Trip](/img/packing-app-2.jpg)
+
+</figure>
+<figure>
+
 ![Siptip Homepage Mobile](/img/siptip-homepage-des-mobile.jpg)
 
 ![Siptip Homepage Desktop](/img/siptip-homepage-des-desktop.jpg)
