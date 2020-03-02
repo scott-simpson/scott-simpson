@@ -60,7 +60,7 @@ const Project = ({
           <Box p={[4, 5]} order={[2, 2, 1]} width={[1, 1, 5/12]}>
             <Heading color={headlineColor} fontFamily="serif" lineHeight="1.25em" fontSize={[4, 7]} pb={2}>{title}</Heading>
             <Text color={bodyColor} lineHeight={1} fontSize={[1, 4]}>{description}</Text>
-            <Allcaps fontSize={[0, 1]} color={bodyColor} pt={[3, 5]}>{client} – {date}</Allcaps>
+            <Allcaps fontSize={[0, 1]} color={bodyColor} pt={[3, 5]}>{client}</Allcaps>
           </Box>
           <Box order={[1, 1, 2]} width={[1, 1, 7/12]}>
             <Img

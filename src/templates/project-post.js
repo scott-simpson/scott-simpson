@@ -19,6 +19,7 @@ export const ProjectPost = ({
   year,
   role,
   technology,
+  client,
   helmet,
 }) => {
   const ProjectContent = contentComponent || Content;
@@ -32,10 +33,10 @@ export const ProjectPost = ({
               <ScrollAnimation offset={0} duration={0.5} animateOnce={true} animateIn="fadeInUp"><Heading color="heading" fontFamily="serif" fontSize={[7, 8, 9]} lineHeight="1.25em">{title}</Heading></ScrollAnimation>
               <ScrollAnimation delay={500} offset={0} duration={0.5} animateOnce={true} animateIn="fadeInUp"><Text pt={[3, 4]} pb={4} fontSize={[4, 5]}>{description}</Text></ScrollAnimation>
               <Flex pt={2} flexWrap="wrap">
-                <Box pb={3} width={[1, 2/12]}>
+                <Box pb={3} width={[1, 3/12]}>
                   <ScrollAnimation offset={0} delay={500} duration={0.5} animateOnce={true} animateIn="fadeInUp">
-                    <Allcaps fontSize={0} color="blue">Year</Allcaps>
-                    <Text color="heading" fontSize={[1, 3]}>{year}</Text>
+                    <Allcaps fontSize={0} color="blue">Client</Allcaps>
+                    <Text color="heading" fontSize={[1, 3]}>{client}</Text>
                   </ScrollAnimation>
                 </Box>
                 <Box pb={3} width={[1, 5/12]}>
@@ -50,7 +51,7 @@ export const ProjectPost = ({
                     </Text>
                   </ScrollAnimation>
                 </Box>
-                <Box pb={3} width={[1, 5/12]}>
+                <Box pb={3} width={[1, 4/12]}>
                   <ScrollAnimation offset={0} delay={500} duration={0.5} animateOnce={true} animateIn="fadeInUp">
                     <Allcaps fontSize={0} color="blue">Technology</Allcaps>
                     <Text color="heading" fontSize={[1, 3]}>
@@ -86,6 +87,7 @@ const ProjectTemplate = ({ data }) => {
       contentComponent={HTMLContent}
       year={post.frontmatter.date}
       role={post.frontmatter.role}
+      client={post.frontmatter.client}
       technology={post.frontmatter.technology}
       description={post.frontmatter.description}
       helmet={<Helmet title={`${post.frontmatter.title} | Project`} />}
@@ -104,6 +106,7 @@ ProjectTemplate.propTypes = {
         description: PropTypes.string,
         role: PropTypes.array,
         technology: PropTypes.array,
+        client: PropTypes.string,
         title: PropTypes.string,
       }),
       helmet: PropTypes.instanceOf(Helmet),
@@ -119,6 +122,7 @@ export const pageQuery = graphql`
       frontmatter {
         date(formatString: "YYYY")
         title
+        client
         description
         role
         technology
