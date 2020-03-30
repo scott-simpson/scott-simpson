@@ -40,3 +40,57 @@ collections:
           - {label: "Working At", name: "working", widget: "string"}
           - {label: "Countries Visited", name: "countries", widget: "string"}
           - {label: "Body", name: "body", widget: "markdown"}
+      - label: "Subscriptions"
+        name: "subscriptions"
+        file: "src/pages/subscriptions/index.md"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "subscriptions-page"}
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Intro", name: "intro", widget: "text"}
+          - {label: "Body", name: "body", widget: "markdown"}
+          - {label: "Why Subscriptions Title", name: "whyTitle", widget: "string"}
+          - {label: "Why Subscriptions Intro", name: "whyIntro", widget: "text"}
+          - {label: "Why Subscriptions Details", name: "why1", widget: "text"}
+          - {label: "Why Subscriptions Details", name: "why2", widget: "text"}
+          - label: "Customer Care"
+            name: "customerCare"
+            widget: "object"
+            fields:
+              - {label: "Icon", name: "icon", widget: "image"}
+              - {label: "Team Name", name: "team", widget: "string"}
+              - {label: "Team Description", name: "description", widget: "text"}
+          - label: "Marketing Team"
+            name: "marketing"
+            widget: "object"
+            fields:
+              - {label: "Icon", name: "icon", widget: "image"}
+              - {label: "Team Name", name: "team", widget: "string"}
+              - {label: "Team Description", name: "description", widget: "text"}
+          - label: "Merchandising Team"
+            name: "merchandising"
+            widget: "object"
+            fields:
+              - {label: "Icon", name: "icon", widget: "image"}
+              - {label: "Team Name", name: "team", widget: "string"}
+              - {label: "Team Description", name: "description", widget: "text"}
+          - label: "Operations Team"
+            name: "operations"
+            widget: "object"
+            fields:
+              - {label: "Icon", name: "icon", widget: "image"}
+              - {label: "Team Name", name: "team", widget: "string"}
+              - {label: "Team Description", name: "description", widget: "text"}
+          - label: "Business Intelligence Team"
+            name: "business"
+            widget: "object"
+            fields:
+              - {label: "Icon", name: "icon", widget: "image"}
+              - {label: "Team Name", name: "team", widget: "string"}
+              - {label: "Team Description", name: "description", widget: "text"}
+          - label: "Engineering Team"
+            name: "engineering"
+            widget: "object"
+            fields:
+              - {label: "Icon", name: "icon", widget: "image"}
+              - {label: "Team Name", name: "team", widget: "string"}
+              - {label: "Team Description", name: "description", widget: "text"}

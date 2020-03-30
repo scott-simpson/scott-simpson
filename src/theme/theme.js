@@ -6,6 +6,7 @@ const colors = {
   gray: '#f6f7f9',
   beige: '#FAF7F5',
   white: '#ffffff',
+  lightGreen: '#f7f9fb',
 }
 
 const fonts = {

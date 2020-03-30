@@ -1,4 +1,5 @@
 ---
+templateKey: subscriptions-page
 title: UrbanStems Subscriptions
 intro: >-
   One of our company-wide OKRs was to increase repeat purchase rate. At that
@@ -51,7 +52,7 @@ marketing:
 merchandising:
   description: >-
     They need to be planning ahead to add more variety to our product mix so
-    each subscription delivery is unique. 
+    each subscription delivery is unique.
   icon: /img/icon-merchandising.svg
   team: Merchandising
 operations:
