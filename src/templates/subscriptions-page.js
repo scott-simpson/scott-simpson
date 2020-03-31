@@ -36,7 +36,7 @@ const HeaderBox = styled(Box)`
   background: url(./img/subscriptions-bg-mobile.jpg) no-repeat 50% 50%;
   background-size: cover;
   @media (min-width: ${props => props.theme.breakpoints[1]}) {
-    background: url(./img/subscriptions-bg.jpg) no-repeat 50% 50%;
+    background: url(/img/subscriptions-bg.jpg) no-repeat 50% 50%;
     background-size: cover;
   }
 `;
