@@ -89,8 +89,10 @@ Once we had an idea of the user flow as well as the different possible combinati
 ![Subscriptions Wireframe Mobile](/img/urbanstems-subscriptions-wire-mobile2.jpg)
 
 </figure>
+
 ## Design
 From the wireframe, I mocked up a higher-fidelity design. After discussions with merchandising around product mix as well as the engineering team around technical limitations around our inventory, we ended up simplifying things down to a single subscription plan with plans to add more in the future.
+
 <figure>
 
 ![Subscriptions Design Desktop](/img/urbanstems-subscriptions-design-desktop1.jpg)
