@@ -30,7 +30,7 @@ customerCare:
   description: >-
     They fielded customer questions around subscriptions, changes of address,
     cancellations etc. In order to do that they had to have a good idea about
-    how the subscription checkout flow works and what the limitations were.
+    how the subscription checkout flow worked and what the limitations were.
   icon: /img/icon-customer-care.svg
   team: Customer Care
 marketing:
@@ -55,13 +55,13 @@ operations:
 business:
   description: >-
     They worked on forecasting subscriptions and helped the design team look at
-    analytics to make better informed decisions.
+    analytics to make informed decisions.
   icon: /img/icon-business-intelligence.svg
   team: Business Intelligence
 engineering:
   description: >-
-    They needed to understand how the UX flow works, what subscription options
-    are (duration, frequency, pricing tiers) and what transactional emails we
+    They needed to understand how the UX flow worked, what subscription options
+    were (duration, frequency, pricing tiers) and what transactional emails we
     needed to build that into our admin system backend as well as frontend.
   icon: /img/icon-engineering.svg
   team: Engineering
@@ -108,7 +108,7 @@ From the wireframe, I mocked up a higher-fidelity design. After discussions with
 When we launched our initial version of subscriptions, the whole team was excited to see customer feedback and see the subscriptions come rolling in. The reality was much different. In the first week of launch, we had just 1 or 2 subscriptions and things seemed to be crawling along. Our conversion rate was just 0.1% versus our storefront conversion of 11%. What was the problem? We invested so much time and resources into building this but with little results to show.
 
 ## Talking with Customers
-We decided that the best way forward was to get feedback from customers as well as people who had never used UrbanStems. Our product designer and I set up user interviews with 10 people to get feedback on subscriptions. From these interviews, we landed on two main things to address. The first was that users wanted more transparency around which bouquets they were getting. The second was that most of the messaging on the subscriptions page was geared towards buying a subscription for yourself. Although customers liked this idea, the price point wasn't in line with their expectations. However, customers did say that they would be likely to gift to someone else at that pricepoint.
+We decided that the best way forward was to get feedback from customers as well as people who had never used UrbanStems. Our product designer and I set up user interviews with 10 people to get feedback on subscriptions. From these interviews, we landed on two main things to address. The first was that users wanted more transparency around which bouquets they were getting. The second was that most of the messaging on the subscriptions page was geared towards buying a subscription for yourself. Although customers liked this idea, the price point wasn't in line with their expectations. However, customers did say they would likely send a gift to someone else at that pricepoint.
 
 <figure>
 
