@@ -1,7 +1,7 @@
 ---
 templateKey: subscriptions-page
 title: UrbanStems Subscriptions
-intro: Learning from our customers while building a new revenue stream.
+intro: Here's a story about a project that didn't go quite as planned...
 whyTitle: Why Subscriptions?
 whyIntro: >-
   One of our company-wide OKRs was to increase repeat purchase rate. At that
