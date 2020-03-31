@@ -7,6 +7,7 @@ import ScrollAnimation from 'react-animate-on-scroll';
 
 import SEO from '../components/Seo';
 import Layout from '../components/Layout';
+import Allcaps from '../components/Allcaps';
 import AllcapsBorder from '../components/AllcapsBorder';
 import Content, { HTMLContent } from '../components/Content';
 import Wrap from '../components/Wrap';
@@ -17,6 +18,14 @@ import IconMarketing from '../img/icon-marketing.svg';
 import IconEngineering from '../img/icon-engineering.svg';
 import IconCustomerCare from '../img/icon-customer-care.svg';
 import IconBusiness from '../img/icon-business-intelligence.svg';
+import IconDesign from '../img/icon-design.svg';
+import IconStoryblocks from '../img/icon-storyblocks.svg';
+
+import IconMedia from '../img/icon-media.svg';
+import IconSearch from '../img/icon-search.svg';
+import IconCasette from '../img/icon-casette.svg';
+import IconCamera from '../img/icon-camera.svg';
+import IconPersonalization from '../img/icon-personalization.svg';
 
 import IconPurchase from '../img/purchase.svg';
 import IconCart from '../img/cart.svg';
@@ -32,36 +41,67 @@ const TeamIconContainer = styled(Box)`
   height: 110px;
 `;
 
-const HeaderBox = styled(Box)`
-  background: url(./img/subscriptions-bg-mobile.jpg) no-repeat 50% 50%;
-  background-size: cover;
-  @media (min-width: ${props => props.theme.breakpoints[1]}) {
-    background: url(/img/subscriptions-bg.jpg) no-repeat 50% 50%;
-    background-size: cover;
+const Part1Box = styled(Box)`
+  background-color: #f8e7e0;
+`;
+
+const Part2Box = styled(Box)`
+  background-color: #1f282f;
+`;
+
+const StoryblocksContainer = styled(Box)`
+  display: inline-block;
+  width: 225px;
+  height: auto;
+  @media (min-width: ${props => props.theme.breakpoints[0]}) {
+    width: 300px;
+  }
+  & svg {
+    max-width: 100%;
+    position: relative;
+    top: 0.45em;
+    height: auto;
   }
 `;
 
-export const SubscriptionsPageTemplate = ({ title, intro, content, contentComponent, data, whyTitle, whyIntro, why1, why1Photo, why2, why2Photo, merchandising, customerCare, operations, engineering, business, marketing }) => {
+export const SubscriptionsPageTemplate = ({ title, intro, content, contentComponent, data, part1Image, part2Image, whyTitle, whyIntro, why1, why1Photo, why2, why2Photo, merchandising, customerCare, operations, engineering, business, marketing }) => {
   const PageContent = contentComponent || Content
 
   return (
     <Layout>
       <SEO title={`Scott Simpson. About.`} keywords={[`scott simpson`, `ux`, `product`, `design`, `dc`]} />
-        <HeaderBox  pt={["6%", "8%", "6%"]} pb={["95%", "70%", "6%"]}>
+        <Box bg="lightGreen"  py={["20%", "10%", "6%"]}>
         <Flex flexWrap="wrap">
-          <Box alignItems="horizontal" width={[12/12, 12/12, 10/12]}>
+          <Box alignItems="horizontal" width={1}>
             <ScrollAnimation offset={0} animateOnce={true} duration={0.75} animateIn="fadeInUp">
-              <Wrap>
-                <Box ml={[0]} py={["7%", "10%"]} width={[1, 1, 7/12]}>
-                  <Heading pb={3} color="heading" fontFamily="serif" fontSize={[7, 9]} lineHeight="1.25em">{title}</Heading>
-                  <Text fontSize={[4, 6]} pt={2} pb={4}>{intro}</Text>
+              <Wrap justifyContent="center">
+                <Box ml={[0]} py={["7%", "10%"]} width={1}>
+                  <Heading textAlign="center" pb={3} color="heading" fontFamily="serif" fontSize={[7, 9]} lineHeight="1.25em">Hey there,  <StoryblocksContainer pt={2}><IconStoryblocks /></StoryblocksContainer></Heading>
+                  <Text textAlign="center" fontSize={[4, 6]} pt={2} pb={4}>Here's a story about a project that didn't go quite as planned...<br />And some ideas on how we can collaborate together.</Text>
                 </Box>
               </Wrap>
             </ScrollAnimation>
           </Box>
         </Flex>
-        </HeaderBox>
+        </Box>
       <Section>
+        <Box py={["8%", "3%"]}>
+            <Part1Box width={1}>
+              <Flex flexWrap="wrap" alignItems="center">
+                <Box p={[4, 5]} order={[2, 2, 1]} width={[1, 1, 5/12]}>
+                  <Heading color="heading" fontFamily="serif" fontSize={[4, 6]}>Part 1</Heading>
+                  <Heading color="heading" fontFamily="serif" lineHeight="1.25em" fontSize={[7, 9]} pb={2}>UrbanStems Subscriptions</Heading>
+                  <Text fontSize={[2, 4]}>A failed launch and learning from our customers.</Text>
+                </Box>
+                <Box order={[1, 1, 2]} width={[1, 1, 7/12]}>
+                  <Img
+                    fluid={part1Image.childImageSharp.fluid}
+                    alt={title}
+                  />
+                </Box>
+              </Flex>
+            </Part1Box>
+        </Box>
         <Box py={["8%", "6%"]} >
           <Wrap flexWrap="wrap" justifyContent="center">
             <Box width={[12/12, 10/12, 8/12, 6/12]} pr={[0,0,4]}>
@@ -129,6 +169,19 @@ export const SubscriptionsPageTemplate = ({ title, intro, content, contentCompon
               <ScrollAnimation offset={0} animateOnce={true} duration={0.75} animateIn="fadeInUp">
                 <Heading pb={3} color="heading" fontFamily="serif" fontSize={[7, 9]} lineHeight="1.25em">Stakeholders</Heading>
               </ScrollAnimation>
+          </Box>
+          <Box width={[12/12, 10/12, 6/12]} px={[0, 0, 4]} py={[3, 3, 4]}>
+            <ScrollAnimation offset={0} animateOnce={true} duration={0.75} animateIn="fadeInUp">
+              <Flex>
+                <TeamIconContainer mr={3}>
+                  <IconDesign />
+                </TeamIconContainer>
+                <Box>
+                  <Heading color="heading" fontFamily="serif" fontSize={[3, 5]} mb={1}>My Role</Heading>
+                  <Text fontSize={[2, 4]}>The project was led by myself and our CTO. I designed the wireframes and mockups and collaborated closely with one of our product designers on user research and user journey mapping. I also led our biweekly product sprints along with our CTO.</Text>
+                </Box>
+              </Flex>
+            </ScrollAnimation>
           </Box>
           <Box width={[12/12, 10/12, 6/12]} px={[0, 0, 4]} py={[3, 3, 4]}>
               <ScrollAnimation offset={0} animateOnce={true} duration={0.75} animateIn="fadeInUp">
@@ -220,6 +273,91 @@ export const SubscriptionsPageTemplate = ({ title, intro, content, contentCompon
             </Box>
           </Wrap>
         </Box>
+        <Box py={["8%", "3%"]}>
+          <Part2Box width={1}>
+            <Flex flexWrap="wrap" alignItems="center">
+              <Box p={[4, 5]} order={[2, 2, 1]} width={[1, 1, 5/12]}>
+                <Heading color="white" fontFamily="serif" fontSize={[4, 6]}>Part 2</Heading>
+                <Heading color="white" fontFamily="serif" lineHeight="1.25em" fontSize={[7, 9]} pb={2}>Storyblocks UX</Heading>
+                <Text color="white" fontSize={[2, 4]}>Ideas for allowing creatives to move faster and create more moving stories.</Text>
+              </Box>
+              <Box order={[1, 1, 2]} width={[1, 1, 7/12]}>
+                <Img
+                  fluid={part2Image.childImageSharp.fluid}
+                  alt={title}
+                />
+              </Box>
+            </Flex>
+          </Part2Box>
+          <Flex alignItems="center" flexWrap="wrap" justifyContent="center" py={['6%']}>
+            <Box width={[12/12, 10/12, 8/12]} px={[0, 0, 4]} py={[3, 3, 4]}>
+                <ScrollAnimation offset={0} animateOnce={true} duration={0.75} animateIn="fadeInUp">
+                  <Flex>
+                    <TeamIconContainer mr={3}>
+                      <IconMedia />
+                    </TeamIconContainer>
+                    <Box ml={3}>
+                      <Heading color="heading" fontFamily="serif" fontSize={[3, 6]} lineHeight="1.25em" mb={1}>Integrate video, audio and imagery into one cohesive browsing experience.</Heading>
+                      <Text fontSize={[2, 4]}>When a user views a video clip, audio is suggested that pairs well with that clip based on things like pacing and keywords. The user can overlay the audio, change tempo, or move onto the next audio clip. Perhaps as a way to get smarter about suggestions, we can have a thumbs up/down system or ask questions about mood/theme.</Text>
+                    </Box>
+                  </Flex>
+                </ScrollAnimation>
+              </Box>
+              <Box width={[12/12, 10/12, 8/12]} px={[0, 0, 4]} py={[3, 3, 4]}>
+                  <ScrollAnimation offset={0} animateOnce={true} duration={0.75} animateIn="fadeInUp">
+                    <Flex>
+                      <TeamIconContainer mr={3}>
+                        <IconPersonalization />
+                      </TeamIconContainer>
+                      <Box ml={3}>
+                        <Heading color="heading" fontFamily="serif" fontSize={[3, 6]} lineHeight="1.25em" mb={1}>More personalization.</Heading>
+                        <Text fontSize={[2, 4]}>As a user is working on a project and downloading content, we should be able to learn more about the subject matter they’re working on. We can suggest content based on their project not only when browsing but also integrate it into the search bar.</Text>
+                      </Box>
+                    </Flex>
+                  </ScrollAnimation>
+                </Box>
+                <Box width={[12/12, 10/12, 8/12]} px={[0, 0, 4]} py={[3, 3, 4]}>
+                    <ScrollAnimation offset={0} animateOnce={true} duration={0.75} animateIn="fadeInUp">
+                      <Flex>
+                        <TeamIconContainer mr={3}>
+                          <IconCasette />
+                        </TeamIconContainer>
+                        <Box ml={3}>
+                          <Heading color="heading" fontFamily="serif" fontSize={[3, 6]} lineHeight="1.25em" mb={1}>Create more space for curated content.</Heading>
+                          <Text fontSize={[2, 4]}>Allow vetted creatives to create content “playlists” based on a mood or theme. Perhaps show off some of the work they’ve done and allow the user to dissect that content and see which audio, video and imagery they used to put it together for inspiration.</Text>
+                        </Box>
+                      </Flex>
+                    </ScrollAnimation>
+                  </Box>
+                  <Box width={[12/12, 10/12, 8/12]} px={[0, 0, 4]} py={[3, 3, 4]}>
+                      <ScrollAnimation offset={0} animateOnce={true} duration={0.75} animateIn="fadeInUp">
+                        <Flex>
+                          <TeamIconContainer mr={3}>
+                            <IconCamera />
+                          </TeamIconContainer>
+                          <Box ml={3}>
+                            <Heading color="heading" fontFamily="serif" fontSize={[3, 6]} lineHeight="1.25em" mb={1}>Create a request system for creatives/contributors.</Heading>
+                            <Text fontSize={[2, 4]}>Allow creatives to put out a request for video, audio, or imagery content that might not be available on the platform. Perhaps some of these requests could appear on the contributor platform and serve to motivate the contributor to fulfill them if they’d like.</Text>
+                          </Box>
+                        </Flex>
+                      </ScrollAnimation>
+                    </Box>
+                    <Box width={[12/12, 10/12, 8/12]} px={[0, 0, 4]} py={[3, 3, 4]}>
+                        <ScrollAnimation offset={0} animateOnce={true} duration={0.75} animateIn="fadeInUp">
+                          <Flex>
+                            <TeamIconContainer mr={3}>
+                              <IconSearch />
+                            </TeamIconContainer>
+                            <Box ml={3}>
+                              <Heading color="heading" fontFamily="serif" fontSize={[3, 6]} lineHeight="1.25em" mb={1}>Build a more powerful search tool.</Heading>
+                              <Text fontSize={[2, 4]} pb={3}>Bring search further upfront into the homepage and make it more visual. Perhaps embed small thumbnails or icons based on theme to help creatives visually sort through results.</Text>
+                              <Text fontSize={[2, 4]}>Allow users to upload audio or video clips that they’re working on and we can suggest others like it (sort of like a reverse Google image search or What The Font search).</Text>
+                            </Box>
+                          </Flex>
+                        </ScrollAnimation>
+                      </Box>
+            </Flex>
+        </Box>
       </Section>
     </Layout>
   )
@@ -244,6 +382,8 @@ const SubscriptionsPage = ({ data }) => {
       title={post.frontmatter.title}
       intro={post.frontmatter.intro}
       content={post.htmlAst}
+      part1Image={post.frontmatter.part1Image}
+      part2Image={post.frontmatter.part2Image}
       whyTitle={post.frontmatter.whyTitle}
       whyIntro={post.frontmatter.whyIntro}
       why1={post.frontmatter.why1}
@@ -273,6 +413,20 @@ export const subscriptionsPageQuery = graphql`
       frontmatter {
         title
         intro
+        part1Image {
+          childImageSharp {
+            fluid(maxWidth: 1800) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+        part2Image {
+          childImageSharp {
+            fluid(maxWidth: 1800) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
         whyTitle
         whyIntro
         why1
