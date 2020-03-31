@@ -110,5 +110,7 @@ From the wireframe, I mocked up a higher-fidelity design. After discussions with
 ## Launch Pains
 When we launched our initial version of subscriptions, the whole team was excited to see customer feedback and see the subscriptions come rolling in. The reality was much different. In the first week of launch, we had just 1 or 2 subscriptions and things seemed to be crawling along. Our conversion rate was just 0.1% versus our storefront conversion of 11%. What was the problem? We invested so much time and resources into building this but with little results to show.
 
-## Reaching Out To Customers
-We decided that
+## Talking with Customers
+We decided that the best way forward was to get feedback from customers as well as people who had never used UrbanStems. Our product designer and I setup user interviews with 10 people to get feedback on subscriptions. From these interviews, we landed on two main things to address. The first was that users 
+
+## 
