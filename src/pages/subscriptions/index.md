@@ -3,7 +3,7 @@ templateKey: subscriptions-page
 title: UrbanStems Subscriptions
 intro: Here's a story about a project that didn't go quite as planned...
 part1Image: /img/urbanstems-part1.jpg
-part2Image: /img/urbanstems-part1.jpg
+part2Image: /img/storyblocks-part2.jpg
 whyTitle: Why Subscriptions?
 whyIntro: >-
   One of our company-wide OKRs was to increase repeat purchase rate. At that
