@@ -15,16 +15,15 @@ whyIntro: >-
   was to find new revenue streams within our existing customer base.
   Subscriptions not only made it easier for our customers to regularly send
   flowers to themselves or loved ones, but it also encouraged repeat purchases.
-why1: >
+why1: >-
   The typical ecommerce customer buys flowers on average 1.5x per year mostly
-  for special occasions like Valentine’s Day and Mother’s Day. Around 50% of the
-  annual revenue of big industry players like 1800-Flowers comes on those two
-  days alone. At UrbanStems our customers look completely different. Only 5.6%
-  of our revenue came on major holidays with most people sending for everyday
-  occasions throughout the year. They also send more often – on average 3x per
-  year. This gave us some strong data that their buying habits were different
-  and skewed towards sending more regularly – something closer aligned with a
-  subscription model.
+  for special occasions. Around 50% of the annual revenue of big industry
+  players like 1800-Flowers comes on Mother's Day and Valentine's Day alone. At
+  UrbanStems our customers look completely different. Only 5.6% of our revenue
+  came on holidays with most people sending for everyday occasions. They also
+  send more often – on average 3x per year. This gave us some strong data that
+  their buying habits skewed towards sending more regularly – something that
+  aligned with a subscription model.
 why2: >-
   Our customer care team was receiving multiple requests per week from customers
   who wanted fresh flowers regularly delivered to their home or office. We found
