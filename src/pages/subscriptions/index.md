@@ -5,8 +5,8 @@ intro: Learning from our customers while building a new revenue stream.
 whyTitle: Why Subscriptions?
 whyIntro: >-
   One of our company-wide OKRs was to increase repeat purchase rate. At that
-  time, our COA was high as we were competing for ad space with big industry
-  players that had big budgets. Because of this, much of our focus that quarter
+  time, our COA was high because we were competing for ad space with with
+  big-budget industry players. Because of this, much of our focus that quarter
   was to find new revenue streams within our existing customer base.
   Subscriptions not only made it easier for our customers to regularly send
   flowers to themselves or loved ones, but it also encouraged repeat purchases.
@@ -26,41 +26,41 @@ why2: >-
 why2Photo: /img/urbanstems-why-2.jpg
 customerCare:
   description: >-
-    They need to field questions around subscriptions, changes of address,
-    cancellations etc. They need to have a good idea about how the subscription
-    checkout flow works and what the limitations are to assist customers.
+    They fielded customer questions around subscriptions, changes of address,
+    cancellations etc. In order to do that they had to have a good idea about
+    how the subscription checkout flow works and what the limitations were.
   icon: /img/icon-customer-care.svg
   team: Customer Care
 marketing:
   description: >-
-    They bring awareness to subscriptions through digital ads and partnerships
+    They brought awareness to subscriptions through digital ads and partnerships
     with companies like Vogue.
   icon: /img/icon-marketing.svg
   team: Marketing
 merchandising:
   description: >-
-    They need to be planning ahead to add more variety to our product mix so
-    each subscription delivery is unique.
+    They planned our subscription product lineup and worked to add more variety
+    to the mix as subscriptions scaled.
   icon: /img/icon-merchandising.svg
   team: Merchandising
 operations:
   description: >-
-    They’ll have more recurring deliveries and they’ll be paying special
-    attention to subscriptions (such as including a vase in the first delivery).
+    They needed to be informed on timeline and projections so that they could
+    pay special attention to subscriptions (such as including a vase in the
+    first delivery).
   icon: /img/icon-operations.svg
   team: Operations
 business:
   description: >-
-    They need to be informed on the timeline on subscriptions so they can
-    forecast buying extra bouquets and work closely with Marketing and
-    Merchandising as demand scales.
+    They worked on forecasting subscriptions and helped the design team look at
+    the analytics data to make better informed decisions.
   icon: /img/icon-business-intelligence.svg
   team: Business Intelligence
 engineering:
   description: >-
-    They need to understand how the UX flow works, what subscription options are
-    (duration, frequency, pricing tiers) and what transactional emails we need
-    to build that into our admin system backend as well as frontend.
+    They needed to understand how the UX flow works, what subscription options
+    are (duration, frequency, pricing tiers) and what transactional emails we
+    needed to build that into our admin system backend as well as frontend.
   icon: /img/icon-engineering.svg
   team: Engineering
 ---
