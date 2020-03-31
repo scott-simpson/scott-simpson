@@ -30,7 +30,7 @@ customerCare:
   description: >-
     They fielded customer questions around subscriptions, changes of address,
     cancellations etc. In order to do that they had to have a good idea about
-    how the subscription checkout flow works and what the limitations were.
+    how the subscription checkout flow worked and what the limitations were.
   icon: /img/icon-customer-care.svg
   team: Customer Care
 marketing:
@@ -55,13 +55,13 @@ operations:
 business:
   description: >-
     They worked on forecasting subscriptions and helped the design team look at
-    analytics to make better informed decisions.
+    analytics to make informed decisions.
   icon: /img/icon-business-intelligence.svg
   team: Business Intelligence
 engineering:
   description: >-
-    They needed to understand how the UX flow works, what subscription options
-    are (duration, frequency, pricing tiers) and what transactional emails we
+    They needed to understand how the UX flow worked, what subscription options
+    were (duration, frequency, pricing tiers) and what transactional emails we
     needed to build that into our admin system backend as well as frontend.
   icon: /img/icon-engineering.svg
   team: Engineering
