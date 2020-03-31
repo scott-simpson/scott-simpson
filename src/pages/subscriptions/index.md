@@ -70,7 +70,7 @@ engineering:
   icon: /img/icon-engineering.svg
   team: Engineering
 ---
-## Whiteboarding & User Flows
+We operated on a 2 week design sprint with the goal to get an early version of subscriptions off the ground in 6-8 weeks. We held weekly design reviews which were open to anyone who wanted to attend and I also held regular one on ones with leaders from each stakeholding team to communicate progress, give feedback and discuss any concerns. The design team also had daily standups to discuss progress, next steps and any blockers.
 
 ## Wireframing
 Once we had an idea of the user flow as well as the different possible combinations of subscriptions, I started to put together a wireframe for mobile and desktop. In one of our whiteboarding sessions, we had an idea to use an existing drawer component for the customer to configure their subscription. Selecting a plan anywhere on this page would bring up the drawer. This interaction nicely mirrored our checkout flow and brought consistency to the experience.
@@ -123,3 +123,15 @@ We decided that the best way forward was to get feedback from customers as well 
 </figure>
 
 ## Refining the Message
+In the next iteration, we decided to simplify the messaging and imagery and focus it around gifting. Rather than breaking subscriptions up into plans, I decided to show how the process works and display product photography of past bouquets. To give more visibility to subscriptions, I also designed a module that allows customers browsing the storefront to subscribe and recieve a bouquet as the first delivery in their subscription.
+
+<figure>
+
+![Subscriptions Design Desktop](/img/urbanstems-subscriptions-design-desktop3.jpg)
+
+![Subscriptions Design Mobile](/img/urbanstems-subscriptions-design-mobile3.jpg)
+
+</figure>
+
+## Results
+We saw an immediate uptick in subscriptions after implementing these changes. We started getting 20-30 subscriptions per day and while conversion still wasn't up to what we were hoping, it was a major improvement over the previous iteration.
