@@ -16,25 +16,18 @@ whyIntro: >-
   Subscriptions not only made it easier for our customers to regularly send
   flowers to themselves or loved ones, but it also encouraged repeat purchases.
 why1: >-
-  The typical ecommerce customer buys flowers on average 1.5x per year mostly
-  for special occasions. Around 50% of the annual revenue of big industry
-  players like 1800-Flowers comes on Mother's Day and Valentine's Day alone. At
-  UrbanStems our customers look completely different. Only 5.6% of our revenue
-  came on holidays with most people sending for everyday occasions. They also
-  send more often – on average 3x per year. This gave us some strong data that
-  their buying habits skewed towards sending more regularly – something that
-  aligned with a subscription model.
+  Our customers look much different than the average floral ecommerce customer.
+  They send flowers on average of 3x per year vs the industry average of 1.5x
+  per year. They also send throughout the year with most people sending for
+  everyday occasions. This is in contrast to the big industry players like
+  1800-Flowers where 50% of their revenue come on Valentine's Day and Mother's
+  Day alone (vs 5.6% for us).
 why1Photo: /img/urbanstems-customers.jpg
 why2: >-
   Our customer care team was receiving multiple requests per week from customers
   who wanted fresh flowers regularly delivered to their home or office. We found
   that many of these people were manually sending themselves flowers along with
-  a note of encouragement. In addition, none of our competitors, especially the
-  big industry players, had subscription services in place due to their reliance
-  on local florists for fulfillment. As we were vertically integrated and had
-  control over the supply chain and end delivery, it seemed like a good
-  opportunity to fill a need in the market without major implications on our
-  fulfillment process.
+  a personal note of encouragement.
 why2Photo: /img/urbanstems-why-2.jpg
 customerCare:
   description: >-
