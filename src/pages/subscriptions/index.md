@@ -69,7 +69,10 @@ engineering:
   icon: /img/icon-engineering.svg
   team: Engineering
 ---
+## Whiteboarding & User Flows
+
 ## Wireframing
+Once we had an idea of the user flow as well as the different possible combinations of subscriptions, I started to put together a wireframe for mobile and desktop. In one of our whiteboarding sessions, we had an idea to use an existing drawer component for the customer to configure their subscription. Selecting a plan anywhere on this page would bring up the drawer. This interaction nicely mirrored our checkout flow and brought consistency to the experience.
 
 <figure>
 
@@ -85,3 +88,8 @@ engineering:
 ![Subscriptions Wireframe Mobile](/img/urbanstems-subscriptions-wire-mobile2.jpg)
 
 </figure>
+## Design
+From the wireframe, I mocked up a higher-fidelity design. After discussions with merchandising around product mix as well as the engineering team around technical limitations around our inventory, we ended up simplifying things down to a single subscription plan with plans to add more in the future.
+
+
+## 
