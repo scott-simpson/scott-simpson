@@ -1,5 +1,5 @@
 ---
-templateKey: subscriptions-page
+templateKey: storyblocks-page
 title: UrbanStems Subscriptions
 intro: Here's a story about a project that didn't go quite as planned...
 part1Image: /img/urbanstems-part1.jpg

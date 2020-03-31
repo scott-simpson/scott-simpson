@@ -64,7 +64,7 @@ const StoryblocksContainer = styled(Box)`
   }
 `;
 
-export const SubscriptionsPageTemplate = ({ title, intro, content, contentComponent, data, part1Image, part2Image, whyTitle, whyIntro, why1, why1Photo, why2, why2Photo, merchandising, customerCare, operations, engineering, business, marketing }) => {
+export const StoryblocksPageTemplate = ({ title, intro, content, contentComponent, data, part1Image, part2Image, whyTitle, whyIntro, why1, why1Photo, why2, why2Photo, merchandising, customerCare, operations, engineering, business, marketing }) => {
   const PageContent = contentComponent || Content
 
   return (
@@ -363,7 +363,7 @@ export const SubscriptionsPageTemplate = ({ title, intro, content, contentCompon
   )
 }
 
-SubscriptionsPageTemplate.propTypes = {
+StoryblocksPageTemplate.propTypes = {
   title: PropTypes.string.isRequired,
   intro: PropTypes.string.isRequired,
   content: PropTypes.shape({
@@ -372,11 +372,11 @@ SubscriptionsPageTemplate.propTypes = {
   contentComponent: PropTypes.func,
 }
 
-const SubscriptionsPage = ({ data }) => {
+const StoryblocksPage = ({ data }) => {
   const { markdownRemark: post } = data
 
   return (
-    <SubscriptionsPageTemplate
+    <StoryblocksPageTemplate
       contentComponent={HTMLContent}
       data={data}
       title={post.frontmatter.title}
@@ -400,14 +400,14 @@ const SubscriptionsPage = ({ data }) => {
   )
 }
 
-SubscriptionsPage.propTypes = {
+StoryblocksPage.propTypes = {
   data: PropTypes.object.isRequired,
 }
 
-export default SubscriptionsPage
+export default StoryblocksPage
 
-export const subscriptionsPageQuery = graphql`
-  query SubscriptionsPage($id: String!) {
+export const storyblocksPageQuery = graphql`
+  query StoryblocksPage($id: String!) {
     markdownRemark(id: { eq: $id }) {
       htmlAst
       frontmatter {

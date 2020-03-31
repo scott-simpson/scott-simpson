@@ -40,11 +40,11 @@ collections:
           - {label: "Working At", name: "working", widget: "string"}
           - {label: "Countries Visited", name: "countries", widget: "string"}
           - {label: "Body", name: "body", widget: "markdown"}
-      - label: "Subscriptions"
-        name: "subscriptions"
-        file: "src/pages/subscriptions/index.md"
+      - label: "Storyblocks"
+        name: "storyblocks"
+        file: "src/pages/storyblocks/index.md"
         fields:
-          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "subscriptions-page"}
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "storyblocks-page"}
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Intro", name: "intro", widget: "text"}
           - {label: "Part 1 Image", name: "part1Image", widget: "image"}
