@@ -25,6 +25,7 @@ why1: >-
   send more often – on average 3x per year. This gave us some strong data that
   their buying habits skewed towards sending more regularly – something that
   aligned with a subscription model.
+why1Photo: /img/urbanstems-customers.jpg
 why2: >-
   Our customer care team was receiving multiple requests per week from customers
   who wanted fresh flowers regularly delivered to their home or office. We found
@@ -35,6 +36,7 @@ why2: >-
   control over the supply chain and end delivery, it seemed like a good
   opportunity to fill a need in the market without major implications on our
   fulfillment process.
+why2Photo: /img/urbanstems-customers.jpg
 customerCare:
   description: >-
     They need to field questions around subscriptions, changes of address,
