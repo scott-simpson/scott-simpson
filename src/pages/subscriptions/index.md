@@ -78,8 +78,8 @@ engineering:
 Wireframing
 <figure>
 
-![Button design system](/img/urbanstems-subscriptions-des-desktop1.jpg)
+![Subscriptions Wireframe Desktop](/img/urbanstems-subscriptions-des-desktop1.jpg)
 
-![Typography design system](/img/urbanstems-subscriptions-des-mobile1.jpg)
+![Subscriptions Wireframe Mobile](/img/urbanstems-subscriptions-des-mobile1.jpg)
 
 </figure>
