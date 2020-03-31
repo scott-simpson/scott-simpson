@@ -1,6 +1,6 @@
 ---
 title: UrbanStems Subscriptions
-intro: Learning to empathize with customers while building a new revenue stream.
+intro: Learning from our customers while building a new revenue stream.
 whyTitle: Why Subscriptions?
 whyIntro: >-
   One of our company-wide OKRs was to increase repeat purchase rate. At that
