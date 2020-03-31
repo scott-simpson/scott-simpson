@@ -3,7 +3,7 @@ import { Text } from 'rebass';
 
 const Allcaps = styled(Text)`
   font-weight: 500;
-  border-bottom: 1px solid #1C21FF;
+  border-bottom: 1px solid #eaeaea;
   text-transform: uppercase;
   letter-spacing: 2px;
   line-height: 1.

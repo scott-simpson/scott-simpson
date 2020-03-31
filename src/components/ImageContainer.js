@@ -16,8 +16,8 @@ const ImageContainer = styled(Flex)`
     width: 130%;
   }
   @media (min-width: ${props => props.theme.breakpoints[2]}) {
-    margin-left: -45%;
-    width: 190%;
+    margin-left: -50%;
+    width: 200%;
   }
 `;
 

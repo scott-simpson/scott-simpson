@@ -51,7 +51,9 @@ collections:
           - {label: "Why Subscriptions Title", name: "whyTitle", widget: "string"}
           - {label: "Why Subscriptions Intro", name: "whyIntro", widget: "text"}
           - {label: "Why Subscriptions Details", name: "why1", widget: "text"}
+          - {label: "Why Subscriptions Photo", name: "why1Photo", widget: "image"}
           - {label: "Why Subscriptions Details", name: "why2", widget: "text"}
+          - {label: "Why Subscriptions Photo", name: "why2Photo", widget: "image"}
           - label: "Customer Care"
             name: "customerCare"
             widget: "object"
