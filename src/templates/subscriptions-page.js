@@ -7,7 +7,7 @@ import ScrollAnimation from 'react-animate-on-scroll';
 
 import SEO from '../components/Seo';
 import Layout from '../components/Layout';
-import AllcapsBorder from '../components/AllCapsBorder';
+import AllcapsBorder from '../components/AllcapsBorder';
 import Content, { HTMLContent } from '../components/Content';
 import Wrap from '../components/Wrap';
 
