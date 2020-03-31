@@ -79,8 +79,8 @@ engineering:
 Wireframing
 <figure>
 
-![Subscriptions Wireframe Desktop](/img/urbanstems-subscriptions-des-desktop1.jpg)
+![Subscriptions Wireframe Desktop](/img/urbanstems-subscriptions-wire-desktop1.jpg)
 
-![Subscriptions Wireframe Mobile](/img/urbanstems-subscriptions-des-mobile1.jpg)
+![Subscriptions Wireframe Mobile](/img/urbanstems-subscriptions-wire-mobile1.jpg)
 
 </figure>
