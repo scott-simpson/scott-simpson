@@ -113,4 +113,12 @@ When we launched our initial version of subscriptions, the whole team was excite
 ## Talking with Customers
 We decided that the best way forward was to get feedback from customers as well as people who had never used UrbanStems. Our product designer and I setup user interviews with 10 people to get feedback on subscriptions. From these interviews, we landed on two main things to address. The first was that users wanted more transparency around which bouquets they were getting. The second was that most of the messaging on the subscriptions page was geared towards buying a subscription for yourself. Although customers liked this idea, the price point wasn't in line with their expectations, but customers did say that they would be likely to gift at that pricepoint.
 
+<figure>
+
+![Subscriptions Feedback](/img/urbanstems-quotes-1.jpg)
+
+![Subscriptions Feedback](/img/urbanstems-quotes-2.jpg)
+
+</figure>
+
 ## Refining the Message
