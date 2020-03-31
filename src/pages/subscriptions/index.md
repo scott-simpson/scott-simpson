@@ -64,7 +64,7 @@ engineering:
   icon: /img/icon-engineering.svg
   team: Engineering
 ---
-We operated on a 2 week design sprint with the goal to get an early version of subscriptions off the ground in 6-8 weeks. We held weekly design reviews which were open to anyone who wanted to attend and I also held regular one on ones with leaders from each stakeholding team to communicate progress, give feedback and discuss any concerns. The design team also had daily standups to discuss progress, next steps and any blockers.
+We operated on a 2 week design sprint with the goal to get an early version of subscriptions off the ground in 6-8 weeks. We held weekly design reviews which were open to anyone who wanted to attend. I also held regular one-on-ones with leaders from each stakeholding team to communicate progress, give feedback and discuss any concerns. The design team also had daily standups to discuss progress, next steps and any blockers.
 
 ## Wireframing
 Once we had an idea of the user flow as well as the different possible combinations of subscriptions, I started to put together a wireframe for mobile and desktop. In one of our whiteboarding sessions, we had an idea to use an existing drawer component for the customer to configure their subscription. Selecting a plan anywhere on this page would bring up the drawer. This interaction nicely mirrored our checkout flow and brought consistency to the experience.
@@ -106,7 +106,7 @@ From the wireframe, I mocked up a higher-fidelity design. After discussions with
 When we launched our initial version of subscriptions, the whole team was excited to see customer feedback and see the subscriptions come rolling in. The reality was much different. In the first week of launch, we had just 1 or 2 subscriptions and things seemed to be crawling along. Our conversion rate was just 0.1% versus our storefront conversion of 11%. What was the problem? We invested so much time and resources into building this but with little results to show.
 
 ## Talking with Customers
-We decided that the best way forward was to get feedback from customers as well as people who had never used UrbanStems. Our product designer and I setup user interviews with 10 people to get feedback on subscriptions. From these interviews, we landed on two main things to address. The first was that users wanted more transparency around which bouquets they were getting. The second was that most of the messaging on the subscriptions page was geared towards buying a subscription for yourself. Although customers liked this idea, the price point wasn't in line with their expectations, but customers did say that they would be likely to gift at that pricepoint.
+We decided that the best way forward was to get feedback from customers as well as people who had never used UrbanStems. Our product designer and I set up user interviews with 10 people to get feedback on subscriptions. From these interviews, we landed on two main things to address. The first was that users wanted more transparency around which bouquets they were getting. The second was that most of the messaging on the subscriptions page was geared towards buying a subscription for yourself. Although customers liked this idea, the price point wasn't in line with their expectations. However, customers did say that they would be likely to gift to someone else at that pricepoint.
 
 <figure>
 
@@ -117,7 +117,7 @@ We decided that the best way forward was to get feedback from customers as well 
 </figure>
 
 ## Refining the Message
-In the next iteration, we decided to simplify the messaging and imagery and focus it around gifting. Rather than breaking subscriptions up into plans, I decided to show how the process works and display product photography of past bouquets. To give more visibility to subscriptions, I also designed a module that allows customers browsing the storefront to subscribe and recieve a bouquet as the first delivery in their subscription.
+In the next iteration, we decided to simplify the messaging and imagery and focus it around gifting. Rather than breaking subscriptions up into plans, I decided to show how the process works and display product photography of past bouquets. To give more visibility to subscriptions, I also designed a module that allows customers browsing the storefront to subscribe and receive a bouquet as the first delivery in their subscription.
 
 <figure>
 
