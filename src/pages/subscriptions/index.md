@@ -116,9 +116,9 @@ We decided that the best way forward was to get feedback from customers as well 
 
 <figure>
 
-![Subscriptions Feedback](/img/urbanstems-quotes-1.jpg)
+![Subscriptions Feedback](/img/subscriptions-quotes-1.jpg)
 
-![Subscriptions Feedback](/img/urbanstems-quotes-2.jpg)
+![Subscriptions Feedback](/img/subscriptions-quotes-2.jpg)
 
 </figure>
 
