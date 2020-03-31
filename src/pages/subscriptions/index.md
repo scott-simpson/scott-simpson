@@ -76,11 +76,19 @@ engineering:
   icon: /img/icon-engineering.svg
   team: Engineering
 ---
-Wireframing
+## Wireframing
+
 <figure>
 
 ![Subscriptions Wireframe Desktop](/img/urbanstems-subscriptions-wire-desktop.jpg)
 
 ![Subscriptions Wireframe Mobile](/img/urbanstems-subscriptions-wire-mobile.jpg)
+
+</figure>
+<figure>
+
+![Subscriptions Wireframe Desktop](/img/urbanstems-subscriptions-wire-desktop2.jpg)
+
+![Subscriptions Wireframe Mobile](/img/urbanstems-subscriptions-wire-mobile2.jpg)
 
 </figure>
