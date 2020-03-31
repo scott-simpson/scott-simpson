@@ -35,7 +35,7 @@ why2: >-
   control over the supply chain and end delivery, it seemed like a good
   opportunity to fill a need in the market without major implications on our
   fulfillment process.
-why2Photo: /img/urbanstems-customers.jpg
+why2Photo: /img/urbanstems-why-2.jpg
 customerCare:
   description: >-
     They need to field questions around subscriptions, changes of address,
