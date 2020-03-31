@@ -99,4 +99,5 @@ From the wireframe, I mocked up a higher-fidelity design. After discussions with
 ![Subscriptions Design Mobile](/img/urbanstems-subscriptions-design-mobile1.jpg)
 
 </figure>
-## 
+
+## Initial Launch
