@@ -53,7 +53,7 @@ operations:
 business:
   description: >-
     They worked on forecasting subscriptions and helped the design team look at
-    the analytics data to make better informed decisions.
+    analytics to make better informed decisions.
   icon: /img/icon-business-intelligence.svg
   team: Business Intelligence
 engineering:
