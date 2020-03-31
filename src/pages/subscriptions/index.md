@@ -16,7 +16,7 @@ why1: >-
   everyday occasions. This is in contrast to the big industry players like
   1800-Flowers where 50% of their revenue come on Valentine's Day and Mother's
   Day alone (vs 5.6% for us).
-why1Photo: /img/urbanstems-customers.jpg
+why1Photo: /img/urbanstems-delivery.jpg
 why2: >-
   Our customer care team was receiving multiple requests per week from customers
   who wanted fresh flowers regularly delivered to their home or office. We found
