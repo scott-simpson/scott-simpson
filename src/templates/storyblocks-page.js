@@ -64,7 +64,7 @@ const StoryblocksContainer = styled(Box)`
   }
 `;
 
-export const StoryblocksPageTemplate = ({ title, intro, content, contentComponent, data, part1Image, part2Image, whyTitle, whyIntro, why1, why1Photo, why2, why2Photo, merchandising, customerCare, operations, engineering, business, marketing }) => {
+export const StoryblocksPageTemplate = ({ title, intro, content, contentComponent, data, stake1, stake2, part1Image, part2Image, whyTitle, whyIntro, why1, why1Photo, why2, why2Photo, merchandising, customerCare, operations, engineering, business, marketing }) => {
   const PageContent = contentComponent || Content
 
   return (
@@ -104,11 +104,13 @@ export const StoryblocksPageTemplate = ({ title, intro, content, contentComponen
         </Box>
         <Box py={["8%", "6%"]} >
           <Wrap flexWrap="wrap" justifyContent="center">
+            <Box width={1}>
+              <Heading textAlign="center" pb={4} color="heading" fontFamily="serif" fontSize={[7, 9]} lineHeight="1.25em">{whyTitle}</Heading>
+            </Box>
             <Box width={[12/12, 10/12, 8/12, 6/12]} pr={[0,0,4]}>
-              <Heading pb={3} color="heading" fontFamily="serif" fontSize={[7, 9]} lineHeight="1.25em">{whyTitle}</Heading>
               <Text fontSize={[2, 4]}>{whyIntro}</Text>
             </Box>
-            <Box width={[12/12, 10/12, 4/12, 4/12]} pt={4} pl={[0,0,4]}>
+            <Box width={[12/12, 10/12, 4/12, 4/12]} pl={[0,0,4]}>
               <AllcapsBorder>Goals</AllcapsBorder>
               <Flex alignItems="center">
                 <Box mr={3} mt={3}><IconPurchase /></Box>
@@ -164,10 +166,10 @@ export const StoryblocksPageTemplate = ({ title, intro, content, contentComponen
           </Wrap>
         </Box>
         <Box bg="lightGreen" py={["12%", "6%"]}>
-          <Wrap flexWrap="wrap" justifyContent="center">
+          <Wrap flexWrap="wrap">
             <Box alignItems="horizontal" width={[12/12, 10/12, 12/12]}>
               <ScrollAnimation offset={0} animateOnce={true} duration={0.75} animateIn="fadeInUp">
-                <Heading pb={3} color="heading" fontFamily="serif" fontSize={[7, 9]} lineHeight="1.25em">Stakeholders</Heading>
+                <Heading textAlign="center" pb={3} color="heading" fontFamily="serif" fontSize={[7, 9]} lineHeight="1.25em">Stakeholders</Heading>
               </ScrollAnimation>
           </Box>
           <Box width={[12/12, 10/12, 6/12]} px={[0, 0, 4]} py={[3, 3, 4]}>
@@ -261,6 +263,39 @@ export const StoryblocksPageTemplate = ({ title, intro, content, contentComponen
                 </Flex>
               </ScrollAnimation>
             </Box>
+            <Box width={12/12} pt={['12%', '6%']}>
+              <Heading textAlign="center" pb={2} color="heading" fontFamily="serif" fontSize={[7, 9]} lineHeight="1.25em">Stakeholder Misalignment</Heading>
+            </Box>
+            <Flex flexWrap="wrap" justifyContent="center">
+              <Box width={[12/12, 12/12, 12/12, 8/12]} pt={['12%', '6%']}>
+                <Flex flexWrap="wrap" alignItems="center">
+                  <Box width={[12/12, 4/12]} pr={[0,4]} pb={[4,0]}>
+                    <Img
+                      fluid={stake1.childImageSharp.fluid}
+                      alt={title}
+                    />
+                  </Box>
+                  <Box width={[12/12, 8/12]}>
+                    <Heading color="heading" fontFamily="serif" fontSize={[3, 5]} mb={1}>Addressing Product Mix Too Late</Heading>
+                    <Text fontSize={[2, 4]}>The Design team wanted to feature three different tiers of subscriptions. Unfortunately, we weren't rotating our product mix fast enough to warrant that. These concerns weren’t addressed until late into the process and although we initially designed for three tiers, we had to scale back to one tier on launch. To realign, I met more frequently with the merchandising team to ensure we could add more bouquets over the coming months with the plan to add bouquets unique to subscriptions depending on demand.</Text>
+                  </Box>
+                </Flex>
+              </Box>
+              <Box width={[12/12, 12/12, 12/12, 8/12]} py={['12%', '6%']}>
+              <Flex flexWrap="wrap" alignItems="center">
+                <Box width={[12/12, 4/12]} pr={[0,4]} pb={[4,0]}>
+                  <Img
+                    fluid={stake2.childImageSharp.fluid}
+                    alt={title}
+                  />
+                </Box>
+                <Box width={[12/12, 8/12]}>
+                <Heading color="heading" fontFamily="serif" fontSize={[3, 5]} mb={1}>Recurring Charges</Heading>
+                <Text fontSize={[2, 4]}>The design team’s initial plan was to default to a recurring subscription which was charged depending on the frequency that the customer chose. Unfortunately, because of how our inventory system was designed it would be too technically difficult in our tight timeline to implement. To realign, I set up a whiteboarding session between engineering and design to map out all the different subscription combinations and we landed on allowing customers to select from a 3 month, 6 month or 12 month subscription that would be purchased upfront.</Text>
+                </Box>
+              </Flex>
+              </Box>
+            </Flex>
           </Wrap>
         </Box>
         <Box py={["12%", "6%"]}>
@@ -382,6 +417,8 @@ const StoryblocksPage = ({ data }) => {
       title={post.frontmatter.title}
       intro={post.frontmatter.intro}
       content={post.htmlAst}
+      stake1={post.frontmatter.stake1}
+      stake2={post.frontmatter.stake2}
       part1Image={post.frontmatter.part1Image}
       part2Image={post.frontmatter.part2Image}
       whyTitle={post.frontmatter.whyTitle}
@@ -413,6 +450,20 @@ export const storyblocksPageQuery = graphql`
       frontmatter {
         title
         intro
+        stake1 {
+          childImageSharp {
+            fluid(maxWidth: 1800) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+        stake2 {
+          childImageSharp {
+            fluid(maxWidth: 1800) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
         part1Image {
           childImageSharp {
             fluid(maxWidth: 1800) {

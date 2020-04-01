@@ -47,6 +47,8 @@ collections:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "storyblocks-page"}
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Intro", name: "intro", widget: "text"}
+          - {label: "Stakeholder 1 Image", name: "stake1", widget: "image"}
+          - {label: "Stakeholder 2 Image", name: "stake2", widget: "image"}
           - {label: "Part 1 Image", name: "part1Image", widget: "image"}
           - {label: "Part 2 Image", name: "part2Image", widget: "image"}
           - {label: "Body", name: "body", widget: "markdown"}
