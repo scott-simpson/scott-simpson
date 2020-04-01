@@ -93,7 +93,7 @@ From the wireframe, I mocked up a higher-fidelity design. After discussions with
 
 <figure>
 
-![Subscriptions Design Desktop](/img/urbanstems-subscriptions-design-desktop1.jpg)
+![Subscriptions Design Desktop](/img/urbanstems-subscriptions-design-desktop1-v2.jpg)
 
 ![Subscriptions Design Mobile](/img/urbanstems-subscriptions-design-mobile1.jpg)
 
