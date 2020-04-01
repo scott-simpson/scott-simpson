@@ -319,7 +319,7 @@ export const StoryblocksPageTemplate = ({ title, intro, content, contentComponen
               <Box order={[1, 1, 2]} width={[1, 1, 7/12]}>
                 <Img
                   fluid={part2Image.childImageSharp.fluid}
-                  alt={title}
+                  alt={title} 
                 />
               </Box>
             </Flex>
