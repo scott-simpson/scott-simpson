@@ -2,6 +2,8 @@
 templateKey: storyblocks-page
 title: UrbanStems Subscriptions
 intro: Here's a story about a project that didn't go quite as planned...
+stake1: /img/product-mix.jpg
+stake2: /img/recurring-charges.jpg
 part1Image: /img/urbanstems-part1.jpg
 part2Image: /img/storyblocks-part2.jpg
 whyTitle: Why Subscriptions?
