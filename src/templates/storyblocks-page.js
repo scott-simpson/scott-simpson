@@ -291,7 +291,7 @@ export const StoryblocksPageTemplate = ({ title, intro, content, contentComponen
                 </Box>
                 <Box width={[12/12, 8/12]}>
                 <Heading color="heading" fontFamily="serif" fontSize={[3, 5]} mb={1}>Recurring Charges</Heading>
-                <Text fontSize={[2, 4]}>The design team’s initial plan was to default to a recurring subscription which was charged depending on the frequency that the customer chose. Unfortunately, because of how our inventory system was designed it would be too technically difficult in our tight timeline to implement. To realign, I set up a whiteboarding session between engineering and design to map out all the different subscription combinations and we landed on allowing customers to select from a 3 month, 6 month or 12 month subscription that would be purchased upfront.</Text>
+                <Text fontSize={[2, 4]}>The design team’s plan was to default to a recurring subscription which was charged depending on the frequency that the customer chose. Unfortunately, because of how our inventory system was designed it would be too technically difficult in our tight timeline to implement. To realign, I set up a whiteboarding session between engineering and design to map out all the different subscription combinations and we landed on allowing customers to select from a 3 month, 6 month or 12 month subscription that would be purchased upfront.</Text>
                 </Box>
               </Flex>
               </Box>
