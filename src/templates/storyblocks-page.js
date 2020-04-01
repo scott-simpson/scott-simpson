@@ -319,7 +319,7 @@ export const StoryblocksPageTemplate = ({ title, intro, content, contentComponen
               <Box order={[1, 1, 2]} width={[1, 1, 7/12]}>
                 <Img
                   fluid={part2Image.childImageSharp.fluid}
-                  alt={title} 
+                  alt={title}
                 />
               </Box>
             </Flex>
@@ -333,7 +333,7 @@ export const StoryblocksPageTemplate = ({ title, intro, content, contentComponen
                     </TeamIconContainer>
                     <Box ml={3}>
                       <Heading color="heading" fontFamily="serif" fontSize={[3, 6]} lineHeight="1.25em" mb={1}>Integrate video, audio and imagery into one cohesive browsing experience.</Heading>
-                      <Text fontSize={[2, 4]}>When a user views a video clip, audio is suggested that pairs well with that clip based on things like pacing and keywords. The user can overlay the audio, change tempo, or move onto the next audio clip. Perhaps as a way to get smarter about suggestions, we can have a thumbs up/down system or ask questions about mood/theme.</Text>
+                      <Text fontSize={[2, 4]}>When a user views a video clip, audio is suggested that pairs well with that clip based on things like pacing and keywords. The user can overlay the audio, change tempo, or move onto the next audio clip. Perhaps as a way to get smarter about suggestions, we can have a thumbs up/down system or ask questions about mood/theme. </Text>
                     </Box>
                   </Flex>
                 </ScrollAnimation>
